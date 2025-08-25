@@ -1,0 +1,51 @@
+package net.ooder.esd.annotation.action;
+
+
+import net.ooder.annotation.IconEnumstype;
+
+public enum OpinionServiceType implements IconEnumstype {
+
+
+    CustomService("绑定服务", "CustomService", "spafont spa-icon-options"),
+
+    CustomMenuService("绑定菜单", "CustomMenuService", "spafont spa-icon-c-toolbar"),
+
+    CustomRowMenuService("行按钮绑定", "CustomRowMenuService", "spafont spa-icon-c-statusbutton");
+
+    private String name;
+
+    private String type;
+
+    private String methodName;
+
+    private final String imageClass;
+
+    OpinionServiceType(String name, String methodName, String imageClass) {
+
+        this.name = name;
+        this.methodName = methodName;
+        this.type = name();
+        this.imageClass = imageClass;
+    }
+
+
+    public String getMethodName() {
+        return methodName;
+    }
+
+
+    @Override
+    public String getType() {
+        return name();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String getImageClass() {
+        return imageClass;
+    }
+
+}
