@@ -8,7 +8,7 @@ public enum EngineType implements IconEnumstype {
 
 
 
-    ESD("xui-icon-upload", "内部应用"),
+    ESD("ood-icon-upload", "内部应用"),
 
     IOT("bpmfont bpmgongzuoliuzhutiguizeweihuguanli", "IOT引擎"),
 

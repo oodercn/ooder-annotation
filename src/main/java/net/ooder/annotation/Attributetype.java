@@ -19,7 +19,7 @@ public enum Attributetype implements IconEnumstype {
 
     BPD("spafont spa-icon-editpath", "定义工具", EngineType.ESD),
 
-    RIGHT("xui-uicmd-cmdbox", "办理权限", EngineType.ESD),
+    RIGHT("ood-uicmd-cmdbox", "办理权限", EngineType.ESD),
 
     CONDITION("spafont spa-icon-function", "执行条件", EngineType.CUSTOM),
 
@@ -29,9 +29,9 @@ public enum Attributetype implements IconEnumstype {
 
     DB("spafont spa-icon-c-grid", "数据库", EngineType.CUSTOM),
 
-    PAGERIGHT("xui-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
+    PAGERIGHT("ood-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
 
-    MODULERIGHT("xui-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
+    MODULERIGHT("ood-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
 
     TASK("bpmfont bpmgongzuoliuzhutiguizeweihuguanli", "任务调度", EngineType.CUSTOM),
 

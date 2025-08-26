@@ -17,7 +17,7 @@ public enum FolderType implements Enums {
 
     space("space", "工作空间"),
 
-    project("project", "XUI工程"),
+    project("project", "OOD工程"),
 
     systemspace("systemspace", "系统空间"),;
 

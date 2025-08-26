@@ -54,7 +54,7 @@ public enum FormulaType implements IconEnumstype {
 
     ColInfoID(Attributetype.DB, "spafont spa-icon-c-comboinput", "数据字段"),
 
-    SafeID(Attributetype.SAFE, "xui-icon-transparent", "安全控制"),
+    SafeID(Attributetype.SAFE, "ood-icon-transparent", "安全控制"),
 
     CommandSelectedID(Attributetype.COMMAND, "spafont spa-icon-mqtt", "执行命令"),
 

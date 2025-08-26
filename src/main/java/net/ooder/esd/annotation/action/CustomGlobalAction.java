@@ -16,9 +16,9 @@ public enum CustomGlobalAction implements ActionType, CustomAction, Enumstype {
 
     SetDirty("设置脏读", CustomGlobalMethod.page, "var", ActionTypeEnum.other, new String[]{"_dirty", "{1}"}, null, "true", false),
     TestDrop("跳转页面", CustomGlobalMethod.page, "var", ActionTypeEnum.other, new String[]{"_dirty", "{1}"}, null, "true", true),
-    Open("跳转页面", CustomGlobalMethod.showModule2, "url", ActionTypeEnum.other, new String[]{"{xui.showModule2()},null,null,{args[1].data.url}, null, null,{args[1].data.params},  null, null, {page}"}, "other:callback:call", "true", false),
+    Open("跳转页面", CustomGlobalMethod.showModule2, "url", ActionTypeEnum.other, new String[]{"{ood.showModule2()},null,null,{args[1].data.url}, null, null,{args[1].data.params},  null, null, {page}"}, "other:callback:call", "true", false),
     Print("打印", CustomGlobalMethod.invoke, "callback", ActionTypeEnum.other, new String[]{"{global.print}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true", true),
-    DownLoad("下载", CustomGlobalMethod.call, "callback", ActionTypeEnum.callback, new String[]{"{xui.downLoad()}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true", true);
+    DownLoad("下载", CustomGlobalMethod.call, "callback", ActionTypeEnum.callback, new String[]{"{ood.downLoad()}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true", true);
 
     private String desc;
     @JSONField(name = "type")

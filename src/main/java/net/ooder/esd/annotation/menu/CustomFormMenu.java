@@ -20,17 +20,17 @@ public enum CustomFormMenu implements CustomMenu, IconEnumstype {
 
     SAVEANACLOSE("保存", "spafont spa-icon-save", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE, CustomPageAction.CLOSETOP}),
 
-    SUBMITFORM("确定", "xui-icon-right", "true",IconColorEnum.GREEN, new CustomAction[]{CustomFormAction.SAVE}),
+    SUBMITFORM("确定", "ood-icon-right", "true",IconColorEnum.GREEN, new CustomAction[]{CustomFormAction.SAVE}),
 
     CLOSE("关闭", "fa fa-lg fa-close", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
 
     CLOSETOP("关闭", "fa fa-lg fa-close", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSETOP}),
 
-    SEARCH("查找", "xui-icon-search", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SEARCH}),
+    SEARCH("查找", "ood-icon-search", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SEARCH}),
 
     RESET("重置", "spafont spa-icon-resetpath", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomFormAction.RESET}),
 
-    PRINT("打印", "xui-icon-print", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
+    PRINT("打印", "ood-icon-print", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 

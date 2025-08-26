@@ -7,7 +7,7 @@ public enum RefType implements IconEnumstype {
     M2O("多对一", "spafont spa-icon-alignwh"),
     F2F("自循环", "spafont spa-icon-cancel"),
     O2O("一对一", "spafont spa-icon-hmirror"),
-    FIND("查找", "xui-icon-search"),
+    FIND("查找", "ood-icon-search"),
     M2M("多对多", "spafont spa-icon-alignwh");
 
     private final String imageClass;

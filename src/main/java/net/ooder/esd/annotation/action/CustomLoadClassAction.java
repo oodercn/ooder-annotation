@@ -11,10 +11,10 @@ import net.ooder.esd.annotation.event.ActionTypeEnum;
 import java.lang.annotation.Annotation;
 
 public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype {
-    tabShow("切换窗口", new String[]{"{xui.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "{args[1].id}", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    show2("切换窗口", new String[]{"{xui.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    IndexShow("切换窗口", new String[]{"{xui.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    GalleryShow("切换窗口", new String[]{"{xui.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true);
+    tabShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "{args[1].id}", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
+    show2("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
+    IndexShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
+    GalleryShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true);
 
 
     private String desc;

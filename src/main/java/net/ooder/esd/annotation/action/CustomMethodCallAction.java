@@ -14,7 +14,7 @@ import java.lang.annotation.Annotation;
 public enum CustomMethodCallAction implements ActionType, CustomAction, Enumstype {
 
 
-    show2("弹出新窗口", null, new String[]{"{xui.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}"}, "other:callback:call", "true",true),
+    show2("弹出新窗口", null, new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}"}, "other:callback:call", "true",true),
     CheckValid("校验表单", "callback", new String[]{"{page.checkValid()}", null, null, "{true}"}, CustomGlobalMethod.call.getType(), "true", false),
     Print("打印", null, new String[]{"{global.print}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true", false);
 

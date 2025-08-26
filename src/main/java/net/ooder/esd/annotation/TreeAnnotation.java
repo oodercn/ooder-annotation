@@ -51,7 +51,7 @@ public @interface TreeAnnotation {
 
     String caption() default "";
 
-    String optBtn() default "xui-uicmd-opt";
+    String optBtn() default "ood-uicmd-opt";
 
     Class[] customService() default {};
 

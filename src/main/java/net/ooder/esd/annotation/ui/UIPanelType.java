@@ -1,11 +1,11 @@
 package net.ooder.esd.annotation.ui;
 
 public enum UIPanelType implements UIType {
-    Audio("xui.UI.Dialog"),
-    Block("xui.UI.Block"),
-    Panel("xui.UI.Panel"),
-    Module("xui.UI.Module"),
-    TreeView("xui.UI.TreeView");
+    Audio("ood.UI.Dialog"),
+    Block("ood.UI.Block"),
+    Panel("ood.UI.Panel"),
+    Module("ood.UI.Module"),
+    TreeView("ood.UI.TreeView");
 
 //
 //    ButtonViews,CheckBox,ColorPicker,ComboInput,DatePicker,Dialog,Echarts,

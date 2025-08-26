@@ -5,7 +5,7 @@ public enum ServiceStatus implements IconEnumstype {
 
     unsupported("不支持", "spafont spa-icon-resetpath"),
 
-    unavailable("不可用", "xui-icon-trash"),
+    unavailable("不可用", "ood-icon-trash"),
 
     normal("正常", "spafont spa-icon-ok");
 

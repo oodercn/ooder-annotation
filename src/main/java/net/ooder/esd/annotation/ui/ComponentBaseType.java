@@ -4,8 +4,8 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.Enumstype;
 
 public enum ComponentBaseType implements Enumstype {
-    absValue("表单组件", "xui.absValue"), absObj("普通组件", "xui.absObj"), Widget("独立控件", "xui.UI.Widget"),
-    absList("集合组件", "xui.absList"), Div("层组件", "xui.UI.Div"), absProfile("Module组件", "xui.absProfile"), svg("SVG图形", "xui.svg"), absComb("组合图形", "xui.svg.absComb");
+    absValue("表单组件", "ood.absValue"), absObj("普通组件", "ood.absObj"), Widget("独立控件", "ood.UI.Widget"),
+    absList("集合组件", "ood.absList"), Div("层组件", "ood.UI.Div"), absProfile("Module组件", "ood.absProfile"), svg("SVG图形", "ood.svg"), absComb("组合图形", "ood.svg.absComb");
 
     private final String name;
     private final String className;

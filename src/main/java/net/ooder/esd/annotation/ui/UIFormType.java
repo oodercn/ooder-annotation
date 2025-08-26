@@ -1,23 +1,23 @@
 package net.ooder.esd.annotation.ui;
 
 public enum UIFormType implements UIType {
-    CheckBox("xui.UI.CheckBox"),
-    ComboInput("xui.UI.ComboInput"),
-    HiddenInput("xui.UI.HiddenInput"),
-    Input("xui.UI.Input"),
-    RadioBox("xui.UI.RadioBox"),
-    RichEditor("xui.UI.RichEditor"),
-    ColorPicker("xui.UI.ColorPicker"),
-    DatePicker("xui.UI.DatePicker"),
-    FormLayout("xui.UI.FormLayout"),
+    CheckBox("ood.UI.CheckBox"),
+    ComboInput("ood.UI.ComboInput"),
+    HiddenInput("ood.UI.HiddenInput"),
+    Input("ood.UI.Input"),
+    RadioBox("ood.UI.RadioBox"),
+    RichEditor("ood.UI.RichEditor"),
+    ColorPicker("ood.UI.ColorPicker"),
+    DatePicker("ood.UI.DatePicker"),
+    FormLayout("ood.UI.FormLayout"),
 
-    Slider("xui.UI.Slider"),
-    StatusButtons("xui.UI.StatusButtons"),
-    TimePicker("xui.UI.TimePicker"),
-    UI("xui.UI.UI"),
+    Slider("ood.UI.Slider"),
+    StatusButtons("ood.UI.StatusButtons"),
+    TimePicker("ood.UI.TimePicker"),
+    UI("ood.UI.UI"),
 
 
-    ProgressBar("xui.UI.ProgressBar");
+    ProgressBar("ood.UI.ProgressBar");
 
 //v
 //    ButtonViews,CheckBox,ColorPicker,ComboInput,DatePicker,Dialog,Echarts,

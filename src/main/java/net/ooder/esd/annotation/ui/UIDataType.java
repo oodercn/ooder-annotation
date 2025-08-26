@@ -1,9 +1,9 @@
 package net.ooder.esd.annotation.ui;
 
 public enum UIDataType implements UIType {
-    DataBinder("xui.DataBinder"),
-    MQTT("xui.MQTT"),
-    APICall("xui.APICall");
+    DataBinder("ood.DataBinder"),
+    MQTT("ood.MQTT"),
+    APICall("ood.APICall");
 
     private String type;
 

@@ -1,15 +1,15 @@
 package net.ooder.esd.annotation.ui;
 
 public enum UIViewType implements UIType {
-    Layout("xui.UI.Layout"),
-    FoldingList("xui.UI.FoldingList"),
-    FormLayout("xui.UI.FormLayout"),
-    FusionChartsXT("xui.UI.FusionChartsXT"),
-    ComboInput("xui.UI.ComboInput"),
-    Gallery("xui.UI.Gallery"),
-    Stacks("xui.UI.Stacks"),
-    SVGPaper("xui.UI.SVGPaper"),
-    Tabs("xui.UI.Tabs");
+    Layout("ood.UI.Layout"),
+    FoldingList("ood.UI.FoldingList"),
+    FormLayout("ood.UI.FormLayout"),
+    FusionChartsXT("ood.UI.FusionChartsXT"),
+    ComboInput("ood.UI.ComboInput"),
+    Gallery("ood.UI.Gallery"),
+    Stacks("ood.UI.Stacks"),
+    SVGPaper("ood.UI.SVGPaper"),
+    Tabs("ood.UI.Tabs");
 
     private String type;
 

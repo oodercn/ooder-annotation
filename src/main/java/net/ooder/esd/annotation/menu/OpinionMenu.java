@@ -17,7 +17,7 @@ public enum OpinionMenu implements CustomMenu, IconEnumstype {
 
     FLAGCLICK("下标点击", "flagClick", "fa fa-calendar-plus-o", "true",IconColorEnum.NONE,  new CustomAction[]{}),
 
-    SUBMITFORM("确定", "saveUrl", "xui-icon-right", "true",IconColorEnum.DARKBLUE,  new CustomAction[]{CustomFormAction.SAVE}),
+    SUBMITFORM("确定", "saveUrl", "ood-icon-right", "true",IconColorEnum.DARKBLUE,  new CustomAction[]{CustomFormAction.SAVE}),
 
     RELOAD("刷新", "dataPath", "fa fa-lg fa-circle-o-notch", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 

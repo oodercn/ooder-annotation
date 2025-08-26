@@ -342,281 +342,281 @@ public enum CustomImageType implements IconEnumstype {
 
     mqtt("spafont spa-icon-mqtt", "&#xe70c"),
 
-    xui("xui-icon-xui", "&#xe6a7;"),
+    ood("ood-icon-ood", "&#xe6a7;"),
 
-    placeholder("xui-icon-placeholder", "&#xe668;"),
+    placeholder("ood-icon-placeholder", "&#xe668;"),
 
-    iempty("xui-icon-empty", "&#xe668;"),
+    iempty("ood-icon-empty", "&#xe668;"),
 
-    loading("xui-icon-loading", "&#xe678;"),
+    loading("ood-icon-loading", "&#xe678;"),
 
-    istar("xui-icon-star", "&#xe69c;"),
+    istar("ood-icon-star", "&#xe69c;"),
 
-    smill("xui-icon-smill", "&#xe69a;"),
+    smill("ood-icon-smill", "&#xe69a;"),
 
-    trash("xui-icon-trash", "&#xe6a1;"),
+    trash("ood-icon-trash", "&#xe6a1;"),
 
-    error("xui-icon-error", "&#xe666;"),
+    error("ood-icon-error", "&#xe666;"),
 
-    back("xui-icon-back", "&#xe64e;"),
+    back("ood-icon-back", "&#xe64e;"),
 
-    bold("xui-icon-bold", "&#xe650;"),
+    bold("ood-icon-bold", "&#xe650;"),
 
-    bgcolor("xui-icon-bgcolor", "&#xe64f;"),
+    bgcolor("ood-icon-bgcolor", "&#xe64f;"),
 
-    breaklink("xui-icon-breaklink", "&#xe652;"),
+    breaklink("ood-icon-breaklink", "&#xe652;"),
 
-    clock("xui-icon-clock", "&#xe657;"),
+    clock("ood-icon-clock", "&#xe657;"),
 
-    circle("xui-icon-circle", "&#xe651;"),
+    circle("ood-icon-circle", "&#xe651;"),
 
-    ibigup("xui-icon-bigup", "&#xe658;"),
+    ibigup("ood-icon-bigup", "&#xe658;"),
 
-    icode("xui-icon-code", "&#xe659;"),
+    icode("ood-icon-code", "&#xe659;"),
 
-    idialog("xui-icon-dialog", "&#xe65a;"),
+    idialog("ood-icon-dialog", "&#xe65a;"),
 
-    bullet("xui-icon-bullet", "&#xe65b;"),
+    bullet("ood-icon-bullet", "&#xe65b;"),
 
-    date("xui-icon-date", "&#xe65c;"),
+    date("ood-icon-date", "&#xe65c;"),
 
-    dragadd("xui-icon-dragadd", "&#xe661;"),
+    dragadd("ood-icon-dragadd", "&#xe661;"),
 
-    dragmove("xui-icon-dragmove", "&#xe662;"),
+    dragmove("ood-icon-dragmove", "&#xe662;"),
 
-    dragcopy("xui-icon-dragcopy", "&#xe663;"),
+    dragcopy("ood-icon-dragcopy", "&#xe663;"),
 
-    dropdown("xui-icon-dropdown", "&#xe664;"),
+    dropdown("ood-icon-dropdown", "&#xe664;"),
 
-    dragstop("xui-icon-dragstop", "&#xe665;"),
+    dragstop("ood-icon-dragstop", "&#xe665;"),
 
-    ifile("xui-icon-file", "&#xe667;"),
+    ifile("ood-icon-file", "&#xe667;"),
 
-    expand("xui-icon-file-expand", "&#xe669;"),
+    expand("ood-icon-file-expand", "&#xe669;"),
 
-    fold("xui-icon-file-fold", "&#xe66a;"),
+    fold("ood-icon-file-fold", "&#xe66a;"),
 
-    filter("xui-icon-filter", "&#xe66b;"),
+    filter("ood-icon-filter", "&#xe66b;"),
 
-    font("xui-icon-font", "&#xe66c;"),
+    font("ood-icon-font", "&#xe66c;"),
 
-    forecolor("xui-icon-forecolor", "&#xe66e;"),
+    forecolor("ood-icon-forecolor", "&#xe66e;"),
 
-    formatbrush("xui-icon-formatbrush", "&#xe66f;"),
+    formatbrush("ood-icon-formatbrush", "&#xe66f;"),
 
-    formatclear("xui-icon-formatclear", "&#xe670;"),
+    formatclear("ood-icon-formatclear", "&#xe670;"),
 
-    iindent("xui-icon-indent", "&#xe671;"),
+    iindent("ood-icon-indent", "&#xe671;"),
 
-    ihtml("xui-icon-html", "&#xe672;"),
+    ihtml("ood-icon-html", "&#xe672;"),
 
-    italic("xui-icon-italic", "&#xe673;"),
+    italic("ood-icon-italic", "&#xe673;"),
 
-    link("xui-icon-link", "&#xe675;"),
+    link("ood-icon-link", "&#xe675;"),
 
-    inserthr("xui-icon-inserthr", "&#xe676;"),
+    inserthr("ood-icon-inserthr", "&#xe676;"),
 
-    imenu("xui-icon-menu", "&#xe677;"),
+    imenu("ood-icon-menu", "&#xe677;"),
 
-    minus("xui-icon-minus", "&#xe679;"),
+    minus("ood-icon-minus", "&#xe679;"),
 
-    checked("xui-icon-menu-checked", "&#xe67a;"),
+    checked("ood-icon-menu-checked", "&#xe67a;"),
 
-    mobile("xui-icon-mobile", "&#xe67b;"),
+    mobile("ood-icon-mobile", "&#xe67b;"),
 
-    mouse("xui-icon-mouse", "&#xe67c;"),
+    mouse("ood-icon-mouse", "&#xe67c;"),
 
-    outdent("xui-icon-outdent", "&#xe689;"),
+    outdent("ood-icon-outdent", "&#xe689;"),
 
-    picture("xui-icon-picture", "&#xe68a;"),
+    picture("ood-icon-picture", "&#xe68a;"),
 
-    print("xui-icon-print", "&#xe68c;"),
+    print("ood-icon-print", "&#xe68c;"),
 
-    numbers("xui-icon-numbers", "&#xe68d;"),
+    numbers("ood-icon-numbers", "&#xe68d;"),
 
-    right("xui-icon-right", "&#xe68e;"),
+    right("ood-icon-right", "&#xe68e;"),
 
-    search("xui-icon-search", "&#xe68f;"),
+    search("ood-icon-search", "&#xe68f;"),
 
-    question("xui-icon-question", "&#xe690;"),
+    question("ood-icon-question", "&#xe690;"),
 
-    remove("xui-icon-remove", "&#xe693;"),
+    remove("ood-icon-remove", "&#xe693;"),
 
-    sort("xui-icon-sort", "&#xe699;"),
+    sort("ood-icon-sort", "&#xe699;"),
 
-    ichecked("xui-icon-sort-checked", "&#xe69b;"),
+    ichecked("ood-icon-sort-checked", "&#xe69b;"),
 
-    strikethrough("xui-icon-strikethrough", "&#xe69d;"),
+    strikethrough("ood-icon-strikethrough", "&#xe69d;"),
 
-    sub("xui-icon-sub", "&#xe69e;"),
+    sub("ood-icon-sub", "&#xe69e;"),
 
-    iconsuper("xui-icon-super", "&#xe69f;"),
+    iconsuper("ood-icon-super", "&#xe69f;"),
 
-    transparent("xui-icon-transparent", "&#xe6a0;"),
+    transparent("ood-icon-transparent", "&#xe6a0;"),
 
-    idown("xui-icon-triangle-down", "&#xe6a2;"),
+    idown("ood-icon-triangle-down", "&#xe6a2;"),
 
-    left("xui-icon-triangle-left", "&#xe6a3;"),
+    left("ood-icon-triangle-left", "&#xe6a3;"),
 
-    iright("xui-icon-triangle-right", "&#xe6a4;"),
+    iright("ood-icon-triangle-right", "&#xe6a4;"),
 
-    iup("xui-icon-triangle-up", "&#xe6a5;"),
+    iup("ood-icon-triangle-up", "&#xe6a5;"),
 
-    undo("xui-icon-undo", "&#xe6a6;"),
+    undo("ood-icon-undo", "&#xe6a6;"),
 
-    redo("xui-icon-redo", "&#xe691;"),
+    redo("ood-icon-redo", "&#xe691;"),
 
-    upload("xui-icon-upload", "&#xe6a8;"),
+    upload("ood-icon-upload", "&#xe6a8;"),
 
-    zoomin("xui-icon-zoomin", "&#xe6a9;"),
+    zoomin("ood-icon-zoomin", "&#xe6a9;"),
 
-    zoomout("xui-icon-zoomout", "&#xe6ac;"),
+    zoomout("ood-icon-zoomout", "&#xe6ac;"),
 
-    underline("xui-icon-underline", "&#xe6aa;"),
+    underline("ood-icon-underline", "&#xe6aa;"),
 
-    ierror("xui-load-error", "&#xe6ab;"),
+    ierror("ood-load-error", "&#xe6ab;"),
 
-    refresh("xui-refresh", "&#xe6ae;"),
+    refresh("ood-refresh", "&#xe6ae;"),
 
-    arrowdrop("xui-uicmd-arrowdrop", "&#xe6af;"),
+    arrowdrop("ood-uicmd-arrowdrop", "&#xe6af;"),
 
-    check("xui-uicmd-check", "&#xe6b0;"),
+    check("ood-uicmd-check", "&#xe6b0;"),
 
-    cichecked("xui-uicmd-check-checked", "&#xe6b1;"),
+    cichecked("ood-uicmd-check-checked", "&#xe6b1;"),
 
-    add("xui-uicmd-add", "&#xe6ad;"),
+    add("ood-uicmd-add", "&#xe6ad;"),
 
-    iclose("xui-uicmd-close", "&#xe6b2;"),
+    iclose("ood-uicmd-close", "&#xe6b2;"),
 
-    cmdbox("xui-uicmd-cmdbox", "&#xe6b3;"),
+    cmdbox("ood-uicmd-cmdbox", "&#xe6b3;"),
 
-    cdate("xui-uicmd-date", "&#xe6b4;"),
+    cdate("ood-uicmd-date", "&#xe6b4;"),
 
-    color("xui-uicmd-color", "&#xe6b5;"),
+    color("ood-uicmd-color", "&#xe6b5;"),
 
-    cdelete("xui-uicmd-delete", "&#xe6b6;"),
+    cdelete("ood-uicmd-delete", "&#xe6b6;"),
 
-    dotted("xui-uicmd-dotted", "&#xe6b7;"),
+    dotted("ood-uicmd-dotted", "&#xe6b7;"),
 
-    cdatetime("xui-uicmd-datetime", "&#xe6b8;"),
+    cdatetime("ood-uicmd-datetime", "&#xe6b8;"),
 
-    helpinput("xui-uicmd-helpinput", "&#xe6b9;"),
+    helpinput("ood-uicmd-helpinput", "&#xe6b9;"),
 
-    getter("xui-uicmd-getter", "&#xe6ba;"),
+    getter("ood-uicmd-getter", "&#xe6ba;"),
 
-    cfile("xui-uicmd-file", "&#xe6bb;"),
+    cfile("ood-uicmd-file", "&#xe6bb;"),
 
-    info("xui-uicmd-info", "&#xe6bc;"),
+    info("ood-uicmd-info", "&#xe6bc;"),
 
-    land("xui-uicmd-land", "&#xe6bd;"),
+    land("ood-uicmd-land", "&#xe6bd;"),
 
-    max("xui-uicmd-max", "&#xe6be;"),
+    max("ood-uicmd-max", "&#xe6be;"),
 
-    min("xui-uicmd-min", "&#xe6bf;"),
+    min("ood-uicmd-min", "&#xe6bf;"),
 
-    location("xui-uicmd-location", "&#xe6c0;"),
+    location("ood-uicmd-location", "&#xe6c0;"),
 
-    opt("xui-uicmd-opt", "&#xe6c1;"),
+    opt("ood-uicmd-opt", "&#xe6c1;"),
 
-    pop("xui-uicmd-pop", "&#xe6c2;"),
+    pop("ood-uicmd-pop", "&#xe6c2;"),
 
-    pin("xui-uicmd-pin", "&#xe6c3;"),
+    pin("ood-uicmd-pin", "&#xe6c3;"),
 
-    radio("xui-uicmd-radio", "&#xe6c4;"),
+    radio("ood-uicmd-radio", "&#xe6c4;"),
 
-    radiochecked("xui-uicmd-radio-checked", "&#xe6c5;"),
+    radiochecked("ood-uicmd-radio-checked", "&#xe6c5;"),
 
-    popbox("xui-uicmd-popbox", "&#xe6c6;"),
+    popbox("ood-uicmd-popbox", "&#xe6c6;"),
 
-    crefresh("xui-uicmd-refresh", "&#xe6c7;"),
+    crefresh("ood-uicmd-refresh", "&#xe6c7;"),
 
-    restore("xui-uicmd-restore", "&#xe6c8;"),
+    restore("ood-uicmd-restore", "&#xe6c8;"),
 
-    cremove("xui-uicmd-remove", "&#xe6c9;"),
+    cremove("ood-uicmd-remove", "&#xe6c9;"),
 
-    time("xui-uicmd-time", "&#xe6ca;"),
+    time("ood-uicmd-time", "&#xe6ca;"),
 
-    cselect("xui-uicmd-select", "&#xe6cb;"),
+    cselect("ood-uicmd-select", "&#xe6cb;"),
 
-    csave("xui-uicmd-save", "&#xe6cc;"),
+    csave("ood-uicmd-save", "&#xe6cc;"),
 
-    toggle("xui-uicmd-toggle", "&#xe6cd;"),
+    toggle("ood-uicmd-toggle", "&#xe6cd;"),
 
-    togglechecked("xui-uicmd-toggle-checked", "&#xe6ce;"),
+    togglechecked("ood-uicmd-toggle-checked", "&#xe6ce;"),
 
-    alingleft("xui-icon-alignleft", "&#xe6d2;"),
+    alingleft("ood-icon-alignleft", "&#xe6d2;"),
 
-    aligncenter("xui-icon-aligncenter", "&#xe6d0;"),
+    aligncenter("ood-icon-aligncenter", "&#xe6d0;"),
 
-    alignjustify("xui-icon-alignjustify", "&#xe6d1;"),
+    alignjustify("ood-icon-alignjustify", "&#xe6d1;"),
 
-    alignright("xui-icon-alignright", "&#xe6cf;"),
+    alignright("ood-icon-alignright", "&#xe6cf;"),
 
-    singleleft("xui-icon-singleleft", "&#xe694;"),
+    singleleft("ood-icon-singleleft", "&#xe694;"),
 
-    singleright("xui-icon-singleright", "&#xe695;"),
+    singleright("ood-icon-singleright", "&#xe695;"),
 
-    singleup("xui-icon-singleup", "&#xe696;"),
+    singleup("ood-icon-singleup", "&#xe696;"),
 
-    singledown("xui-icon-singledown", "&#xe692;"),
+    singledown("ood-icon-singledown", "&#xe692;"),
 
-    smalldown("xui-icon-smalldown", "&#xe697;"),
+    smalldown("ood-icon-smalldown", "&#xe697;"),
 
-    smallup("xui-icon-smallup", "&#xe698;"),
+    smallup("ood-icon-smallup", "&#xe698;"),
 
-    arrowleft("xui-icon-arrowleft", "&#xe64c;"),
+    arrowleft("ood-icon-arrowleft", "&#xe64c;"),
 
-    arrowright("xui-icon-arrowright", "&#xe64b;"),
+    arrowright("ood-icon-arrowright", "&#xe64b;"),
 
-    carrowtop("xui-icon-arrowtop", "&#xe64d;"),
+    carrowtop("ood-icon-arrowtop", "&#xe64d;"),
 
-    arrowbottom("xui-icon-arrowbottom", "&#xe6d3;"),
+    arrowbottom("ood-icon-arrowbottom", "&#xe6d3;"),
 
-    circleleft("xui-icon-circleleft", "&#xe654;"),
+    circleleft("ood-icon-circleleft", "&#xe654;"),
 
-    circleright("xui-icon-circleright", "&#xe655;"),
+    circleright("ood-icon-circleright", "&#xe655;"),
 
-    circleup("xui-icon-circleup", "&#xe656;"),
+    circleup("ood-icon-circleup", "&#xe656;"),
 
-    circledown("xui-icon-circledown", "&#xe653;"),
+    circledown("ood-icon-circledown", "&#xe653;"),
 
-    doubleleft("xui-icon-doubleleft", "&#xe65e;"),
+    doubleleft("ood-icon-doubleleft", "&#xe65e;"),
 
-    doubleright("xui-icon-doubleright", "&#xe660;"),
+    doubleright("ood-icon-doubleright", "&#xe660;"),
 
-    doubleup("xui-icon-doubleup", "&#xe65f;"),
+    doubleup("ood-icon-doubleup", "&#xe65f;"),
 
-    doubledown("xui-icon-doubledown", "&#xe65d;"),
+    doubledown("ood-icon-doubledown", "&#xe65d;"),
 
-    first("xui-icon-first", "&#xe66d;"),
+    first("ood-icon-first", "&#xe66d;"),
 
-    prev("xui-icon-prev", "&#xe68b;"),
+    prev("ood-icon-prev", "&#xe68b;"),
 
-    next("xui-icon-next", "&#xe67d;"),
+    next("ood-icon-next", "&#xe67d;"),
 
-    last("xui-icon-last", "&#xe674;"),
+    last("ood-icon-last", "&#xe674;"),
 
-    number("xui-icon-number", "&#xe67e;"),
+    number("ood-icon-number", "&#xe67e;"),
 
-    number0("xui-icon-number0", "&#xe680;"),
+    number0("ood-icon-number0", "&#xe680;"),
 
-    number1("xui-icon-number1", "&#xe67f;"),
+    number1("ood-icon-number1", "&#xe67f;"),
 
-    number2("xui-icon-number2", "&#xe681;"),
+    number2("ood-icon-number2", "&#xe681;"),
 
-    number3("xui-icon-number3", "&#xe682;"),
+    number3("ood-icon-number3", "&#xe682;"),
 
-    number4("xui-icon-number4", "&#xe683;"),
+    number4("ood-icon-number4", "&#xe683;"),
 
-    number5("xui-icon-number5", "&#xe686;"),
+    number5("ood-icon-number5", "&#xe686;"),
 
-    number6("xui-icon-number6", "&#xe687;"),
+    number6("ood-icon-number6", "&#xe687;"),
 
-    number7("xui-icon-number7", "&#xe684;"),
+    number7("ood-icon-number7", "&#xe684;"),
 
-    number8("xui-icon-number8", "&#xe685;"),
+    number8("ood-icon-number8", "&#xe685;"),
 
-    number9("xui-icon-number9", "&#xe688;");
+    number9("ood-icon-number9", "&#xe688;");
 
     private String type;
     private String name;

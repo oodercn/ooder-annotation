@@ -12,7 +12,7 @@ public enum APIEventEnum implements EventKey, IconEnumstype {
 
     afterInvoke("调用后", "spafont spa-icon-move-up"),
     onExecuteSuccess("执行成功", "spafont spa-icon-ok"),
-    onExecuteError("执行失败", "xui-icon-dragstop"),
+    onExecuteError("执行失败", "ood-icon-dragstop"),
     callback("回调函数", "spafont spa-icon-com3");
 
     private String name;

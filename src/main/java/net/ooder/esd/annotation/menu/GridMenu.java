@@ -16,11 +16,11 @@ public enum GridMenu implements CustomMenu, IconEnumstype {
 
     ADD("添加", "addPath", "fa fa-calendar-plus-o", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
-    SUBMITFORM("确定", "saveUrl", "xui-icon-right", "true", IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SAVEALLROW}),
+    SUBMITFORM("确定", "saveUrl", "ood-icon-right", "true", IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SAVEALLROW}),
 
     SAVE("保存", "saveUrl", "spafont spa-icon-save", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
-    SEARCH("查询", "Search", "xui-icon-search", "true", IconColorEnum.LIGHTPURPLE, new CustomAction[]{CustomGridAction.SEARCH}),
+    SEARCH("查询", "Search", "ood-icon-search", "true", IconColorEnum.LIGHTPURPLE, new CustomAction[]{CustomGridAction.SEARCH}),
 
     RELOAD("刷新", "dataPath", "fa fa-lg fa-circle-o-notch", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 

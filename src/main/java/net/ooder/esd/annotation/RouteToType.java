@@ -26,7 +26,7 @@ public enum RouteToType implements IconEnumstype {
 
     View("查看历史", "bpmfont bpmshujukaifagongzuoliushujutansuozuijindakai", "true"),
 
-    SaveOnly("保存", "xui-icon-right", "$currActivityInst.isCanPerform()"),
+    SaveOnly("保存", "ood-icon-right", "$currActivityInst.isCanPerform()"),
 
     MultiSelect("并行选择", "bpmfont bpmbinghangkaishi", "$currActivityInst.activityDef.split.type=='AND'"),
 
@@ -36,7 +36,7 @@ public enum RouteToType implements IconEnumstype {
 
     CanSpecialSend("特送", "bpmfont bpmworkflow", "$currActivityInst.isCanSpecialSend()"),
 
-    Print("打印", "xui-icon-print", "true"),
+    Print("打印", "ood-icon-print", "true"),
 
     Reload("刷新", "fa fa-lg fa-circle-o-notch", "true"),
 

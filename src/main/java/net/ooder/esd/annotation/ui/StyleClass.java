@@ -5,12 +5,12 @@ import net.ooder.annotation.Enumstype;
 
 public enum StyleClass implements Enumstype {
 
-    mobile("xui-uisyle-mobile"),
-    touch("xui-cursor-touch"),
-    circle("xui-uiborder-circle"),
-    uigradient("xui-uigradient"),
-    shadow("xui-ui-shadow")
-    ,noscroll("xui-css-noscroll");
+    mobile("ood-uisyle-mobile"),
+    touch("ood-cursor-touch"),
+    circle("ood-uiborder-circle"),
+    uigradient("ood-uigradient"),
+    shadow("ood-ui-shadow")
+    ,noscroll("ood-css-noscroll");
 
 
     private final String name;

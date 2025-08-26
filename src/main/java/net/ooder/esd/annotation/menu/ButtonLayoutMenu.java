@@ -16,7 +16,7 @@ public enum ButtonLayoutMenu implements CustomMenu, IconEnumstype {
 
     ADD("添加", "addPath", "fa fa-calendar-plus-o", "true",IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
-    SORT("排序", "sortUrl", "xui-icon-right", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    SORT("排序", "sortUrl", "ood-icon-right", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
     RELOAD("刷新", "dataPath", "fa fa-lg fa-circle-o-notch", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 

@@ -2,8 +2,8 @@ package net.ooder.esd.annotation.ui;
 
 public enum ToggleIconType implements UIType {
 
-    taggle("xui-uicmd-toggle"),
-    check("xui-uicmd-check");
+    taggle("ood-uicmd-toggle"),
+    check("ood-uicmd-check");
 
     private String type;
 
