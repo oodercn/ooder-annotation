@@ -8,69 +8,69 @@ import java.util.List;
 
 public enum FormulaType implements IconEnumstype {
 
-    ItemRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-grid", "选择项授权"),
+    ItemRight(Attributetype.PAGERIGHT, "fas fa-list-check", "选择项授权"),
 
-    GridRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-grid", "列表项组件"),
+    GridRight(Attributetype.PAGERIGHT, "fas fa-table", "列表项组件"),
 
-    UIRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-block", "显示项授权"),
+    UIRight(Attributetype.PAGERIGHT, "fas fa-th-large", "显示项授权"),
 
-    FormRight(Attributetype.PAGERIGHT, "spafont spa-icon-astext", "表单项授权"),
+    FormRight(Attributetype.PAGERIGHT, "fas fa-file-lines", "表单项授权"),
 
-    BarRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-toolbar", "按钮组授权"),
+    BarRight(Attributetype.PAGERIGHT, "fas fa-toolbox", "按钮组授权"),
 
-    ActionRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-imagebutton", "动作组授权"),
+    ActionRight(Attributetype.PAGERIGHT, "fas fa-play", "动作组授权"),
 
-    TabRight(Attributetype.PAGERIGHT, "spafont spa-icon-c-tabs", "TAB过滤"),
-
-
-    UserRightCon(Attributetype.CONDITION, "bpmfont bpm-gongzuoliu-moxing", "用户权限"),
-
-    WorkFlowCon(Attributetype.CONDITION, "spafont spa-icon-phonegap", "流程条件"),
-
-    ExpressionCon(Attributetype.CONDITION, "spafont spa-icon-function", "表达式权限"),
-
-    PageCon(Attributetype.CONDITION, "spafont spa-icon-page", "页面条件"),
+    TabRight(Attributetype.PAGERIGHT, "fas fa-table-cells", "TAB过滤"),
 
 
-    ModuleRight(Attributetype.MODULERIGHT, "spafont spa-icon-page", "模块授权"),
+    UserRightCon(Attributetype.CONDITION, "fas fa-user-shield", "用户权限"),
 
-    MenuRight(Attributetype.MODULERIGHT, "spafont spa-icon-c-menu", "菜单授权"),
+    WorkFlowCon(Attributetype.CONDITION, "fas fa-arrow-right-left", "流程条件"),
 
-    ReaderSelectedID(Attributetype.RIGHT, "bpmfont bpmgongzuoliu", "阅办人"),
+    ExpressionCon(Attributetype.CONDITION, "fas fa-code", "表达式权限"),
 
-    PerformerSelectedID(Attributetype.RIGHT, "bpmfont bpmyuxiandengjibanli", "办理人"),
+    PageCon(Attributetype.CONDITION, "fas fa-file", "页面条件"),
 
-    InsteadSignSelectedID(Attributetype.RIGHT, "bpmfont bpmgongzuoliujilu", "代签人"),
 
-    TaskID(Attributetype.TASK, "bpmfont bpmgongzuoliuzhutiguizeweihuguanli", "任务管理"),
+    ModuleRight(Attributetype.MODULERIGHT, "fas fa-file", "模块授权"),
 
-    WebAPISelectedID(Attributetype.TASK, "spafont spa-icon-c-webapi", "接口调用"),
+    MenuRight(Attributetype.MODULERIGHT, "fas fa-bars", "菜单授权"),
 
-    ESDCOM(Attributetype.PAGE, "spafont spa-icon-c-iconslist", "页面组件"),
+    ReaderSelectedID(Attributetype.RIGHT, "fas fa-eye", "阅办人"),
 
-    ActionSelectedID(Attributetype.PAGE, "spafont spa-icon-action", "页面动作"),
+    PerformerSelectedID(Attributetype.RIGHT, "fas fa-user-tie", "办理人"),
 
-    TableSelectedID(Attributetype.DB, "spafont spa-icon-c-grid", "数据库表"),
+    InsteadSignSelectedID(Attributetype.RIGHT, "fas fa-signature", "代签人"),
 
-    ColInfoID(Attributetype.DB, "spafont spa-icon-c-comboinput", "数据字段"),
+    TaskID(Attributetype.TASK, "fas fa-tasks", "任务管理"),
 
-    SafeID(Attributetype.SAFE, "ood-icon-transparent", "安全控制"),
+    WebAPISelectedID(Attributetype.TASK, "fas fa-plug", "接口调用"),
 
-    CommandSelectedID(Attributetype.COMMAND, "spafont spa-icon-mqtt", "执行命令"),
+    ESDCOM(Attributetype.PAGE, "fas fa-puzzle-piece", "页面组件"),
 
-    DeviceSelectedID(Attributetype.DEVICE, "spafont spa-icon-tool", "选择设备"),
+    ActionSelectedID(Attributetype.PAGE, "fas fa-play", "页面动作"),
 
-    ServiceSelectedID(Attributetype.SERVICE, "spafont spa-icon-com2", "内部接口"),
+    TableSelectedID(Attributetype.DB, "fas fa-table", "数据库表"),
 
-    EventSelectID(Attributetype.EVENT, "spafont spa-icon-event", "监听事件"),
+    ColInfoID(Attributetype.DB, "fas fa-database", "数据字段"),
 
-    DeviceEventSelectedID(Attributetype.DEVICEEVENT, "spafont spa-icon-event", "设备事件"),
+    SafeID(Attributetype.SAFE, "fas fa-lock", "安全控制"),
 
-    UserPerformSelectedID(Attributetype.USEREVENT, "spafont spa-icon-event", "用户事件"),
+    CommandSelectedID(Attributetype.COMMAND, "fas fa-terminal", "执行命令"),
 
-    ServiceEventSelectedID(Attributetype.SERVICEEVENT, "spafont spa-icon-links", "系统服务"),
+    DeviceSelectedID(Attributetype.DEVICE, "fas fa-microchip", "选择设备"),
 
-    UNKNOW(Attributetype.CUSTOMIZE, "spafont spa-icon-empty", "未知类型");
+    ServiceSelectedID(Attributetype.SERVICE, "fas fa-server", "内部接口"),
+
+    EventSelectID(Attributetype.EVENT, "fas fa-bell", "监听事件"),
+
+    DeviceEventSelectedID(Attributetype.DEVICEEVENT, "fas fa-bell", "设备事件"),
+
+    UserPerformSelectedID(Attributetype.USEREVENT, "fas fa-bell", "用户事件"),
+
+    ServiceEventSelectedID(Attributetype.SERVICEEVENT, "fas fa-link", "系统服务"),
+
+    UNKNOW(Attributetype.CUSTOMIZE, "fas fa-question", "未知类型");
 
 
     private Attributetype baseType;

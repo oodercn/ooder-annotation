@@ -47,7 +47,7 @@ public @interface DialogAnnotation {
     String name() default "";
 
     @NotNull
-    String imageClass() default "spafont spa-icon-c-dialog";
+    String imageClass() default "fas fa-window-maximize";
 
     String id() default "";
 

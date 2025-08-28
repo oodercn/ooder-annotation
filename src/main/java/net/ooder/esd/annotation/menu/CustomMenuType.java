@@ -10,21 +10,21 @@ import java.util.List;
 public enum CustomMenuType implements Enumstype {
 
 
-    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "spafont spa-icon-c-toolbar"),
-    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "spafont spa-icon-c-toolbar"),
-    BOTTOMBAR("下标栏", SysMenuType.CustomBottomBar, "spafont spa-icon-c-statusbutton"),
-    MENUBAR("菜单栏", SysMenuType.CustomMenusBar, "spafont spa-icon-c-menu"),
-    ROWCMD("行控制按钮", SysMenuType.CustomToolsBar, "spafont spa-icon-c-statusbutton"),
-    CONTEXTMENU("右键菜单", SysMenuType.CustomContextBar, "spafont spa-icon-c-menu"),
-    SUB("子菜单", SysMenuType.CustomSubBar, "spafont spa-icon-c-menu"),
-    BPM("流程控制栏", SysMenuType.RouteInstToolBar, "bpmfont bpmgongzuoliuxitong"),
-    BPMBOTTOM("流程控制栏", SysMenuType.RouteInstBottomBar, "bpmfont bpmgongzuoliuxitong"),
+    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "fa fa-toolbox"),
+    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "fa fa-toolbox"),
+    BOTTOMBAR("下标栏", SysMenuType.CustomBottomBar, "fa fa-square"),
+    MENUBAR("菜单栏", SysMenuType.CustomMenusBar, "fa fa-menu"),
+    ROWCMD("行控制按钮", SysMenuType.CustomToolsBar, "fa fa-square"),
+    CONTEXTMENU("右键菜单", SysMenuType.CustomContextBar, "fa fa-menu"),
+    SUB("子菜单", SysMenuType.CustomSubBar, "fa fa-menu"),
+    BPM("流程控制栏", SysMenuType.RouteInstToolBar, "fa fa-sitemap"),
+    BPMBOTTOM("流程控制栏", SysMenuType.RouteInstBottomBar, "fa fa-sitemap"),
     //  java("JAVA调试", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
-    COMPONENT("RAD通用组件", SysMenuType.CustomToolsBar, "spafont spa-icon-c-menu"),
-    PLUGINS("RAD顶部插件", SysMenuType.RADTopMenu, "spafont spa-icon-c-menu"),
+    COMPONENT("RAD通用组件", SysMenuType.CustomToolsBar, "fa fa-menu"),
+    PLUGINS("RAD顶部插件", SysMenuType.RADTopMenu, "fa fa-menu"),
     //   page("RAD页面插件", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
     //   RADDebug("RAD主菜单", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
-    TOP("RAD工具栏菜单", SysMenuType.CustomToolsBar, "spafont spa-icon-c-menu");
+    TOP("RAD工具栏菜单", SysMenuType.CustomToolsBar, "fa fa-menu");
 
 
     private String name;

@@ -41,7 +41,7 @@ public @interface ChildTreeAnnotation {
 
     boolean group() default false;
 
-    String imageClass() default "spafont spa-icon-c-treeview";
+    String imageClass() default "fas fa-tree";
 
     String valueSeparator() default ";";
 

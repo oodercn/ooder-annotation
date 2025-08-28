@@ -9,14 +9,14 @@ import java.lang.annotation.Annotation;
 
 public enum TreeRowMenu implements CustomMenu, IconEnumstype {
 
-    MSG("消息", "spafont spa-icon-c-audio", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    EDITOR("编辑", "spafont spa-icon-designview", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
-    CONFIG("配置", "spafont spa-icon-conf", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
-    SORTDOWN("向上", "spafont spa-icon-move-down", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
-    SORTUP("向下", "spafont spa-icon-move-up", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
+    MSG("消息", "fa fa-volume-high", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    EDITOR("编辑", "fa fa-code", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
+    CONFIG("配置", "fa fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    SORTDOWN("向上", "fa fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
+    SORTUP("向下", "fa fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
     DELETE("删除", "fa fa-lg fa-close", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
-    SAVEROW("保存", "spafont spa-icon-save", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
-    LOADMENU("菜单", "spafont spa-icon-c-menu", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
+    SAVEROW("保存", "fa fa-floppy-disk", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
+    LOADMENU("菜单", "fa fa-menu", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
 
     private String tag;
 

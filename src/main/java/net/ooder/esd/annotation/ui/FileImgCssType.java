@@ -2,21 +2,20 @@ package net.ooder.esd.annotation.ui;
 
 
 public enum FileImgCssType implements UIType {
-    html("html", "spafont spa-icon-html"),
-    css("css", "spafont spa-icon-css"),
-    js("js", "spafont spa-icon-js"),
-    cls("cls", "spafont spa-icon-page"),
-    json("json", "spafont spa-icon-formatjson"),
-    xml("xml", "spafont spa-icon-xml"),
-    swf("swf", "spafont spa-icon-swf"),
-    flv("flv", "spafont spa-icon-swf"),
-    fla("fla", "spafont spa-icon-swf"),
-    jpg("jpg", "spafont spa-icon-pic"),
-    png("png", "spafont spa-icon-pic"),
-    gif("gif", "spafont spa-icon-pic"),
-    bmp("bmp", "spafont spa-icon-pic"),
-
-    unkown("unkown", "spafont spa-icon-unkown");
+    html("html", "fas fa-code"),
+    css("css", "fas fa-css3-alt"),
+    js("js", "fas fa-js"),
+    cls("cls", "fas fa-file-code"),
+    json("json", "fas fa-code"),
+    xml("xml", "fas fa-code"),
+    swf("swf", "fas fa-file-video"),
+    flv("flv", "fas fa-file-video"),
+    fla("fla", "fas fa-file-video"),
+    jpg("jpg", "fas fa-image"),
+    png("png", "fas fa-image"),
+    gif("gif", "fas fa-image"),
+    bmp("bmp", "fas fa-image"),
+    unkown("unkown", "fas fa-question-circle");
 
 
     private String type;

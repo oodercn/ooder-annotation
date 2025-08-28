@@ -5,51 +5,51 @@ import net.ooder.common.EngineType;
 
 public enum Attributetype implements IconEnumstype {
 
-    ADVANCE("spafont spa-icon-shouhou", "引擎内部属性", EngineType.ESD),
+    ADVANCE("fa fa-headset", "引擎内部属性", EngineType.ESD),
 
-    TOOL("spafont spa-icon-c-video", "自动活动属性", EngineType.ESD),
+    TOOL("fa fa-video", "自动活动属性", EngineType.ESD),
 
-    LISTENER("spafont spa-icon-phonegap", "监听器属性", EngineType.ESD),
+    LISTENER("fa fa-mobile-screen", "监听器属性", EngineType.ESD),
 
-    APPLICATION("spafont spa-icon-c-iconslist", "应用解释", EngineType.ESD),
+    APPLICATION("fa fa-cubes", "应用解释", EngineType.ESD),
 
-    CUSTOMIZE("spafont spa-icon-action1", "应用定制属性", EngineType.ESD),
+    CUSTOMIZE("fa fa-wand-magic-sparkles", "应用定制属性", EngineType.ESD),
 
-    PDT("spafont spa-icon-editpath", "工具使用的属性", EngineType.ESD),
+    PDT("fa fa-road", "工具使用的属性", EngineType.ESD),
 
-    BPD("spafont spa-icon-editpath", "定义工具", EngineType.ESD),
+    BPD("fa fa-road", "定义工具", EngineType.ESD),
 
-    RIGHT("ood-uicmd-cmdbox", "办理权限", EngineType.ESD),
+    RIGHT("fa fa-keyboard", "办理权限", EngineType.ESD),
 
-    CONDITION("spafont spa-icon-function", "执行条件", EngineType.CUSTOM),
+    CONDITION("fa fa-function", "执行条件", EngineType.CUSTOM),
 
-    SAFE("spafont spa-icon-editpath", "数据安全", EngineType.CUSTOM),
+    SAFE("fa fa-road", "数据安全", EngineType.CUSTOM),
 
-    PAGE("spafont spa-icon-page", "页面属性", EngineType.CUSTOM),
+    PAGE("fa fa-file-lines", "页面属性", EngineType.CUSTOM),
 
-    DB("spafont spa-icon-c-grid", "数据库", EngineType.CUSTOM),
+    DB("fa fa-table", "数据库", EngineType.CUSTOM),
 
-    PAGERIGHT("ood-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
+    PAGERIGHT("fa fa-keyboard", "页面权限", EngineType.CUSTOM),
 
-    MODULERIGHT("ood-uicmd-cmdbox", "页面权限", EngineType.CUSTOM),
+    MODULERIGHT("fa fa-keyboard", "页面权限", EngineType.CUSTOM),
 
-    TASK("bpmfont bpmgongzuoliuzhutiguizeweihuguanli", "任务调度", EngineType.CUSTOM),
+    TASK("fa fa-list-check", "任务调度", EngineType.CUSTOM),
 
-    EXPRESSION("spafont spa-icon-function", "表达式调用", EngineType.CUSTOM),
+    EXPRESSION("fa fa-function", "表达式调用", EngineType.CUSTOM),
 
     SERVICEEVENT("SERVICEEVENT", "服务事件属性", EngineType.ESB),
 
-    SERVICE("spafont spa-icon-event", "服务属性", EngineType.ESB),
+    SERVICE("fa fa-bell", "服务属性", EngineType.ESB),
 
-    EVENT("spafont spa-icon-event", "事件属性", EngineType.IOT),
+    EVENT("fa fa-bell", "事件属性", EngineType.IOT),
 
-    DEVICE("spafont spa-icon-event", "事件属性", EngineType.IOT),
+    DEVICE("fa fa-microchip", "事件属性", EngineType.IOT),
 
-    DEVICEEVENT("spafont spa-icon-event", "设备事件属性", EngineType.IOT),
+    DEVICEEVENT("fa fa-microchip", "设备事件属性", EngineType.IOT),
 
-    USEREVENT("spafont spa-icon-event", "用户事件属性", EngineType.IOT),
+    USEREVENT("fa fa-user", "用户事件属性", EngineType.IOT),
 
-    COMMAND("spafont spa-icon-mqtt", "命令", EngineType.IOT);
+    COMMAND("fa fa-satellite", "命令", EngineType.IOT);
 
     public EngineType getEngineType() {
         return engineType;

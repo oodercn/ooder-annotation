@@ -29,7 +29,7 @@ public @interface GridItemAnnotation {
     @NotNull
     boolean autoReload() default true;
 
-    String imageClass() default "spafont spa-icon-c-treeview";
+    String imageClass() default "fas fa-tree";
 
     String valueSeparator() default ";";
 

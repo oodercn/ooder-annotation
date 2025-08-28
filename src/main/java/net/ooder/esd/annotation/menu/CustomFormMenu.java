@@ -14,23 +14,23 @@ import java.lang.annotation.Annotation;
 public enum CustomFormMenu implements CustomMenu, IconEnumstype {
 
 
-    RELOAD("刷新", "fa fa-lg fa-circle-o-notch", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.RELOAD}),
+    RELOAD("刷新", "fas fa-sync-alt", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.RELOAD}),
 
-    SAVE("保存", "spafont spa-icon-save", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    SAVE("保存", "fas fa-save", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
-    SAVEANACLOSE("保存", "spafont spa-icon-save", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE, CustomPageAction.CLOSETOP}),
+    SAVEANACLOSE("保存", "fas fa-save", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE, CustomPageAction.CLOSETOP}),
 
-    SUBMITFORM("确定", "ood-icon-right", "true",IconColorEnum.GREEN, new CustomAction[]{CustomFormAction.SAVE}),
+    SUBMITFORM("确定", "fas fa-check", "true",IconColorEnum.GREEN, new CustomAction[]{CustomFormAction.SAVE}),
 
-    CLOSE("关闭", "fa fa-lg fa-close", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
+    CLOSE("关闭", "fas fa-times", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
 
-    CLOSETOP("关闭", "fa fa-lg fa-close", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSETOP}),
+    CLOSETOP("关闭", "fas fa-times", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSETOP}),
 
-    SEARCH("查找", "ood-icon-search", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SEARCH}),
+    SEARCH("查找", "fas fa-search", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SEARCH}),
 
-    RESET("重置", "spafont spa-icon-resetpath", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomFormAction.RESET}),
+    RESET("重置", "fas fa-redo", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomFormAction.RESET}),
 
-    PRINT("打印", "ood-icon-print", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
+    PRINT("打印", "fas fa-print", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 

@@ -4,13 +4,9 @@ package net.ooder.esd.annotation.action;
 import net.ooder.annotation.IconEnumstype;
 
 public enum GridServiceType implements IconEnumstype {
-
-
-    CustomService("绑定服务", "CustomService", "spafont spa-icon-options"),
-
-    CustomMenuService("绑定菜单", "CustomMenuService", "spafont spa-icon-c-toolbar"),
-
-    CustomRowMenuService("行按钮绑定", "CustomRowMenuService", "spafont spa-icon-c-statusbutton");
+    CustomService("绑定服务", "CustomService", "fas fa-cogs"),
+    CustomMenuService("绑定菜单", "CustomMenuService", "fas fa-th-list"),
+    CustomRowMenuService("行按钮绑定", "CustomRowMenuService", "fas fa-toolbox");
 
     private String name;
 
