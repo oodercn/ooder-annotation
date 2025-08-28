@@ -9,8 +9,8 @@ import java.lang.annotation.Annotation;
 
 public enum TreeRowMenu implements CustomMenu, IconEnumstype {
 
-    MSG("消息", "fa fa-volume-high", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    EDITOR("编辑", "fa fa-code", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
+    MSG("消息", "fas fa-volume-high", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    EDITOR("编辑", "fas fa-code", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
     CONFIG("配置", "fa fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
     SORTDOWN("向上", "fa fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
     SORTUP("向下", "fa fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),

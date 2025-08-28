@@ -5,8 +5,8 @@ import net.ooder.annotation.IconEnumstype;
 
 public enum CustomImageType implements IconEnumstype {
     o("fa fa-lg fa-calendar-plus-o", "fa fa-lg fa-calendar-plus-o"),
-    close("fa fa-lg fa-close", "fa fa-lg fa-close"),
-    notch("fa fa-lg fa-circle-o-notch", "fa fa-lg fa-circle-o-notch"),
+    close("fas fa-lg fa-times", "fas fa-lg fa-times"),
+    notch("fas fa-lg fa-circle-notch", "fas fa-lg fa-circle-notch"),
     data("fa fa-database", "&#xe601"),
     debug("fa fa-bug", "&#xe602"),
     debug1("fa fa-vial", "&#xe603"),
