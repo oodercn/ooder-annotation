@@ -4,10 +4,10 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum CmdButtonType implements IconEnumstype {
-    button("按钮", "spafont spa-icon-c-nativebutton"),
-    image("图片", "spafont spa-icon-c-imagebutton"),
-    text("文本", "spafont spa-icon-indent"),
-    split("分隔符", "spafont spa-icon-c-spinner");
+    button("按钮", "fas fa-button"),
+    image("图片", "fas fa-image"),
+    text("文本", "fas fa-font"),
+    split("分隔符", "fas fa-grip-lines");
     private final String name;
     private final String imageClass;
 

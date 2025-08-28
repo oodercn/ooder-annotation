@@ -3,12 +3,12 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum ComboType implements IconEnumstype {
-    module("模块", "spafont spa-icon-module"),
-    input("输入框", "spafont spa-icon-c-input"),
-    list("选择项", "spafont spa-icon-c-list"),
-    button("按钮", "spafont spa-icon-c-nativebutton"),
-    number("数字", "spafont spa-icon-c-numberinput"),
-    other("其他", "spafont spa-icon-codeview");
+    module("模块", "fas fa-cubes"),
+    input("输入框", "fas fa-keyboard"),
+    list("选择项", "fas fa-list"),
+    button("按钮", "fas fa-button"),
+    number("数字", "fas fa-hashtag"),
+    other("其他", "fas fa-ellipsis-h");
 
     private final String name;
     private final String imageClass;

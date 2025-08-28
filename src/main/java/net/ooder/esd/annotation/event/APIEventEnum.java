@@ -5,15 +5,14 @@ import net.ooder.common.EventKey;
 
 public enum APIEventEnum implements EventKey, IconEnumstype {
 
-    beforeData("开始准备数据", "spafont spa-icon-c-video"),
-    onData("数据准备完成", "spafont spa-icon-designview"),
-    beforeInvoke("开始调用", "spafont spa-icon-jumpto"),
-    onError("调用失败", "fa fa-lg fa-close"),
-
-    afterInvoke("调用后", "spafont spa-icon-move-up"),
-    onExecuteSuccess("执行成功", "spafont spa-icon-ok"),
-    onExecuteError("执行失败", "ood-icon-dragstop"),
-    callback("回调函数", "spafont spa-icon-com3");
+    beforeData("开始准备数据", "fas fa-database"),
+    onData("数据准备完成", "fas fa-check-circle"),
+    beforeInvoke("开始调用", "fas fa-play"),
+    onError("调用失败", "fas fa-times-circle"),
+    afterInvoke("调用后", "fas fa-backward"),
+    onExecuteSuccess("执行成功", "fas fa-check"),
+    onExecuteError("执行失败", "fas fa-exclamation-triangle"),
+    callback("回调函数", "fas fa-callback");
 
     private String name;
     private String imageClass;

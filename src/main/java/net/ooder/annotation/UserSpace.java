@@ -1,11 +1,11 @@
 package net.ooder.annotation;
 
 public enum UserSpace implements IconEnumstype {
-    CRUD("通用数据库应用", "spafont spa-icon-module"),
-    FORM("工作表单", "spafont spa-icon-c-grid"),
-    USER("用户自定义", "spafont spa-icon-tools"),
-    VIEW("视图定义", "spafont spa-icon-c-buttonview"),
-    SYS("系统应用", "bpmfont bpm-gongzuoliu-moxing");
+    CRUD("通用数据库应用", "fas fa-database"),
+    FORM("工作表单", "fas fa-file-alt"),
+    USER("用户自定义", "fas fa-user-cog"),
+    VIEW("视图定义", "fas fa-eye"),
+    SYS("系统应用", "fas fa-cogs");
     private final String name;
     private final String imageClass;
 

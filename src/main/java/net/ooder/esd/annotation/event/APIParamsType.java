@@ -5,12 +5,9 @@ import net.ooder.annotation.IconEnumstype;
 
 public enum APIParamsType implements IconEnumstype {
 
-
-    RequestData("请求参数", "spafont spa-icon-options"),
-
-    ResponseData("数据绑定", "spafont spa-icon-coms"),
-
-    ResponseCall("回调函数", "spafont spa-icon-function");
+    RequestData("请求参数", "fas fa-paper-plane"),
+    ResponseData("数据绑定", "fas fa-plug"),
+    ResponseCall("回调函数", "fas fa-callback");
 
     private final String imageClass;
 
