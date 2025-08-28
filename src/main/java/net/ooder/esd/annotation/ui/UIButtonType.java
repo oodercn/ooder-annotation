@@ -1,9 +1,9 @@
 package net.ooder.esd.annotation.ui;
 
 public enum UIButtonType implements ItemType {
-    add("add", "增加", "fa fa-calendar-plus-o"),
-    edit("edit", "修改", "fa fa-lg fa-edit"),
-    delete("delete", "删除", "fa fa-lg fa-remove");
+    add("add", "增加", "fas fa-calendar-plus"),
+    edit("edit", "修改", "fas fa-edit"),
+    delete("delete", "删除", "fas fa-times");
 
     private String id;
     private String caption;

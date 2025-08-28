@@ -7,7 +7,7 @@ public enum APIParamsType implements IconEnumstype {
 
     RequestData("请求参数", "fas fa-paper-plane"),
     ResponseData("数据绑定", "fas fa-plug"),
-    ResponseCall("回调函数", "fas fa-callback");
+    ResponseCall("回调函数", "fas fa-code");
 
     private final String imageClass;
 

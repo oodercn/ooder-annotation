@@ -1,15 +1,15 @@
 package net.ooder.annotation;
 
 public enum AggregationType implements IconEnumstype {
-    ROOT("聚合根", "spafont spa-icon-shukongjian"),
-    SET("聚合关系", "spafont spa-icon-c-grid"),
-    MAP("值对象", "spafont spa-icon-coin"),
-    ENTITY("聚合实体", "spafont spa-icon-com"),
-    TABLE("数据库表", "spafont spa-icon-c-grid"),
-    MENU("菜单", "spafont spa-icon-c-treebar"),
-    DOMAIN("通用域服务", "spafont spa-icon-module"),
-    VIEW("视图", "spafont spa-icon-c-cssbox"),
-    API("通用API", "spafont spa-icon-c-webapi");
+    ROOT("聚合根", "fas fa-project-diagram"),
+    SET("聚合关系", "fas fa-th"),
+    MAP("值对象", "fas fa-coins"),
+    ENTITY("聚合实体", "fas fa-cubes"),
+    TABLE("数据库表", "fas fa-table"),
+    MENU("菜单", "fas fa-bars"),
+    DOMAIN("通用域服务", "fas fa-layer-group"),
+    VIEW("视图", "fas fa-eye"),
+    API("通用API", "fas fa-plug");
 
     private final String name;
     private final String imageClass;

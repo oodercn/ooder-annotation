@@ -12,7 +12,7 @@ public enum APIEventEnum implements EventKey, IconEnumstype {
     afterInvoke("调用后", "fas fa-backward"),
     onExecuteSuccess("执行成功", "fas fa-check"),
     onExecuteError("执行失败", "fas fa-exclamation-triangle"),
-    callback("回调函数", "fas fa-callback");
+    callback("回调函数", "fas fa-code");
 
     private String name;
     private String imageClass;
