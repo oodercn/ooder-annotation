@@ -12,14 +12,11 @@ import net.ooder.esd.annotation.menu.GridMenu;
 import java.lang.annotation.Annotation;
 
 public enum CustomDynMenu implements CustomMenu, IconEnumstype {
-
-    DELETE("Delete", "删除", "delPath", "fa fa-lg fa-close", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
-
-    DUMP("Save", "镜像", "saveUrl", "fa fa-calendar-plus-o", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomDynModuleAction.DUMP}),
-
-    SAVE("Save", "保存", "saveUrl", "fa fa-calendar-plus-o", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomDynModuleAction.SAVE}),
-
-    DYNRELOAD("DynReload", "刷新", "dataPath", "fa fa-lg fa-circle-o-notch", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomDynModuleAction.DYNRELOAD});
+    // 将所有"fa"前缀改为"fas"，并更新特定图标名称
+    DELETE("Delete", "删除", "delPath", "fas fa-lg fa-times", "true", IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    DUMP("Save", "镜像", "saveUrl", "fas fa-calendar-plus", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomDynModuleAction.DUMP}),
+    SAVE("Save", "保存", "saveUrl", "fas fa-calendar-plus", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomDynModuleAction.SAVE}),
+    DYNRELOAD("DynReload", "刷新", "dataPath", "fas fa-lg fa-circle-notch", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomDynModuleAction.DYNRELOAD});
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 

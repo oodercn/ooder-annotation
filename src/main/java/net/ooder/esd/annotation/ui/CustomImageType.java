@@ -4,92 +4,150 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum CustomImageType implements IconEnumstype {
-    o("fa fa-lg fa-calendar-plus-o", "fa fa-lg fa-calendar-plus-o"),
-    close("fas fa-lg fa-times", "fas fa-lg fa-times"),
-    notch("fas fa-lg fa-circle-notch", "fas fa-lg fa-circle-notch"),
-    data("fa fa-database", "&#xe601"),
-    debug("fa fa-bug", "&#xe602"),
-    debug1("fa fa-vial", "&#xe603"),
-    video("fa fa-video", "&#xe604"),
-    webapi("fa fa-plug", "&#xe605"),
-    cut("fa fa-cut", "&#xe606"),
-    delete("fa fa-trash-alt", "&#xe607"),
-    designview("fa fa-code", "&#xe608"),
-    icondomnode("fa fa-cube", "&#xe609"),
-    deletepath("fa fa-road", "&#xe60a"),
-    edit("fa fa-pen", "&#xe60b"),
-    deletefile("fa fa-file-circle-exclamation", "&#xe60c"),
-    event("fa fa-bell", "&#xe60d"),
-    editpath("fa fa-road", "&#xe60e"),
-    empty("fa fa-rectangle", "&#xe60f"),
-    file("fa fa-file", "&#xe610"),
-    explore("fa fa-folder-open", "&#xe611"),
-    fillcell("fa fa-fill", "&#xe612"),
-    filexml("fa fa-file-code", "&#xe613"),
-    formatjs("fa fa-code", "&#xe614"),
-    formatjson("fa fa-code", "&#xe615"),
-    frame("fa fa-window-maximize", "&#xe616"),
-    hmirror("fa fa-arrows-left-right", "&#xe617"),
-    hash("fa fa-hashtag", "&#xe618"),
-    function("fa fa-function", "&#xe619"),
-    gallery("fa fa-images", "&#xe61a"),
-    html("fa fa-html5", "&#xe61b"),
-    arrowtop("fa fa-arrow-up", "&#xe61c"),
-    bigup("fa fa-arrow-up-from-bracket", "&#xe61d"),
-    indent("fa fa-indent", "&#xe61e"),
-    js("fa fa-js", "&#xe61f"),
-    jumpto("fa fa-location-arrow", "&#xe620"),
-    language("fa fa-language", "&#xe621"),
-    sfile("fa fa-file-code", "&#xe622"),
-    manual("fa fa-book", "&#xe623"),
-    links("fa fa-link", "&#xe624"),
-    login("fa fa-right-to-bracket", "&#xe625"),
-    movebackward("fa fa-backward", "&#xe626"),
-    module("fa fa-cubes", "&#xe627"),
-    down("fa fa-arrow-down", "&#xe628"),
-    moveforward("fa fa-forward", "&#xe629"),
-    up("fa fa-arrow-up", "&#xe62a"),
-    newfile("fa fa-file-circle-plus", "&#xe62c"),
-    newprj("fa fa-folder-plus", "&#xe62d"),
-    ok("fa fa-check", "&#xe62e"),
-    openprj("fa fa-folder-open", "&#xe62f"),
-    iconpackage("fa fa-box", "&#xe630"),
-    options("fa fa-sliders", "&#xe631"),
-    page("fa fa-file-lines", "&#xe632"),
-    phonegap("fa fa-mobile-screen", "&#xe633"),
-    paste("fa fa-paste", "&#xe634"),
-    pic("fa fa-image", "&#xe635"),
-    previewpage("fa fa-eye", "&#xe636"),
-    preview("fa fa-eye", "&#xe637"),
-    property("fa fa-sliders", "&#xe638"),
-    rename("fa fa-pen-to-square", "&#xe639"),
-    project("fa fa-folder-tree", "&#xe63a"),
-    rendermode("fa fa-brush", "&#xe63b"),
-    resetpath("fa fa-arrows-rotate", "&#xe63c"),
-    rotateleft("fa fa-rotate-left", "&#xe63d"),
-    rotateright("fa fa-rotate-right", "&#xe63e"),
-    rpc("fa fa-plug", "&#xe63f"),
-    save("fa fa-floppy-disk", "&#xe640"),
-    saveall("fa fa-floppy-disk", "&#xe641"),
-    searchreplace("fa fa-magnifying-glass", "&#xe642"),
-    select("fa fa-hand-pointer", "&#xe643"),
-    select1("fa fa-hand", "&#xe644"),
-    setup("fa fa-cog", "&#xe645"),
-    shouhou("fa fa-headset", "&#xe646"),
-    star("fa fa-star", "&#xe647"),
-    settingprj("fa fa-gear", "&#xe648"),
-    theme("fa fa-palette", "&#xe649"),
-    tool("fa fa-toolbox", "&#xe64a"),
-    unkown("fa fa-question-circle", "&#xe64b"),
-    tools("fa fa-tools", "&#xe64c"),
-    values("fa fa-list-check", "&#xe64d"),
-    ivideo("fa fa-video", "&#xe64e"),
-    var("fa fa-code", "&#xe64f"),
-    vmirror("fa fa-arrows-up-down", "&#xe650"),
-    shukongjian("fa fa-cubes", "&#xe651"),
-    viewpoint("fa fa-eye", "&#xe652"),
-    action("fa fa-wand-magic-sparkles", "&#xe653"),
-    x("fa fa-xmark", "&#xe654"),
+    o("fa fa-lg fa-calendar-pluso-o", "fa fa-lg fa-calendar-plus-o"),
+    close("fa fa-lg fa-close", "fa fa-lg fa-close"),
+    notch("fa fa-lg fa-circle-o-notch", "fa fa-lg fa-circle-o-notch"),
+    data("spafont spa-icon-data", "&#xe601"),
+    debug("spafont spa-icon-debug", "&#xe602"),
+    debug1("spafont spa-icon-debug1", "&#xe603"),
+    video("spafont spa-icon-c-video", "&#xe604"),
+    webapi("spafont spa-icon-c-webapi", "&#xe605"),
+    cut("spafont spa-icon-cut", "&#xe606"),
+    delete("spafont spa-icon-delete", "&#xe607"),
+    designview("spafont spa-icon-designview", "&#xe608"),
+    icondomnode("spafont spa-icon-domnode", "&#xe609"),
+    deletepath("spafont spa-icon-deletepath", "&#xe60a"),
+    edit("spafont spa-icon-edit", "&#xe60b"),
+    deletefile("spafont spa-icon-deletefile", "&#xe60c"),
+    event("spafont spa-icon-event", "&#xe60d"),
+    editpath("spafont spa-icon-editpath", "&#xe60e"),
+    empty("spafont spa-icon-empty", "&#xe60f"),
+    file("spafont spa-icon-file", "&#xe610"),
+    explore("spafont spa-icon-explore", "&#xe611"),
+    fillcell("spafont spa-icon-fillcell", "&#xe612"),
+    filexml("spafont spa-icon-filexml", "&#xe613"),
+    formatjs("spafont spa-icon-formatjs", "&#xe614"),
+    formatjson("spafont spa-icon-formatjson", "&#xe615"),
+    frame("spafont spa-icon-frame", "&#xe616"),
+    hmirror("spafont spa-icon-hmirror", "&#xe617"),
+    hash("spafont spa-icon-hash", "&#xe618"),
+    function("spafont spa-icon-function", "&#xe619"),
+    gallery("spafont spa-icon-gallery", "&#xe61a"),
+
+    html("spafont spa-icon-html", "&#xe61b"),
+
+    arrowtop("spafont spa-icon-icon-arrowtop", "&#xe61c"),
+
+    bigup("spafont spa-icon-icon-bigup", "&#xe61d"),
+
+    indent("spafont spa-icon-indent", "&#xe61e"),
+
+    js("spafont spa-icon-js", "&#xe61f"),
+
+    jumpto("spafont spa-icon-jumpto", "&#xe620"),
+
+    language("spafont spa-icon-language", "&#xe621"),
+
+    sfile("spafont spa-icon-json-file", "&#xe622"),
+
+    manual("spafont spa-icon-manual", "&#xe623"),
+
+    links("spafont spa-icon-links", "&#xe624"),
+
+    login("spafont spa-icon-login", "&#xe625"),
+
+    movebackward("spafont spa-icon-movebackward", "&#xe626"),
+
+    module("spafont spa-icon-module", "&#xe627"),
+
+    down("spafont spa-icon-move-down", "&#xe628"),
+
+    moveforward("spafont spa-icon-moveforward", "&#xe629"),
+
+    up("spafont spa-icon-move-up", "&#xe62a"),
+
+    newfile("spafont spa-icon-newfile", "&#xe62c"),
+
+    newprj("spafont spa-icon-newprj", "&#xe62d"),
+
+    ok("spafont spa-icon-ok", "&#xe62e"),
+
+    openprj("spafont spa-icon-openprj", "&#xe62f"),
+
+    iconpackage("spafont spa-icon-package", "&#xe630"),
+
+    options("spafont spa-icon-options", "&#xe631"),
+
+    page("spafont spa-icon-page", "&#xe632"),
+
+    phonegap("spafont spa-icon-phonegap", "&#xe633"),
+
+    paste("spafont spa-icon-paste", "&#xe634"),
+
+    pic("spafont spa-icon-pic", "&#xe635"),
+
+    previewpage("spafont spa-icon-previewpage", "&#xe636"),
+
+    preview("spafont spa-icon-preview", "&#xe637"),
+
+    property("spafont spa-icon-property", "&#xe638"),
+
+    rename("spafont spa-icon-rename", "&#xe639"),
+
+    project("spafont spa-icon-project", "&#xe63a"),
+
+    rendermode("spafont spa-icon-rendermode", "&#xe63b"),
+
+    resetpath("spafont spa-icon-resetpath", "&#xe63c"),
+
+    rotateleft("spafont spa-icon-rotateleft", "&#xe63d"),
+
+    rotateright("spafont spa-icon-rotateright", "&#xe63e"),
+
+    rpc("spafont spa-icon-rpc", "&#xe63f"),
+
+    save("spafont spa-icon-save", "&#xe640"),
+
+    saveall("spafont spa-icon-saveall", "&#xe641"),
+
+    searchreplace("spafont spa-icon-searchreplace", "&#xe642"),
+
+    select("spafont spa-icon-select", "&#xe643"),
+
+    select1("spafont spa-icon-select1", "&#xe644"),
+
+    setup("spafont spa-icon-setup", "&#xe645"),
+
+    shouhou("spafont spa-icon-shouhou", "&#xe646"),
+
+    star("spafont spa-icon-star", "&#xe647"),
+
+    settingprj("spafont spa-icon-settingprj", "&#xe648"),
+
+    theme("spafont spa-icon-theme", "&#xe649"),
+
+    tool("spafont spa-icon-tool", "&#xe64a"),
+
+    unkown("spafont spa-icon-unkown", "&#xe64b"),
+
+    tools("spafont spa-icon-tools", "&#xe64c"),
+
+    values("spafont spa-icon-values", "&#xe64d"),
+
+    ivideo("spafont spa-icon-video", "&#xe64e"),
+
+    var("spafont spa-icon-var", "&#xe64f"),
+
+    vmirror("spafont spa-icon-vmirror", "&#xe650"),
+
+    shukongjian("spafont spa-icon-shukongjian", "&#xe651"),
+
+    viewpoint("spafont spa-icon-viewpoint", "&#xe652"),
+
+    action("spafont spa-icon-action", "&#xe653"),
+
+    x("spafont spa-icon-x", "&#xe654"),
+
     wbdiconsoftswf("spafont spa-icon-wbdiconsoftswf", "&#xe655"),
 
     action1("spafont spa-icon-action1", "&#xe656"),

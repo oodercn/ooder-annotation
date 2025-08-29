@@ -10,18 +10,12 @@ import net.ooder.esd.annotation.ui.*;
 import java.lang.annotation.Annotation;
 
 public enum CustomGalleryMenu implements CustomMenu, IconEnumstype {
-
-
-    DELETE("删除", "delPath", "fa fa-lg fa-close", "true", IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
-
-    ADD("添加", "addPath", "fa fa-calendar-plus-o", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
-
-    FLAGCLICK("下标点击", "flagClick", "fa fa-calendar-plus-o", "true", IconColorEnum.NONE, new CustomAction[]{}),
-
-    SUBMITFORM("确定", "saveUrl", "fa fa-check", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
-
-    RELOAD("刷新", "dataPath", "fa fa-lg fa-circle-o-notch", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
-
+    
+    DELETE("删除", "delPath", "fas fa-lg fa-times", "true", IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    ADD("添加", "addPath", "fas fa-calendar-plus", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    FLAGCLICK("下标点击", "flagClick", "fas fa-calendar-plus", "true", IconColorEnum.NONE, new CustomAction[]{}),
+    SUBMITFORM("确定", "saveUrl", "fas fa-check", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    RELOAD("刷新", "dataPath", "fas fa-lg fa-circle-notch", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 
