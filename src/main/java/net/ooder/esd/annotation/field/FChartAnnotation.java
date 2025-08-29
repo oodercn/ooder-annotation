@@ -1,5 +1,5 @@
 package net.ooder.esd.annotation.field;
-;
+
 import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.CustomClass;
 import net.ooder.esd.annotation.event.CustomFieldEvent;
