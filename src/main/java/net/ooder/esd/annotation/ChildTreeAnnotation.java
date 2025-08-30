@@ -41,7 +41,7 @@ public @interface ChildTreeAnnotation {
 
     boolean group() default false;
 
-    String imageClass() default "fas fa-tree";
+    String imageClass() default "fa-solid fa-tree";
 
     String valueSeparator() default ";";
 

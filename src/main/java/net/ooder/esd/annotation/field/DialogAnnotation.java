@@ -47,7 +47,7 @@ public @interface DialogAnnotation {
     String name() default "";
 
     @NotNull
-    String imageClass() default "fas fa-window-maximize";
+    String imageClass() default "fa-solid fa-window-maximize";
 
     String id() default "";
 

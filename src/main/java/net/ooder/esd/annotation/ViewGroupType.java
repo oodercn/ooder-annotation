@@ -3,14 +3,14 @@ package net.ooder.esd.annotation;
 import net.ooder.annotation.Enumstype;
 
 public enum ViewGroupType implements Enumstype {
-    CHARTS("绘图图表", "fas fa-chart-bar"),
-    MOBILE("移动组件", "fas fa-mobile-alt"),
-    MODULE("高级组件", "fas fa-cogs"),
-    DIC("字典辅助", "fas fa-book"),
-    LAYOUT("布局容器", "fas fa-th"),
-    VIEW("通用视图", "fas fa-eye"),
-    NAV("框架导航", "fas fa-compass"),
-    NAVTREE("菜单导航", "fas fa-sitemap");
+    CHARTS("绘图图表", "fa-solid fa-chart-bar"),
+    MOBILE("移动组件", "fa-solid fa-mobile-alt"),
+    MODULE("高级组件", "fa-solid fa-cogs"),
+    DIC("字典辅助", "fa-solid fa-book"),
+    LAYOUT("布局容器", "fa-solid fa-th"),
+    VIEW("通用视图", "fa-solid fa-eye"),
+    NAV("框架导航", "fa-solid fa-compass"),
+    NAVTREE("菜单导航", "fa-solid fa-sitemap");
 
 
     private final String name;

@@ -6,10 +6,10 @@ import net.ooder.annotation.IconEnumstype;
 public enum ListenerType implements IconEnumstype {
 
 
-    PROCESS("流程监听器","fas fa-sitemap"),
-    ACTIVITY("活动监听器","fas fa-tasks"),
-    RIGHT("权限监听器","fas fa-shield-alt"),
-    EXPRESSION("表达式监听器", "fas fa-code");
+    PROCESS("流程监听器","fa-solid fa-sitemap"),
+    ACTIVITY("活动监听器","fa-solid fa-tasks"),
+    RIGHT("权限监听器","fa-solid fa-shield-alt"),
+    EXPRESSION("表达式监听器", "fa-solid fa-code");
 
 
     private String type;

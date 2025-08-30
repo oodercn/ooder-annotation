@@ -2,20 +2,20 @@ package net.ooder.esd.annotation.ui;
 
 
 public enum FileImgCssType implements UIType {
-    html("html", "fas fa-code"),
-    css("css", "fas fa-css3-alt"),
-    js("js", "fas fa-js"),
-    cls("cls", "fas fa-file-code"),
-    json("json", "fas fa-code"),
-    xml("xml", "fas fa-code"),
-    swf("swf", "fas fa-file-video"),
-    flv("flv", "fas fa-file-video"),
-    fla("fla", "fas fa-file-video"),
-    jpg("jpg", "fas fa-image"),
-    png("png", "fas fa-image"),
-    gif("gif", "fas fa-image"),
-    bmp("bmp", "fas fa-image"),
-    unkown("unkown", "fas fa-question-circle");
+    html("html", "fa-solid fa-code"),
+    css("css", "fa-solid fa-css3-alt"),
+    js("js", "fa-solid fa-js"),
+    cls("cls", "fa-solid fa-file-code"),
+    json("json", "fa-solid fa-code"),
+    xml("xml", "fa-solid fa-code"),
+    swf("swf", "fa-solid fa-file-video"),
+    flv("flv", "fa-solid fa-file-video"),
+    fla("fla", "fa-solid fa-file-video"),
+    jpg("jpg", "fa-solid fa-image"),
+    png("png", "fa-solid fa-image"),
+    gif("gif", "fa-solid fa-image"),
+    bmp("bmp", "fa-solid fa-image"),
+    unkown("unkown", "fa-solid fa-question-circle");
 
 
     private String type;

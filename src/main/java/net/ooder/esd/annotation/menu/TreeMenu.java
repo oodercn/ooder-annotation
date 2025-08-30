@@ -28,7 +28,7 @@ public enum TreeMenu implements CustomMenu, IconEnumstype {
 
     LOADCHILD("刷新", CustomImageType.refresh.getImageClass(), "true", IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.RELOADCHILD}),
 
-    CLOSE("关闭", "fas fa-times", "true", IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
+    CLOSE("关闭", "fa-solid fa-times", "true", IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
 
     RELOAD("刷新", CustomImageType.refresh.getImageClass(), "true", IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.RELOAD});
 

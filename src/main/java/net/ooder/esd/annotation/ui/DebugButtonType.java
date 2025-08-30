@@ -3,9 +3,9 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.esd.annotation.ui.ItemType;
 
 public enum DebugButtonType implements ItemType {
-    clear("clear", "清空", "fas fa-lg fa-circle-notch"),
-    config("config", "配置", "fas fa-cog"),
-    edit("edit", "编辑页面", "fas fa-code");
+    clear("clear", "清空", "fa-solid fa-lg fa-circle-notch"),
+    config("config", "配置", "fa-solid fa-cog"),
+    edit("edit", "编辑页面", "fa-solid fa-code");
 
     private String id;
     private String caption;

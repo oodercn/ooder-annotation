@@ -10,17 +10,17 @@ import java.lang.annotation.Annotation;
 
 public enum GridRowMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "fas fa-times", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
+    DELETE("删除", "fa-solid fa-times", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
 
-    SORTDOWN("向上", "fas fa-arrow-up", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SORTUP}),
+    SORTDOWN("向上", "fa-solid fa-arrow-up", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SORTUP}),
 
-    SORTUP("向下", "fas fa-arrow-down", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SORTDOWN}),
+    SORTUP("向下", "fa-solid fa-arrow-down", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SORTDOWN}),
 
-    EDITOR("编辑", "fas fa-edit", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.EDITOR}),
+    EDITOR("编辑", "fa-solid fa-edit", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.EDITOR}),
 
-    SAVEALLROW("保存全部", "fas fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEALLROW}),
+    SAVEALLROW("保存全部", "fa-solid fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEALLROW}),
 
-    SAVEROW("保存", "fas fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEROW});
+    SAVEROW("保存", "fa-solid fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEROW});
 
     private TagCmdsAlign tagCmdsAlign;
 

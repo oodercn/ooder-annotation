@@ -10,7 +10,7 @@ import net.ooder.esd.annotation.ui.*;
 import java.lang.annotation.Annotation;
 
 public enum GroupCmdMenu implements CustomMenu, IconEnumstype {
-    Reload("刷新", "fas fa-lg fa-circle-notch", "true", ComboInputType.button, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    Reload("刷新", "fa-solid fa-lg fa-circle-notch", "true", ComboInputType.button, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
     private String type;
 

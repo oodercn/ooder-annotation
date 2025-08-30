@@ -8,69 +8,69 @@ import java.util.List;
 
 public enum FormulaType implements IconEnumstype {
 
-    ItemRight(Attributetype.PAGERIGHT, "fas fa-list-check", "选择项授权"),
+    ItemRight(Attributetype.PAGERIGHT, "fa-solid fa-list-check", "选择项授权"),
 
-    GridRight(Attributetype.PAGERIGHT, "fas fa-table", "列表项组件"),
+    GridRight(Attributetype.PAGERIGHT, "fa-solid fa-table", "列表项组件"),
 
-    UIRight(Attributetype.PAGERIGHT, "fas fa-th-large", "显示项授权"),
+    UIRight(Attributetype.PAGERIGHT, "fa-solid fa-th-large", "显示项授权"),
 
-    FormRight(Attributetype.PAGERIGHT, "fas fa-file-lines", "表单项授权"),
+    FormRight(Attributetype.PAGERIGHT, "fa-solid fa-file-lines", "表单项授权"),
 
-    BarRight(Attributetype.PAGERIGHT, "fas fa-toolbox", "按钮组授权"),
+    BarRight(Attributetype.PAGERIGHT, "fa-solid fa-toolbox", "按钮组授权"),
 
-    ActionRight(Attributetype.PAGERIGHT, "fas fa-play", "动作组授权"),
+    ActionRight(Attributetype.PAGERIGHT, "fa-solid fa-play", "动作组授权"),
 
-    TabRight(Attributetype.PAGERIGHT, "fas fa-table-cells", "TAB过滤"),
-
-
-    UserRightCon(Attributetype.CONDITION, "fas fa-user-shield", "用户权限"),
-
-    WorkFlowCon(Attributetype.CONDITION, "fas fa-arrow-right-left", "流程条件"),
-
-    ExpressionCon(Attributetype.CONDITION, "fas fa-code", "表达式权限"),
-
-    PageCon(Attributetype.CONDITION, "fas fa-file", "页面条件"),
+    TabRight(Attributetype.PAGERIGHT, "fa-solid fa-table-cells", "TAB过滤"),
 
 
-    ModuleRight(Attributetype.MODULERIGHT, "fas fa-file", "模块授权"),
+    UserRightCon(Attributetype.CONDITION, "fa-solid fa-user-shield", "用户权限"),
 
-    MenuRight(Attributetype.MODULERIGHT, "fas fa-bars", "菜单授权"),
+    WorkFlowCon(Attributetype.CONDITION, "fa-solid fa-arrow-right-left", "流程条件"),
 
-    ReaderSelectedID(Attributetype.RIGHT, "fas fa-eye", "阅办人"),
+    ExpressionCon(Attributetype.CONDITION, "fa-solid fa-code", "表达式权限"),
 
-    PerformerSelectedID(Attributetype.RIGHT, "fas fa-user-tie", "办理人"),
+    PageCon(Attributetype.CONDITION, "fa-solid fa-file", "页面条件"),
 
-    InsteadSignSelectedID(Attributetype.RIGHT, "fas fa-signature", "代签人"),
 
-    TaskID(Attributetype.TASK, "fas fa-tasks", "任务管理"),
+    ModuleRight(Attributetype.MODULERIGHT, "fa-solid fa-file", "模块授权"),
 
-    WebAPISelectedID(Attributetype.TASK, "fas fa-plug", "接口调用"),
+    MenuRight(Attributetype.MODULERIGHT, "fa-solid fa-bars", "菜单授权"),
 
-    ESDCOM(Attributetype.PAGE, "fas fa-puzzle-piece", "页面组件"),
+    ReaderSelectedID(Attributetype.RIGHT, "fa-solid fa-eye", "阅办人"),
 
-    ActionSelectedID(Attributetype.PAGE, "fas fa-play", "页面动作"),
+    PerformerSelectedID(Attributetype.RIGHT, "fa-solid fa-user-tie", "办理人"),
 
-    TableSelectedID(Attributetype.DB, "fas fa-table", "数据库表"),
+    InsteadSignSelectedID(Attributetype.RIGHT, "fa-solid fa-signature", "代签人"),
 
-    ColInfoID(Attributetype.DB, "fas fa-database", "数据字段"),
+    TaskID(Attributetype.TASK, "fa-solid fa-tasks", "任务管理"),
 
-    SafeID(Attributetype.SAFE, "fas fa-lock", "安全控制"),
+    WebAPISelectedID(Attributetype.TASK, "fa-solid fa-plug", "接口调用"),
 
-    CommandSelectedID(Attributetype.COMMAND, "fas fa-terminal", "执行命令"),
+    ESDCOM(Attributetype.PAGE, "fa-solid fa-puzzle-piece", "页面组件"),
 
-    DeviceSelectedID(Attributetype.DEVICE, "fas fa-microchip", "选择设备"),
+    ActionSelectedID(Attributetype.PAGE, "fa-solid fa-play", "页面动作"),
 
-    ServiceSelectedID(Attributetype.SERVICE, "fas fa-server", "内部接口"),
+    TableSelectedID(Attributetype.DB, "fa-solid fa-table", "数据库表"),
 
-    EventSelectID(Attributetype.EVENT, "fas fa-bell", "监听事件"),
+    ColInfoID(Attributetype.DB, "fa-solid fa-database", "数据字段"),
 
-    DeviceEventSelectedID(Attributetype.DEVICEEVENT, "fas fa-bell", "设备事件"),
+    SafeID(Attributetype.SAFE, "fa-solid fa-lock", "安全控制"),
 
-    UserPerformSelectedID(Attributetype.USEREVENT, "fas fa-bell", "用户事件"),
+    CommandSelectedID(Attributetype.COMMAND, "fa-solid fa-terminal", "执行命令"),
 
-    ServiceEventSelectedID(Attributetype.SERVICEEVENT, "fas fa-link", "系统服务"),
+    DeviceSelectedID(Attributetype.DEVICE, "fa-solid fa-microchip", "选择设备"),
 
-    UNKNOW(Attributetype.CUSTOMIZE, "fas fa-question", "未知类型");
+    ServiceSelectedID(Attributetype.SERVICE, "fa-solid fa-server", "内部接口"),
+
+    EventSelectID(Attributetype.EVENT, "fa-solid fa-bell", "监听事件"),
+
+    DeviceEventSelectedID(Attributetype.DEVICEEVENT, "fa-solid fa-bell", "设备事件"),
+
+    UserPerformSelectedID(Attributetype.USEREVENT, "fa-solid fa-bell", "用户事件"),
+
+    ServiceEventSelectedID(Attributetype.SERVICEEVENT, "fa-solid fa-link", "系统服务"),
+
+    UNKNOW(Attributetype.CUSTOMIZE, "fa-solid fa-question", "未知类型");
 
 
     private Attributetype baseType;

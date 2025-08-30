@@ -9,14 +9,14 @@ import java.lang.annotation.Annotation;
 
 public enum ContextMenu implements CustomMenu, IconEnumstype {
 
-    Msg("消息", "fas fa-comment-alt", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    Editor("编辑", "fas fa-edit", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
-    Config("配置", "fas fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
-    SortDown("向上", "fas fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
-    SortUP("向下", "fas fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
-    Delete("删除", "fas fa-times", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
-    saveRow("保存", "fas fa-save", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
-    LoadMenu("菜单", "fas fa-bars", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
+    Msg("消息", "fa-solid fa-comment-alt", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    Editor("编辑", "fa-solid fa-edit", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
+    Config("配置", "fa-solid fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    SortDown("向上", "fa-solid fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
+    SortUP("向下", "fa-solid fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
+    Delete("删除", "fa-solid fa-times", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
+    saveRow("保存", "fa-solid fa-save", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
+    LoadMenu("菜单", "fa-solid fa-bars", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
 
     private String tag;
 
