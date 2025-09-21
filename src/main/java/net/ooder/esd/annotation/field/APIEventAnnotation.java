@@ -10,6 +10,10 @@ import net.ooder.esd.annotation.event.CustomGridEvent;
 import net.ooder.esd.annotation.event.CustomMGridEvent;
 import net.ooder.esd.annotation.event.CustomTabsEvent;
 import net.ooder.esd.annotation.event.CustomTreeEvent;
+import net.ooder.esd.annotation.menu.CustomFormMenu;
+import net.ooder.esd.annotation.menu.CustomGalleryMenu;
+import net.ooder.esd.annotation.menu.GridMenu;
+import net.ooder.esd.annotation.menu.TreeMenu;
 import net.ooder.esd.annotation.ui.*;
 
 import java.lang.annotation.ElementType;
@@ -34,6 +38,14 @@ public @interface APIEventAnnotation {
     public int index() default -1;
 
     public CustomMenuItem[] bindMenu() default {};
+
+    public GridMenu[] bindGridMenu() default {};
+
+    public TreeMenu[] bindTreeMenu() default {};
+
+    public CustomFormMenu[] bindFormMenu() default {};
+
+    public CustomGalleryMenu[] bindGalleryMenu() default {};
 
     public CustomAction[] bindAction() default {};
 
