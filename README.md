@@ -1,25 +1,16 @@
-# onecode-rad
+# ooder-annotation
 
 #### 介绍
-onecode-rad 是 onecode 开发版的最小集合，包含了基础的可视化设计器（100+标准插件），支持 onecode3.0 标准规范。该项目允许用户使用 onecode 注解规范构建自身的应用开发，并可使用 onecode AI 插件实现自然语言（LLM）编写 OneCode 代码。onecode 本身基于 Spring Boot 架构，支持网络部署。
+ooder-annotation 是一个轻量级的 Java 注解库，旨在简化代码标记、提升代码可读性，并优化开发流程。该项目为开发者提供了一套结构化的注解体系，支持在应用开发中进行元数据定义和行为控制。
 
 项目核心功能包括：
-- 可视化设计器，支持拖放式界面设计
-- 丰富的插件系统，提供 100+ 标准插件
-- 支持 onecode3.0 注解规范
-- AI 辅助编程功能
-- 工程管理与部署
+- 提供丰富的自定义注解，用于描述类、方法、字段的行为与属性
+- 支持 AIGC（AI生成内容）相关的数据建模与任务定义
+- 实现安全、访问控制、生命周期管理、数据库映射等功能的注解支持
+- 可与其他框架（如 Spring、Esb 等）集成，增强扩展能力
 
 #### 软件架构
-onecode-rad 基于 Spring Boot 架构开发，主要包含以下核心模块：
-
-1. **核心框架**：基于 Spring Boot，提供依赖注入、配置管理等基础功能
-2. **可视化设计器**：提供拖放式界面设计能力
-3. **插件系统**：支持 100+ 标准插件，通过组件插件服务进行管理
-4. **工程管理**：通过 ProjectManager 类实现工程的创建、编辑和部署
-5. **数据模型**：定义在 bean 包下，包括各种 UI 组件和配置节点
-6. **API 服务**：提供 RESTful API 接口
-7. **文件系统**：管理文件和资源
+ooder-annotation 为纯 Java 注解库，不依赖具体运行时框架，采用模块化设计，按功能划分多个注解包。
 
 #### 安装教程
 
@@ -30,15 +21,25 @@ onecode-rad 基于 Spring Boot 架构开发，主要包含以下核心模块：
 
 2. **克隆项目**：
    ```bash
-   git clone https://gitee.com/your-org/onecode-rad.git
-   cd onecode-rad
+   git clone https://github.com/oodercn/ooder-annotation.git
+   cd ooder-annotation
+   ```
+
+3. **编译打包**：
+   ```bash
+   mvn clean install
    ```
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+项目包含多个示例文档，可参考学习：
+1. [ooder通用服务注解规范.md](ooder通用服务注解规范.md) - 通用服务注解使用规范
+2. [ooder平台移动OA考勤模块完整规范文档.md](ooder平台移动OA考勤模块完整规范文档.md) - 考勤模块完整设计规范
+3. [ooder平台移动OA考勤模块完整规范总结.md](ooder平台移动OA考勤模块完整规范总结.md) - 考勤模块完整规范总结（最新）
+4. [ooder平台移动OA考勤模块经验教训总结.md](ooder平台移动OA考勤模块经验教训总结.md) - 项目经验总结
+5. [ooder服务参数默认值使用规范实施总结.md](ooder服务参数默认值使用规范实施总结.md) - 参数默认值使用规范实施总结
+6. [ooder考勤模块代码清理与规范检查报告.md](ooder考勤模块代码清理与规范检查报告.md) - 代码清理与规范检查报告
+7. [ooder服务规范检查与修正报告.md](ooder服务规范检查与修正报告.md) - ooder服务规范检查与修正报告
 
 #### 参与贡献
 
