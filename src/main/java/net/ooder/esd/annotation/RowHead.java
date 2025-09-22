@@ -1,7 +1,7 @@
 package net.ooder.esd.annotation;
 
-import net.ooder.esd.annotation.ui.SelModeType;
 import net.ooder.annotation.NotNull;
+import net.ooder.esd.annotation.ui.SelModeType;
 
 import java.lang.annotation.*;
 
@@ -23,7 +23,7 @@ public @interface RowHead {
     boolean rowHandler() default true;
 
     @NotNull
-    String headerHeight() default "3.0em";
+    String headerHeight() default "2.0em";
 
     @NotNull
     SelModeType selMode() default SelModeType.multibycheckbox;

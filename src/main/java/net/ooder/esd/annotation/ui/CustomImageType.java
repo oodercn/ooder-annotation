@@ -8,8 +8,9 @@ public enum CustomImageType implements IconEnumstype {
     o("fa-solid fa-lg fa-calendar-plus", "fa-solid fa-lg fa-calendar-plus"),
     close("fa-solid fa-lg fa-times", "fa-solid fa-lg fa-times"),
     notch("fa-solid fa-lg fa-circle-notch", "fa-solid fa-lg fa-circle-notch"),
-    
-    // spafont 图标升级
+    div("fa-solid fa-canvas","fa-solid fa-canvas"),
+
+    dialog("fa-solid fa-window-maximize", "fa-solid fa-window-maximize"),
     data("fa-solid fa-database", "fa-solid fa-database"),
     debug("fa-solid fa-bug", "fa-solid fa-bug"),
     debug1("fa-solid fa-vial", "fa-solid fa-vial"),
