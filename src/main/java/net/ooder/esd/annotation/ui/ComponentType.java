@@ -96,7 +96,33 @@ public enum ComponentType implements IconEnumstype {
     CONTENTBLOCK("ood.UI.ContentBlock", "ContentBlockComponent", "内容列表", new ComponentBaseType[]{}, "fa-solid fa-list-ul", ComponentType.LIST),
     TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "树形列表", new ComponentBaseType[]{}, "fa-solid fa-table-tree", new ComponentType[]{ComponentType.LIST}),
     MTREEGRID("ood.UI.MTreeGrid", "MTreeGridComponent", "树形列表", new ComponentBaseType[]{}, "fa-solid fa-table-tree", new ComponentType[]{ComponentType.TREEGRID}),
-    FOLDINGTABS("ood.UI.FoldingTabs", "FoldingTabsComponent", "FoldingTAB容器", new ComponentBaseType[]{}, "fa-solid fa-table-columns", ComponentType.TABS);
+    FOLDINGTABS("ood.UI.FoldingTabs", "FoldingTabsComponent", "FoldingTAB容器", new ComponentBaseType[]{}, "fa-solid fa-table-columns", ComponentType.TABS),
+    MBUTTON("ood.Mobile.Button", "Button", "移动端按钮", new ComponentBaseType[]{ComponentBaseType.absValue, ComponentBaseType.absList}, "fa-mobile-button", ComponentType.UI),
+
+    MINPUT("ood.Mobile.Input", "Input", "移动端输入框", new ComponentBaseType[]{ComponentBaseType.absValue}, "fa-keyboard", ComponentType.UI),
+
+    MLIST("ood.Mobile.List", "List", "移动端列表", new ComponentBaseType[]{ComponentBaseType.absList, ComponentBaseType.absValue}, "fa-list", ComponentType.UI),
+
+    MSWITCH("ood.Mobile.Switch", "Switch", "移动端开关", new ComponentBaseType[]{ComponentBaseType.absValue}, "fa-toggle-on", ComponentType.UI),
+
+    // 布局组件
+    MPANEL("ood.Mobile.Panel", "Panel", "移动端面板", new ComponentBaseType[]{}, "fa-window-maximize", ComponentType.UI),
+
+    MLAYOUT("ood.Mobile.Layout", "Layout", "移动端布局", new ComponentBaseType[]{}, "fa-th", ComponentType.UI),
+
+    MGRID("ood.Mobile.Grid", "Grid", "移动端网格", new ComponentBaseType[]{}, "fa-th-large", ComponentType.UI),
+
+    // 导航组件
+    MNAVBAR("ood.Mobile.NavBar", "NavBar", "移动端导航栏", new ComponentBaseType[]{}, "fa-bars", ComponentType.UI),
+
+    MTABBAR("ood.Mobile.TabBar", "TabBar", "移动端标签栏", new ComponentBaseType[]{}, "fa-window-restore", ComponentType.UI),
+
+    MDRAWER("ood.Mobile.Drawer", "Drawer", "移动端抽屉", new ComponentBaseType[]{}, "fa-indent", ComponentType.UI),
+
+    // 反馈组件
+    MTOAST("ood.Mobile.Toast", "Toast", "移动端提示", new ComponentBaseType[]{}, "fa-info-circle", ComponentType.UI),
+
+    MMODAL("ood.Mobile.Modal", "Modal", "移动端模态框", new ComponentBaseType[]{}, "fa-window-restore", ComponentType.UI);
 
     private static Map<ComponentType, Set<ComponentBaseType>> baseTypeMap = new HashMap();
     private static Map<ComponentType, Set<ComponentType>> typeMap = new HashMap();
