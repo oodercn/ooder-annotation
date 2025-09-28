@@ -14,7 +14,7 @@ public @interface Aggregation {
 
     UserSpace[] userSpace() default {};
 
-    AggregationType type() default AggregationType.API;
+    AggregationType type() default AggregationType.VIEW;
 
     Class entityClass() default Void.class;
 
