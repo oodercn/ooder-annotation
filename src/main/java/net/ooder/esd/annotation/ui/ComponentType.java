@@ -97,32 +97,34 @@ public enum ComponentType implements IconEnumstype {
     TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-node-tree", new ComponentType[]{ComponentType.LIST}),
     MTREEGRID("ood.UI.MTreeGrid", "MTreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-node-tree", new ComponentType[]{ComponentType.TREEGRID}),
     FOLDINGTABS("ood.UI.FoldingTabs", "FoldingTabsComponent", "FoldingTAB容器", new ComponentBaseType[]{}, "ri-layout-2-line", ComponentType.TABS),
+
+
     MBUTTON("ood.Mobile.Button", "Button", "移动端按钮", new ComponentBaseType[]{ComponentBaseType.absValue, ComponentBaseType.absList}, "ri-phone-fill", ComponentType.UI),
-
     MINPUT("ood.Mobile.Input", "Input", "移动端输入框", new ComponentBaseType[]{ComponentBaseType.absValue}, "ri-keyboard-line", ComponentType.UI),
-
     MLIST("ood.Mobile.List", "List", "移动端列表", new ComponentBaseType[]{ComponentBaseType.absList, ComponentBaseType.absValue}, "ri-list-check", ComponentType.UI),
-
     MSWITCH("ood.Mobile.Switch", "Switch", "移动端开关", new ComponentBaseType[]{ComponentBaseType.absValue}, "ri-toggle-line", ComponentType.UI),
-
     // 布局组件
     MPANEL("ood.Mobile.Panel", "Panel", "移动端面板", new ComponentBaseType[]{}, "ri-window-line", ComponentType.UI),
-
     MLAYOUT("ood.Mobile.Layout", "Layout", "移动端布局", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.UI),
-
     MGRID("ood.Mobile.Grid", "Grid", "移动端网格", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.UI),
 
     // 导航组件
     MNAVBAR("ood.Mobile.NavBar", "NavBar", "移动端导航栏", new ComponentBaseType[]{}, "ri-menu-line", ComponentType.UI),
-
     MTABBAR("ood.Mobile.TabBar", "TabBar", "移动端标签栏", new ComponentBaseType[]{}, "ri-window-line", ComponentType.UI),
-
     MDRAWER("ood.Mobile.Drawer", "Drawer", "移动端抽屉", new ComponentBaseType[]{}, "ri-indent-decrease", ComponentType.UI),
 
     // 反馈组件
     MTOAST("ood.Mobile.Toast", "Toast", "移动端提示", new ComponentBaseType[]{}, "ri-information-line", ComponentType.UI),
+    MMODAL("ood.Mobile.Modal", "Modal", "移动端模态框", new ComponentBaseType[]{}, "ri-window-line", ComponentType.UI),
 
-    MMODAL("ood.Mobile.Modal", "Modal", "移动端模态框", new ComponentBaseType[]{}, "ri-window-line", ComponentType.UI);
+    // 动作组件
+    MACTIONSHEET("ood.Mobile.ActionSheet", "ActionSheet", "移动端操作表", new ComponentBaseType[]{}, "ri-menu-3-line", ComponentType.UI),
+    MFORM("ood.Mobile.Form", "MForm", "移动表单", new ComponentBaseType[]{}, "ri-file-list-line", ComponentType.UI),
+    MCard("ood.Mobile.Card", "MCard", "信息卡片", new ComponentBaseType[]{}, "ri-bank-card-line", ComponentType.UI),
+    MAVATAR("ood.Mobile.Avatar", "MAvatar", "用户头像", new ComponentBaseType[]{}, "ri-user-3-line", ComponentType.UI),
+    MBADGE("ood.Mobile.Badge", "MBadge", "移动端徽标", new ComponentBaseType[]{}, "ri-user-3-line", ComponentType.UI),
+    MPICKER("ood.Mobile.Picker", "MPicker", "移动端选择器", new ComponentBaseType[]{}, "ri-list-check-2", ComponentType.UI);
+
 
     private static Map<ComponentType, Set<ComponentBaseType>> baseTypeMap = new HashMap();
     private static Map<ComponentType, Set<ComponentType>> typeMap = new HashMap();
