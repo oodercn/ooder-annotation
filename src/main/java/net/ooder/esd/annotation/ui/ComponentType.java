@@ -120,7 +120,7 @@ public enum ComponentType implements IconEnumstype {
     // 动作组件
     MACTIONSHEET("ood.Mobile.ActionSheet", "ActionSheet", "移动端操作表", new ComponentBaseType[]{}, "ri-menu-3-line", ComponentType.UI),
     MFORM("ood.Mobile.Form", "MForm", "移动表单", new ComponentBaseType[]{}, "ri-file-list-line", ComponentType.UI),
-    MCard("ood.Mobile.Card", "MCard", "信息卡片", new ComponentBaseType[]{}, "ri-bank-card-line", ComponentType.UI),
+    MCARD("ood.Mobile.Card", "MCard", "信息卡片", new ComponentBaseType[]{}, "ri-bank-card-line", ComponentType.UI),
     MAVATAR("ood.Mobile.Avatar", "MAvatar", "用户头像", new ComponentBaseType[]{}, "ri-user-3-line", ComponentType.UI),
     MBADGE("ood.Mobile.Badge", "MBadge", "移动端徽标", new ComponentBaseType[]{}, "ri-user-3-line", ComponentType.UI),
     MPICKER("ood.Mobile.Picker", "MPicker", "移动端选择器", new ComponentBaseType[]{}, "ri-list-check-2", ComponentType.UI);
