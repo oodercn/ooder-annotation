@@ -1,9 +1,6 @@
 package net.ooder.esd.annotation.view;
 
 import net.ooder.annotation.NotNull;
-import net.ooder.esd.annotation.CustomClass;
-import net.ooder.esd.annotation.ui.CustomViewType;
-import net.ooder.esd.annotation.ui.ModuleViewType;
 import net.ooder.esd.annotation.ui.ResponsePathTypeEnum;
 
 import java.lang.annotation.*;
@@ -15,8 +12,17 @@ public @interface NavFoldingTabsViewAnnotation {
     String expression() default "";
 
     String saveUrl() default "";
+
+    String dataUrl() default "";
+
+    String reSetUrl() default "";
+
     @NotNull
     boolean autoSave() default false;
+
+    @NotNull
+    boolean cache() default false;
+
     @NotNull
     ResponsePathTypeEnum itemType() default ResponsePathTypeEnum.TABS;
 
