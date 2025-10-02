@@ -57,11 +57,11 @@ public @interface GalleryAnnotation {
 
     int rows() default 0;
 
-    String flagText()default"";
+    String flagText() default "";
 
-    String flagClass()default"";
+    String flagClass() default "";
 
-    String flagStyle()default"";
+    String flagStyle() default "";
 
     @NotNull
     SelModeType selMode() default SelModeType.single;
@@ -79,7 +79,7 @@ public @interface GalleryAnnotation {
 
     CustomGalleryEvent[] event() default {};
 
-    boolean autoIconColor() default true;
+    boolean autoIconColor() default false;
 
     boolean autoItemColor() default false;
 
@@ -91,7 +91,6 @@ public @interface GalleryAnnotation {
     String[] itemColors() default {};
 
     String[] fontColors() default {};
-
 
 
 }
