@@ -71,12 +71,6 @@ public @interface BottomBarMenu{
     boolean autoFontColor() default false;
 
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
     TagCmdsAlign tagCmdsAlign() default TagCmdsAlign.floatright;
 
     @NotNull

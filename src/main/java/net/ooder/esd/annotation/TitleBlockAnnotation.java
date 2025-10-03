@@ -84,12 +84,4 @@ public @interface TitleBlockAnnotation {
     @NotNull
     String defaultMore() default "&gt;&gt; 更多";
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
-    String[] moreColors() default {};
-
 }

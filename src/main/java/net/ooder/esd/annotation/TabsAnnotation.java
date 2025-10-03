@@ -83,12 +83,6 @@ public @interface TabsAnnotation {
     boolean autoFontColor() default false;
 
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {"#F19B60", "#49CD81", "#0277bd", "#A693EB", "#42a3af", "#B0E0E6", "#F06292"};
-
-    String[] fontColors() default {"#F19B60", "#49CD81", "#0277bd", "#A693EB", "#42a3af", "#B0E0E6", "#F06292"};
-
 
     @NotNull
     String barSize() default "2.5em";

@@ -70,13 +70,6 @@ public @interface ButtonViewsAnnotation {
     boolean autoFontColor() default false;
 
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
-
     ComponentType[] bindTypes() default {ComponentType.BUTTONVIEWS, ComponentType.TABS, ComponentType.STACKS, ComponentType.FOLDINGTABS};
 
 

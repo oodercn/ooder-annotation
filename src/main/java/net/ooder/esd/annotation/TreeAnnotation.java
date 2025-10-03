@@ -73,13 +73,6 @@ public @interface TreeAnnotation {
     boolean autoFontColor() default false;
 
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
-
     CustomTreeEvent[] event() default {};
 
     ComponentType[] bindTypes() default {ComponentType.TREEBAR, ComponentType.TREEVIEW, ComponentType.MTREEVIEW};

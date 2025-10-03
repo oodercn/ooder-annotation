@@ -1,13 +1,10 @@
 package net.ooder.esd.annotation.field;
 
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.CustomClass;
 import net.ooder.esd.annotation.CustomMenu;
-import net.ooder.esd.annotation.ui.CustomViewType;
-import net.ooder.esd.annotation.ui.ComponentType;
-import net.ooder.esd.annotation.ui.HAlignType;
-import net.ooder.esd.annotation.ui.VAlignType;
-import net.ooder.annotation.NotNull;
+import net.ooder.esd.annotation.ui.*;
 
 import java.lang.annotation.*;
 
@@ -21,7 +18,7 @@ public @interface ToolBarMenu {
 
     HAlignType hAlign() default HAlignType.left;
 
-    VAlignType vAlign() default VAlignType.top;
+    VAlignType vAlign() default VAlignType.middle;
 
     @NotNull
     String iconFontSize() default "1.5em";
@@ -29,6 +26,8 @@ public @interface ToolBarMenu {
     String groupId() default "";
 
     String id() default "";
+
+    Dock dock() default Dock.top;
 
 
     boolean autoIconColor() default true;

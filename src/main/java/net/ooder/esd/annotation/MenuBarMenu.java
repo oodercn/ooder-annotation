@@ -54,12 +54,6 @@ public @interface MenuBarMenu {
     boolean autoFontColor() default false;
 
 
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
     @NotNull
     int index() default 100;
 

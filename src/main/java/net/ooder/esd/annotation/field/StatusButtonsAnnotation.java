@@ -52,13 +52,6 @@ public @interface StatusButtonsAnnotation {
 
     boolean autoFontColor() default false;
 
-
-    String[] iconColors() default {};
-
-    String[] itemColors() default {};
-
-    String[] fontColors() default {};
-
     boolean connected() default false;
 
 }
