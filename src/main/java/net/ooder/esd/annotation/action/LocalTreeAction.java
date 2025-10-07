@@ -105,35 +105,7 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
     }
 
 
-    @Override
-    public TreeViewEventEnum[] treeEvent() {
-        return new TreeViewEventEnum[0];
-    }
 
-    @Override
-    public GridEventEnum[] gridEvent() {
-        return new GridEventEnum[0];
-    }
-
-    @Override
-    public GalleryEventEnum[] galleryEvent() {
-        return new GalleryEventEnum[0];
-    }
-
-    @Override
-    public FieldEventEnum[] fieldEvent() {
-        return new FieldEventEnum[0];
-    }
-
-    @Override
-    public TabsEventEnum[] tabsEvent() {
-        return new TabsEventEnum[0];
-    }
-
-    @Override
-    public CustomHotKeyEvent[] hotkeyEvent() {
-        return new CustomHotKeyEvent[0];
-    }
 
     @Override
     public String desc() {
