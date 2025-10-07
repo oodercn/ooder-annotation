@@ -2,6 +2,7 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomTreeAction;
+import net.ooder.esd.annotation.action.LocalTreeAction;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -15,6 +16,8 @@ public @interface TreeEvent {
     TreeViewEventEnum eventEnum();
 
     CustomTreeAction[] customActions() default {};
+
+    LocalTreeAction[] localActions() default {};
 
     CustomAction[] actions() default {};
 

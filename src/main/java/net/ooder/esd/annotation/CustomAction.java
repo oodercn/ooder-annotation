@@ -11,18 +11,6 @@ import java.lang.annotation.*;
 @Repeatable(CustomActions.class)
 public @interface CustomAction {
 
-//    TreeViewEventEnum[] treeEvent() default {};
-//
-//    GridEventEnum[] gridEvent() default {};
-//
-//    GalleryEventEnum[] galleryEvent() default {};
-//
-//    FieldEventEnum[] fieldEvent() default {};
-//
-//    TabsEventEnum[] tabsEvent() default {};
-//
-//    CustomHotKeyEvent[] hotkeyEvent() default {};
-
     String desc() default "";
 
     ActionTypeEnum type();
