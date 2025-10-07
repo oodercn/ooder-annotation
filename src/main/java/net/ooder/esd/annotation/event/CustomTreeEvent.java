@@ -32,6 +32,8 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
 
     TREERELOAD(TreeViewEventEnum.onRender, "装载数据", "true", new CustomAction[]{CustomTreeAction.RELOAD}),
 
+    TREENODECLICK(TreeViewEventEnum.onClick, "点击节点", "true", new CustomAction[]{}),
+
     TREENODEEDITOR(TreeViewEventEnum.onClick, "编辑", "true", new CustomAction[]{CustomPageAction.EDITOR});
 
 

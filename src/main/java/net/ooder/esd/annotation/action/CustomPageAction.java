@@ -4,8 +4,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.ActionType;
-import net.ooder.esd.annotation.event.ActionTypeEnum;
+import net.ooder.esd.annotation.event.*;
 
 import java.lang.annotation.Annotation;
 
@@ -16,6 +15,7 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
 
     RELOAD("刷新页面",
             CustomTarget.DYNCURRMODULENAME.getName(), CustomModuleMethod.initData, new String[]{}, "true", true),
+
 
 
     EDITOR("编辑",
@@ -48,7 +48,9 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
 
     RELOADTOP("刷新顶级页面", CustomTarget.TOPMODULE.getName(), CustomModuleMethod.initData, new String[]{}, "true", true),
 
-    RELOADTOPPARENT("刷新顶级页面", CustomTarget.TOPMODULE.getName(), CustomModuleMethod.reloadParent, new String[]{}, "true", true);
+    RELOADTOPPARENT("刷新顶级页面", CustomTarget.TOPMODULE.getName(), CustomModuleMethod.reloadParent, new String[]{}, "true", true),
+
+    TREENODECLICK("点击", "true", true);
 
 
     private String desc;
@@ -62,6 +64,12 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
+    CustomPageAction(String desc, String expression, boolean _return) {
+        this.desc = desc;
+        this.expression = expression;
+        this._return = _return;
+
+    }
 
     CustomPageAction(String desc, String target, Enumstype method, String[] args, String expression, boolean _return) {
         this.desc = desc;
@@ -132,6 +140,36 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
         return redirection;
     }
 
+
+    @Override
+    public TreeViewEventEnum[] treeEvent() {
+        return new TreeViewEventEnum[0];
+    }
+
+    @Override
+    public GridEventEnum[] gridEvent() {
+        return new GridEventEnum[0];
+    }
+
+    @Override
+    public GalleryEventEnum[] galleryEvent() {
+        return new GalleryEventEnum[0];
+    }
+
+    @Override
+    public FieldEventEnum[] fieldEvent() {
+        return new FieldEventEnum[0];
+    }
+
+    @Override
+    public TabsEventEnum[] tabsEvent() {
+        return new TabsEventEnum[0];
+    }
+
+    @Override
+    public CustomHotKeyEvent[] hotkeyEvent() {
+        return new CustomHotKeyEvent[0];
+    }
 
     @Override
     public String desc() {

@@ -4,8 +4,7 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.ActionType;
-import net.ooder.esd.annotation.event.ActionTypeEnum;
+import net.ooder.esd.annotation.event.*;
 
 import java.lang.annotation.Annotation;
 
@@ -167,6 +166,36 @@ public enum CustomGridAction implements ActionType, CustomAction, Enumstype {
 
     public void setArgs(String[] args) {
         this.args = args;
+    }
+
+    @Override
+    public TreeViewEventEnum[] treeEvent() {
+        return new TreeViewEventEnum[0];
+    }
+
+    @Override
+    public GridEventEnum[] gridEvent() {
+        return new GridEventEnum[0];
+    }
+
+    @Override
+    public GalleryEventEnum[] galleryEvent() {
+        return new GalleryEventEnum[0];
+    }
+
+    @Override
+    public FieldEventEnum[] fieldEvent() {
+        return new FieldEventEnum[0];
+    }
+
+    @Override
+    public TabsEventEnum[] tabsEvent() {
+        return new TabsEventEnum[0];
+    }
+
+    @Override
+    public CustomHotKeyEvent[] hotkeyEvent() {
+        return new CustomHotKeyEvent[0];
     }
 
     @Override

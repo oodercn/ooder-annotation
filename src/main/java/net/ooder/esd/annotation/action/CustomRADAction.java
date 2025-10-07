@@ -4,14 +4,14 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.ActionType;
-import net.ooder.esd.annotation.event.ActionTypeEnum;
+import net.ooder.esd.annotation.event.*;
 
 import java.lang.annotation.Annotation;
 
 
 public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
-    ReloadPage("下载", CustomGlobalMethod.call, "callback", ActionTypeEnum.callback, new String[]{"{SAP.()}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true",  true);
+    RELOADPAGE("刷新页面", CustomGlobalMethod.call, "callback", ActionTypeEnum.callback, new String[]{"{SAP.reloadPage()}", null, null, "{page}"}, CustomGlobalMethod.call.getType(), "true", true),
+    OPENCLS("打开文件", CustomGlobalMethod.call, "callback", ActionTypeEnum.callback, new String[]{"{SAP.openCls()}", null, null, "{args[1].tagVar"}, CustomGlobalMethod.call.getType(), "true", true);
 
     private String desc;
     @JSONField(name = "type")
@@ -92,6 +92,36 @@ public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
     @Override
     public ActionTypeEnum getActionType() {
         return actionType;
+    }
+
+    @Override
+    public TreeViewEventEnum[] treeEvent() {
+        return new TreeViewEventEnum[0];
+    }
+
+    @Override
+    public GridEventEnum[] gridEvent() {
+        return new GridEventEnum[0];
+    }
+
+    @Override
+    public GalleryEventEnum[] galleryEvent() {
+        return new GalleryEventEnum[0];
+    }
+
+    @Override
+    public FieldEventEnum[] fieldEvent() {
+        return new FieldEventEnum[0];
+    }
+
+    @Override
+    public TabsEventEnum[] tabsEvent() {
+        return new TabsEventEnum[0];
+    }
+
+    @Override
+    public CustomHotKeyEvent[] hotkeyEvent() {
+        return new CustomHotKeyEvent[0];
     }
 
     @Override
