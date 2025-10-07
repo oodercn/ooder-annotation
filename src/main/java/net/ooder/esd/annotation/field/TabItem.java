@@ -11,5 +11,9 @@ public interface TabItem extends IconEnumstype {
 
     public boolean isDynDestory();
 
+    public String getTips();
+
+    public String getCaption();
+
     public boolean isDynLoad();
 }
