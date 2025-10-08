@@ -5,7 +5,7 @@ import net.ooder.esd.annotation.CustomAction;
 
 import java.lang.annotation.*;
 
-@Repeatable(StacksEvents.class)
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface StacksEvent {
@@ -17,5 +17,7 @@ public @interface StacksEvent {
     String expression() default "";
 
     CustomAction[] actions();
+
+    boolean _return() default true;
 
 }

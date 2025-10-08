@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation.event;
 
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomMQTTAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
@@ -67,13 +68,17 @@ public enum CustomCallBack implements APIEvent {
     APIEventEnum event;
     CustomAction[] actions;
     String desc;
-
+    @JSONField(name = "return")
+    private Boolean _return;
     CustomCallBack(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
         this.desc = desc;
     }
-
+    @Override
+    public boolean _return() {
+        return true;
+    }
     ;
 
     CustomCallBack(APIEvent event) {

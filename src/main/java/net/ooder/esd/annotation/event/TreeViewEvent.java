@@ -16,4 +16,6 @@ public @interface TreeViewEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

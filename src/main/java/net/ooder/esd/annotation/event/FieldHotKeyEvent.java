@@ -18,4 +18,6 @@ public @interface FieldHotKeyEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

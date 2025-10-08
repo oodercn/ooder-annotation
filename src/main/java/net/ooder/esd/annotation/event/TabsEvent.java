@@ -17,4 +17,5 @@ public @interface TabsEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

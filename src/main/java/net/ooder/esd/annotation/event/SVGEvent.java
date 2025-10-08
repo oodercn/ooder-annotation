@@ -19,4 +19,5 @@ public @interface SVGEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

@@ -21,4 +21,6 @@ public @interface MQTTEvent {
 
     String expression() default "";
 
+    boolean _return() default true;
+
 }

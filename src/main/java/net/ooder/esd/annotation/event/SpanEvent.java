@@ -19,4 +19,6 @@ public @interface SpanEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

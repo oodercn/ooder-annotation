@@ -18,4 +18,6 @@ public @interface LabelEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

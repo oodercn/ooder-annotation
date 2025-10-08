@@ -19,4 +19,5 @@ public @interface CheckBoxEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

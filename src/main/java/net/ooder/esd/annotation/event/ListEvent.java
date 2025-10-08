@@ -19,4 +19,6 @@ public @interface ListEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

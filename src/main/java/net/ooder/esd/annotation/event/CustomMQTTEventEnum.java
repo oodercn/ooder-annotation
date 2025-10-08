@@ -1,5 +1,6 @@
 package net.ooder.esd.annotation.event;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomMQTTAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
@@ -17,7 +18,8 @@ public enum CustomMQTTEventEnum implements MQTTEvent {
     MQTTEventEnum event;
     CustomAction[] actions;
     String desc;
-
+    @JSONField(name = "return")
+    private Boolean _return;
     CustomMQTTEventEnum(MQTTEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -31,7 +33,10 @@ public enum CustomMQTTEventEnum implements MQTTEvent {
         this.actions = event.actions();
         this.desc = event.desc();
     }
-
+    @Override
+    public boolean _return() {
+        return true;
+    }
     public String getDesc() {
         return desc;
     }

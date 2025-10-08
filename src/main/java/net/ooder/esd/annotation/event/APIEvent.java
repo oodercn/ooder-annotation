@@ -15,4 +15,6 @@ public @interface APIEvent {
     CustomAction[] actions();
 
     String desc()default "";
+
+    boolean _return() default true;
 }

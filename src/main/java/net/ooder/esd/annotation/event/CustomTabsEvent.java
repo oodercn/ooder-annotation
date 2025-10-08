@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation.event;
 
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomPageAction;
@@ -25,7 +26,8 @@ public enum CustomTabsEvent implements TabsEvent, CustomEvent, Enumstype {
     private String expression;
 
     public CustomAction[] actions;
-
+    @JSONField(name = "return")
+    private Boolean _return;
 
     CustomTabsEvent(TabsEventEnum eventEnum, String name, String expression, CustomAction[] actions) {
         this.eventEnum = eventEnum;
@@ -94,7 +96,10 @@ public enum CustomTabsEvent implements TabsEvent, CustomEvent, Enumstype {
     public CustomAction[] actions() {
         return actions;
     }
-
+    @Override
+    public boolean _return() {
+        return true;
+    }
     @Override
     public Class<? extends Annotation> annotationType() {
         return CustomTabsEvent.class;

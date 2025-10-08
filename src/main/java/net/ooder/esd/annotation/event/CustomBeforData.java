@@ -1,5 +1,6 @@
 package net.ooder.esd.annotation.event;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
 import net.ooder.esd.annotation.action.BPMAPIAction;
@@ -20,7 +21,8 @@ public enum CustomBeforData implements APIEvent {
     APIEventEnum event;
     CustomAction[] actions;
     String desc;
-
+    @JSONField(name = "return")
+    private Boolean _return;
     CustomBeforData(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -78,6 +80,11 @@ public enum CustomBeforData implements APIEvent {
     @Override
     public String desc() {
         return desc;
+    }
+
+    @Override
+    public boolean _return() {
+        return true;
     }
 
     @Override

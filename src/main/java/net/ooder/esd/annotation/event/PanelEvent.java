@@ -17,4 +17,6 @@ public @interface PanelEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

@@ -18,4 +18,6 @@ public @interface ButtonEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

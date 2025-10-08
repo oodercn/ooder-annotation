@@ -16,4 +16,5 @@ public @interface AnimBinderEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

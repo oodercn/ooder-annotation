@@ -19,4 +19,6 @@ public @interface GalleryEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

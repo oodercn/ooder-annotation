@@ -1,5 +1,6 @@
 package net.ooder.esd.annotation.event;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
 import net.ooder.esd.annotation.action.CustomPageAction;
@@ -19,6 +20,8 @@ public enum CustomModuleEventEnum implements ModuleEvent {
     ModuleEventEnum event;
     CustomAction[] actions;
     String desc;
+    @JSONField(name = "return")
+    private Boolean _return;
 
     CustomModuleEventEnum(ModuleEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
@@ -27,13 +30,12 @@ public enum CustomModuleEventEnum implements ModuleEvent {
 
     }
 
-    ;
-
     CustomModuleEventEnum(ModuleEvent event) {
         this.event = event.event();
         this.actions = event.actions();
         this.desc = event.desc();
     }
+
 
     public String getDesc() {
         return desc;
@@ -79,6 +81,11 @@ public enum CustomModuleEventEnum implements ModuleEvent {
     @Override
     public String desc() {
         return desc;
+    }
+
+    @Override
+    public boolean _return() {
+        return true;
     }
 
     @Override

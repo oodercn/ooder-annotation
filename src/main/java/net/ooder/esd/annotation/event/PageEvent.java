@@ -18,4 +18,6 @@ public @interface PageEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

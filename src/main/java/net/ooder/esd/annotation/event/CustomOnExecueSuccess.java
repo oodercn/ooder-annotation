@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation.event;
 
 
+import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
 import net.ooder.esd.annotation.action.CustomPageAction;
@@ -28,7 +29,8 @@ public enum CustomOnExecueSuccess implements APIEvent {
     APIEventEnum event;
     CustomAction[] actions;
     String desc;
-
+    @JSONField(name = "return")
+    private Boolean _return;
     CustomOnExecueSuccess(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -54,6 +56,10 @@ public enum CustomOnExecueSuccess implements APIEvent {
         this.desc = desc;
     }
 
+    @Override
+    public boolean _return() {
+        return true;
+    }
 
     public APIEventEnum getEvent() {
         return event;

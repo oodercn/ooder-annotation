@@ -18,4 +18,5 @@ public @interface ImageEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

@@ -16,4 +16,5 @@ public @interface PopMenuEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

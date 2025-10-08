@@ -19,4 +19,6 @@ public @interface MessageEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

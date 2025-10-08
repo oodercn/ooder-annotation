@@ -16,4 +16,5 @@ public @interface IconEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
 }

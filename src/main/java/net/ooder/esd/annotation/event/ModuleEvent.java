@@ -16,4 +16,6 @@ public @interface ModuleEvent {
     CustomAction[] actions();
 
     String desc();
+
+    boolean _return() default true;
 }

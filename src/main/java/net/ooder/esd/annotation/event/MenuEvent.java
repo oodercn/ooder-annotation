@@ -19,5 +19,7 @@ public @interface MenuEvent {
 
     String expression() default "";
 
+    boolean _return() default true;
+
 
 }

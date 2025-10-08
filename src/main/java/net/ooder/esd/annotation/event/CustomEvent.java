@@ -6,4 +6,6 @@ public interface CustomEvent<T> {
     public CustomAction[] getActions(boolean expar);
 
     T getEventEnum();
+
+
 }

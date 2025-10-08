@@ -19,4 +19,6 @@ public @interface ToolBarEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

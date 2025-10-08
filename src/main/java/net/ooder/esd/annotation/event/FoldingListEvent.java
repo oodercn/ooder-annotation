@@ -18,4 +18,6 @@ public @interface FoldingListEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

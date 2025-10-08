@@ -17,4 +17,6 @@ public @interface AudioEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

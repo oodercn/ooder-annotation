@@ -18,4 +18,6 @@ public @interface ResizerEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

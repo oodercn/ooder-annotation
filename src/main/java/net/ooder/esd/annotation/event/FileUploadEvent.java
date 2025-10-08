@@ -18,4 +18,6 @@ public @interface FileUploadEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

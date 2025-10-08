@@ -17,4 +17,6 @@ public @interface ComboInputEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

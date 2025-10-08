@@ -19,4 +19,6 @@ public @interface SpiderEvent {
 
     CustomAction[] actions();
 
+    boolean _return() default true;
+
 }

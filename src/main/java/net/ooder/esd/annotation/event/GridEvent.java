@@ -20,4 +20,6 @@ public @interface GridEvent {
 
     CustomGridEvent[] event() default {};
 
+    boolean _return() default true;
+
 }
