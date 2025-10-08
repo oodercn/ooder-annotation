@@ -31,6 +31,19 @@ public enum CustomTabsAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+
+    private String script;
+
+    private String[] params;
+
+    CustomTabsAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
+
+
     CustomTabsAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -40,6 +53,24 @@ public enum CustomTabsAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
 
     @Override
     public String getType() {

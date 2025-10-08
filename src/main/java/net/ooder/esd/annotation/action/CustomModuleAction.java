@@ -30,6 +30,17 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+
+    private String script;
+
+    private String[] params;
+
+    CustomModuleAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
     CustomModuleAction(String desc, String target, CustomModuleMethod method, String[] args, String expression, boolean _return) {
         this.desc = desc;
         this.method = method;
@@ -39,6 +50,8 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
         this._return = _return;
 
     }
+
+
 
     @Override
     public String getType() {
@@ -91,6 +104,15 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
     }
 
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     @Override
     public String desc() {

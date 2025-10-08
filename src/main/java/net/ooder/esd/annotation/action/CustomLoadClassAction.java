@@ -28,6 +28,14 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
     private CustomCondition[] conditions;
     private String[] args;
 
+    private String script;
+
+    private String[] params;
+
+    CustomLoadClassAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
 
     CustomLoadClassAction(String desc, String[] args, String redirection, String expression, boolean _return) {
         this.desc = desc;
@@ -40,6 +48,68 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
 
     }
 
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public void setActionType(ActionTypeEnum actionType) {
+        this.actionType = actionType;
+    }
+
+    public void setExpression(String expression) {
+        this.expression = expression;
+    }
+
+    public void setTarget(String target) {
+        this.target = target;
+    }
+
+    public void setMethod(CustomGlobalMethod method) {
+        this.method = method;
+    }
+
+    public void set_return(Boolean _return) {
+        this._return = _return;
+    }
+
+    public void setRedirection(String redirection) {
+        this.redirection = redirection;
+    }
+
+    public void setConditions(CustomCondition[] conditions) {
+        this.conditions = conditions;
+    }
+
+    public void setArgs(String[] args) {
+        this.args = args;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public void setScript(String script) {
+        this.script = script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
+    }
 
     @Override
     public String getType() {

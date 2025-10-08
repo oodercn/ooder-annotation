@@ -27,6 +27,15 @@ public enum CustomMQTTAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
+    private String script;
+
+    private String[] params;
+
+    CustomMQTTAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
 
     CustomMQTTAction(String desc, String target, CustomMQTTMethod method, String redirection, String[] args, String expression, Boolean _return) {
         this.desc = desc;
@@ -37,6 +46,24 @@ public enum CustomMQTTAction implements ActionType, CustomAction, Enumstype {
         this.args = args;
         this._return = _return;
 
+    }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
     }
 
     @Override

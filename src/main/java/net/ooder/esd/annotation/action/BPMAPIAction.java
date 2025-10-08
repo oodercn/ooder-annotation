@@ -26,6 +26,15 @@ public enum BPMAPIAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
+    private String script;
+
+    private String[] params;
+
+    BPMAPIAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
 
     BPMAPIAction(String desc, String expression, String target, Boolean _return) {
         this.desc = desc;
@@ -36,6 +45,23 @@ public enum BPMAPIAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
 
     @Override
     public String getType() {

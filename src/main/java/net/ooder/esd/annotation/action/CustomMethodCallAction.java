@@ -30,6 +30,18 @@ public enum CustomMethodCallAction implements ActionType, CustomAction, Enumstyp
     private String[] args;
 
 
+
+    private String script;
+
+    private String[] params;
+
+    CustomMethodCallAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
+
     CustomMethodCallAction(String desc, String target, String[] args, String redirection, String expression, boolean _return) {
         this.desc = desc;
         this.redirection = redirection;
@@ -39,6 +51,22 @@ public enum CustomMethodCallAction implements ActionType, CustomAction, Enumstyp
         this.args = args;
         this._return = _return;
 
+    }
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
     }
 
     @Override

@@ -49,6 +49,16 @@ public enum CustomTreeAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+
+    private String script;
+
+    private String[] params;
+
+    CustomTreeAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
     CustomTreeAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -58,6 +68,31 @@ public enum CustomTreeAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public void setScript(String script) {
+        this.script = script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
+    }
 
     @Override
     public String getType() {

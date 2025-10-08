@@ -64,6 +64,16 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
+
+    private String script;
+
+    private String[] params;
+
+    CustomPageAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
     CustomPageAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -80,6 +90,16 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
         this._return = _return;
     }
 
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     public Boolean get_return() {
         return _return;

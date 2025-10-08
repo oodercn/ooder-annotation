@@ -32,6 +32,16 @@ public enum CustomDynModuleAction implements ActionType, CustomAction, Enumstype
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    CustomDynModuleAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
     CustomDynModuleAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -40,6 +50,17 @@ public enum CustomDynModuleAction implements ActionType, CustomAction, Enumstype
         this._return = _return;
 
     }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
 
 
     @Override

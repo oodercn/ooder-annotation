@@ -17,6 +17,10 @@ public @interface CustomAction {
 
     String name();
 
+    String script() default "";
+
+    String[] params() default {};
+
     String expression() default "true";
 
     String target() default "";

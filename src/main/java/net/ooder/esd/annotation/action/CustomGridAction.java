@@ -61,6 +61,15 @@ public enum CustomGridAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    CustomGridAction(String script, String[] params) {
+        this.script = script;
+        this.params = params;
+    }
+
     CustomGridAction(String desc, String expression, Boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -86,6 +95,15 @@ public enum CustomGridAction implements ActionType, CustomAction, Enumstype {
         args[0] = "{page." + target + ".invoke()}";
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     public Boolean get_return() {
         return _return;

@@ -47,6 +47,16 @@ public enum CustomFieldAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    CustomFieldAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
     CustomFieldAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -56,6 +66,15 @@ public enum CustomFieldAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     @Override
     public String getType() {

@@ -39,6 +39,15 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
     private String redirection;
     private String[] args;
 
+    private String script;
+
+    private String[] params;
+
+    LocalTreeAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
 
     LocalTreeAction(CustomTreeMethod method, String source, String expression, Boolean _return) {
         this.desc = method.getName();
@@ -49,6 +58,23 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
 
     public Boolean get_return() {
         return _return;

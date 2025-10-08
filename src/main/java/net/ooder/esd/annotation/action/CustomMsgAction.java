@@ -32,9 +32,18 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     @JSONField(name = "return")
     private Boolean _return =  true;
 
+    private CustomCondition[] conditions;
 
     private String[] args;
-    private CustomCondition[] conditions;
+
+    private String script;
+
+    private String[] params;
+
+    CustomMsgAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
 
 
     CustomMsgAction(String desc, CustomMsgMethod method, String[] args) {
@@ -44,6 +53,17 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
         this.method = method;
         this.args = args;
     }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
 
     @Override
     public String getType() {
@@ -86,11 +106,6 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     }
 
     @Override
-    public CustomCondition[] getConditions() {
-        return conditions;
-    }
-
-    @Override
     public String getExpression() {
         return expression;
     }
@@ -100,7 +115,10 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
         return redirection;
     }
 
-
+    @Override
+    public CustomCondition[] getConditions() {
+        return conditions;
+    }
 
     @Override
     public String desc() {
@@ -139,7 +157,7 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
 
     @Override
     public CustomCondition[] conditions() {
-        return conditions;
+        return new CustomCondition[0];
     }
 
     @Override

@@ -26,6 +26,16 @@ public enum OnContextPageAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    OnContextPageAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
     OnContextPageAction(String desc, String expression, boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -35,6 +45,15 @@ public enum OnContextPageAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     @Override
     public String getType() {

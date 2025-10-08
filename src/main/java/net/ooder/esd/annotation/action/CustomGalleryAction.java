@@ -38,6 +38,16 @@ public enum CustomGalleryAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    CustomGalleryAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
+
     CustomGalleryAction(String desc, String expression, Boolean _return) {
         this.desc = desc;
         this.expression = expression;
@@ -47,6 +57,23 @@ public enum CustomGalleryAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
 
     @Override
     public String getType() {

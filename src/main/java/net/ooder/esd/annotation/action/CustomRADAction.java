@@ -26,6 +26,15 @@ public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
     private String[] args;
 
 
+    private String script;
+
+    private String[] params;
+
+    CustomRADAction(String script, String[] params) {
+        this.script=script;
+        this.params=params;
+    }
+
     CustomRADAction(String desc, CustomGlobalMethod method, String target, ActionTypeEnum type, String[] args, String redirection, String expression, boolean _return) {
         this.desc = desc;
         this.actionType = type;
@@ -36,6 +45,24 @@ public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
         this.args = args;
         this._return = _return;
 
+    }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
+    }
+
+    public String getScript() {
+        return script;
+    }
+
+    public String[] getParams() {
+        return params;
     }
 
     @Override

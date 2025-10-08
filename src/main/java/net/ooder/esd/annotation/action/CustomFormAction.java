@@ -1,11 +1,11 @@
 package net.ooder.esd.annotation.action;
 
 import com.alibaba.fastjson.annotation.JSONField;
-
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
 
 import java.lang.annotation.Annotation;
 
@@ -38,6 +38,14 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
+    private String script;
+
+    private String[] params;
+
+    CustomFormAction(String script, String[] params) {
+        this.script = script;
+        this.params = params;
+    }
 
     CustomFormAction(String desc, String expression, boolean _return) {
         this.desc = desc;
@@ -48,6 +56,22 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
 
     }
 
+
+    public String getScript() {
+        return script;
+    }
+
+    public void setScript(String script) {
+        this.script = script;
+    }
+
+    public String[] getParams() {
+        return params;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
+    }
 
     @Override
     public String getType() {
@@ -147,7 +171,6 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
     }
 
 
-
     @Override
     public String desc() {
         return desc;
@@ -156,6 +179,16 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
     @Override
     public ActionTypeEnum type() {
         return actionType;
+    }
+
+    @Override
+    public String script() {
+        return script;
+    }
+
+    @Override
+    public String[] params() {
+        return params;
     }
 
     @Override
