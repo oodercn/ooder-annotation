@@ -11,10 +11,13 @@ public @interface MenuEvent {
 
     MenuEventEnum eventEnum();
 
-    String name()default "";
+    CustomAction[] actions() default {};
+
+    String desc() default "";
+
+    String name() default "";
 
     String expression() default "";
 
-    CustomAction[] actions();
 
 }

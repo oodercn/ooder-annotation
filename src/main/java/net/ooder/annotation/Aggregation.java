@@ -1,6 +1,8 @@
 package net.ooder.annotation;
 
 
+import net.ooder.esd.annotation.CustomAction;
+
 import java.lang.annotation.*;
 
 @Inherited
@@ -15,6 +17,8 @@ public @interface Aggregation {
     UserSpace[] userSpace() default {};
 
     AggregationType type() default AggregationType.VIEW;
+
+    Class<? extends CustomAction>[] implActions() default {};
 
     Class entityClass() default Void.class;
 
