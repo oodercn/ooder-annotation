@@ -8,12 +8,11 @@ import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
-@Repeatable(CustomActions.class)
 public @interface CustomAction {
 
     String desc() default "";
 
-    ActionTypeEnum type();
+    ActionTypeEnum type() default ActionTypeEnum.other;
 
     String name();
 

@@ -7,7 +7,6 @@ import net.ooder.esd.annotation.ui.*;
 import java.lang.annotation.*;
 
 @Inherited
-@Repeatable(CustomMenus.class)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface CustomMenu {

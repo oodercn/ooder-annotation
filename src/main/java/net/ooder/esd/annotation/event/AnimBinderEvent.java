@@ -4,7 +4,6 @@ import net.ooder.esd.annotation.CustomAction;
 
 import java.lang.annotation.*;
 
-@Repeatable(AnimBinderEvents.class)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface AnimBinderEvent {

@@ -6,7 +6,6 @@ import net.ooder.esd.annotation.action.CustomGridAction;
 
 import java.lang.annotation.*;
 
-@Repeatable(GridEvents.class)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface GridEvent {

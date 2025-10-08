@@ -5,7 +5,6 @@ import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
-@Repeatable(AnimFramesAnnotation.class)
 public @interface AnimFrameAnnotation {
 
     String type() default "";

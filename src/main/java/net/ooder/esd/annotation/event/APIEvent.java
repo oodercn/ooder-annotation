@@ -2,20 +2,17 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.esd.annotation.CustomAction;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
 public @interface APIEvent {
 
-    String eventName();
+    String eventName()default "";
 
     APIEventEnum event();
 
     CustomAction[] actions();
 
-    String desc();
+    String desc()default "";
 }

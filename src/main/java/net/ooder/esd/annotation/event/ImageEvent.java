@@ -5,7 +5,7 @@ import net.ooder.esd.annotation.CustomAction;
 
 import java.lang.annotation.*;
 
-@Repeatable(ImageEvents.class)
+
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface ImageEvent {
