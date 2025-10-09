@@ -2,6 +2,7 @@ package net.ooder.esd.annotation.event;
 
 
 import net.ooder.esd.annotation.CustomAction;
+import net.ooder.esd.annotation.action.CustomGalleryAction;
 import net.ooder.esd.annotation.action.CustomGridAction;
 
 import java.lang.annotation.*;
@@ -14,12 +15,13 @@ public @interface GridEvent {
 
     CustomGridAction[] customActions() default {};
 
-    String expression() default "true";
-
     CustomAction[] actions() default {};
 
-    CustomGridEvent[] event() default {};
+    String desc() default "";
+
+    String name() default "";
+
+    String expression() default "";
 
     boolean _return() default true;
-
 }

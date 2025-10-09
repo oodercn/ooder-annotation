@@ -7,11 +7,10 @@ import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.action.CustomPageAction;
 import net.ooder.esd.annotation.action.CustomTabsAction;
 
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 
-public enum CustomTabsEvent implements TabsEvent, CustomEvent, Enumstype {
+public enum CustomTabsEvent implements CustomEvent, Enumstype {
 
     TABCHILD(TabsEventEnum.onIniPanelView, "装载TAB页", "true", new CustomAction[]{CustomTabsAction.TABCHILD}),
 
@@ -54,12 +53,16 @@ public enum CustomTabsEvent implements TabsEvent, CustomEvent, Enumstype {
         this.eventEnum = eventEnum;
     }
 
+    public CustomAction[] getActions() {
+        return actions;
+    }
+
     public CustomAction[] getActions(boolean expar) {
         List<CustomAction> actionTypes = new ArrayList<CustomAction>();
         for (CustomAction actionType : this.actions) {
-           // if (EsbUtil.parExpression(getExpression(), Boolean.class) || expar) {
-                actionTypes.add(actionType);
-           // }
+            // if (EsbUtil.parExpression(getExpression(), Boolean.class) || expar) {
+            actionTypes.add(actionType);
+            // }
         }
 
         return actionTypes.toArray(new CustomAction[]{});
@@ -82,26 +85,5 @@ public enum CustomTabsEvent implements TabsEvent, CustomEvent, Enumstype {
         this.name = name;
     }
 
-    @Override
-    public TabsEventEnum eventEnum() {
-        return eventEnum;
-    }
 
-    @Override
-    public String expression() {
-        return expression;
-    }
-
-    @Override
-    public CustomAction[] actions() {
-        return actions;
-    }
-    @Override
-    public boolean _return() {
-        return true;
-    }
-    @Override
-    public Class<? extends Annotation> annotationType() {
-        return CustomTabsEvent.class;
-    }
 }
