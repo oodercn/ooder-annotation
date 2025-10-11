@@ -2,6 +2,7 @@ package net.ooder.esd.annotation.event;
 
 
 import net.ooder.esd.annotation.CustomAction;
+import net.ooder.esd.annotation.action.CustomGalleryAction;
 
 import java.lang.annotation.*;
 
@@ -11,10 +12,16 @@ public @interface FieldEvent {
 
     FieldEventEnum eventEnum();
 
+    CustomGalleryAction[] customActions() default {};
+
+    CustomAction[] actions() default {};
+
+    String desc() default "";
+
     String name() default "";
 
     String expression() default "";
 
-    CustomAction[] actions();
     boolean _return() default true;
+
 }
