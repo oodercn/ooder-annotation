@@ -10,6 +10,7 @@ public enum RadioBoxEventEnum implements EventKey {
     // List组件事件
     onClick("onClick", "点击时", "profile", "item", "e", "src"),
     onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),

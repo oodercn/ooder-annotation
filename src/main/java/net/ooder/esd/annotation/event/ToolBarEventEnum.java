@@ -9,6 +9,7 @@ import net.ooder.common.EventKey;
 public enum ToolBarEventEnum implements EventKey {
     // 点击事件
     onClick("onClick", "点击时", "profile", "item", "group", "e", "src", "itemid"),
+    onMenuBtnClick("onMenuBtnClick", "菜单按钮点击", "profile", "item", "e", "src"),
     
     // 父类事件
     beforeRender("beforeRender", "渲染前", "profile"),
