@@ -11,6 +11,7 @@ public enum InfoBlockEventEnum implements EventKey {
     onClick("onClick", "点击时", "profile", "item", "e", "src"),
     onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
     onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
+    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
@@ -56,8 +57,7 @@ public enum InfoBlockEventEnum implements EventKey {
     onDestroy("onDestroy", "销毁时", "profile"),
     beforeDestroy("beforeDestroy", "销毁前", "profile"),
     afterDestroy("afterDestroy", "销毁后", "profile"),
-    onShowTips("onShowTips", "显示提示", "profile", "node", "pos"),
-    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos");
+    onShowTips("onShowTips", "显示提示", "profile", "node", "pos");
 
     private String event;
     private String[] params;
