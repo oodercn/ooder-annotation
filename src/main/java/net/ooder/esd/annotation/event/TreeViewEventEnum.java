@@ -39,6 +39,7 @@ public enum TreeViewEventEnum implements EventKey {
     onClick("onClick", "点击时", "profile", "item", "e", "src"),
     onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
     onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
+    onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),

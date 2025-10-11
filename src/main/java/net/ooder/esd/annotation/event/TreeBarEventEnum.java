@@ -7,11 +7,12 @@ import net.ooder.common.EventKey;
  * 对应JS文件: src/main/js/UI/TreeBar.js
  */
 public enum TreeBarEventEnum implements EventKey {
+    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
     onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
-    onClick("onClick", "点击时", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
-    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
     onGetContent("onGetContent", "获取内容", "profile", "item", "callback"),
     onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
