@@ -2,37 +2,34 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.common.EventKey;
 
+/**
+ * Audio组件事件枚举定义
+ * 对应JS文件: src/main/js/UI/Audio.js
+ */
 public enum AudioEventEnum implements EventKey {
-    beforeRender("beforeRender"),
-    onRender("onRender"),
-    onLayout("onLayout"),
-    onResize("onResize"),
-
-    onMove("onMove"),
-    onDock("onDock"),
-    beforePropertyChanged("beforePropertyChanged"),
-    afterPropertyChanged("afterPropertyChanged"),
-
-
-    beforeAppend("beforeAppend"),
-    afterAppend("afterAppend"),
-    beforeRemove("beforeRemove"),
-    afterRemove("afterRemove"),
-
-    onDestroy("onDestroy"),
-    afterDestroy("afterDestroy"),
-    beforeDestroy("beforeDestroy"),
-    onShowTips("onShowTips"),
-
-    onContextmenu("onContextmenu"),
-
-    onMediaEvent("onChecked");
-
+    onMediaEvent("onMediaEvent", "媒体事件", "profile", "eventType", "params");
 
     private String event;
+    private String[] params;
+    private String name;
 
-    AudioEventEnum(String event) {
+    AudioEventEnum(String event, String name, String... args) {
         this.event = event;
+        this.name = name;
+        this.params = args;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
+
+    @Override
+    public String[] getParams() {
+        return params;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
     }
 
     @Override
@@ -40,11 +37,12 @@ public enum AudioEventEnum implements EventKey {
         return event;
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
         return event;
     }
-
-
 }

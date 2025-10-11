@@ -2,46 +2,59 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.common.EventKey;
 
+/**
+ * ContentBlock组件事件枚举定义
+ * 对应JS文件: src/main/js/UI/ContentBlock.js
+ */
 public enum ContentBlockEventEnum implements EventKey {
-    //module event
-    onFragmentChanged("onFragmentChanged"),
-    onMessage("onMessage"),
-    beforeCreated("beforeCreated"),
-    onLoadBaseClass("onLoadBaseClass"),
-
-    onLoadRequiredClass("onLoadRequiredClass"),
-    onLoadRequiredClassErr("onLoadRequiredClassErr"),
-    onIniResource("onIniResource"),
-
-    beforeIniComponents("beforeIniComponents"),
-    afterIniComponents("afterIniComponents"),
-    afterShow("afterShow"),
-    onModulePropChange("onModulePropChange"),
-    onReady("onReady"),
-    onRender("onRender"),
-    onDestroy("onDestroy"),
-    onContextmenu("onContextmenu"),
-
-    //GalleryEventEnum event
-
-    onShowOptions("onShowOptions"),
-    onClick("onClick"),
-    beforeClick("beforeClick"),
-    afterClick("afterClick"),
-    onLabelClick("onLabelClick"),
-    onLabelDblClick("onLabelDblClick"),
-    onLabelActive("onLabelActive"),
-    onCmd("onCmd"),
-    onDblclick("onDblclick"),
-    onItemSelected("onItemSelected"),
-    onMoreClick("onMoreClick"),
-    onTitleClick("onTitleClick");
-
+    // List组件事件
+    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
+    afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
+    onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
+    onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
+    onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
+    onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
+    onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
+    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    
+    // ContentBlock特有事件
+    onMoreClick("onMoreClick", "更多点击", "profile", "item", "e", "src"),
+    onTitleClick("onTitleClick", "标题点击", "profile", "item", "e", "src"),
+    touchstart("touchstart", "触摸开始", "profile", "item", "e", "src"),
+    touchmove("touchmove", "触摸移动", "profile", "item", "e", "src"),
+    touchend("touchend", "触摸结束", "profile", "item", "e", "src"),
+    touchcancel("touchcancel", "触摸取消", "profile", "item", "e", "src"),
+    swipe("swipe", "滑动", "profile", "item", "e", "src"),
+    swipeleft("swipeleft", "向左滑动", "profile", "item", "e", "src"),
+    swiperight("swiperight", "向右滑动", "profile", "item", "e", "src"),
+    swipeup("swipeup", "向上滑动", "profile", "item", "e", "src"),
+    swipedown("swipedown", "向下滑动", "profile", "item", "e", "src"),
+    press("press", "按下", "profile", "item", "e", "src"),
+    pressup("pressup", "抬起", "profile", "item", "e", "src");
 
     private String event;
+    private String[] params;
+    private String name;
 
-    ContentBlockEventEnum(String event) {
+    ContentBlockEventEnum(String event, String name, String... args) {
         this.event = event;
+        this.name = name;
+        this.params = args;
+    }
+
+    public void setEvent(String event) {
+        this.event = event;
+    }
+
+    @Override
+    public String[] getParams() {
+        return params;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
     }
 
     @Override
@@ -49,11 +62,12 @@ public enum ContentBlockEventEnum implements EventKey {
         return event;
     }
 
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
         return event;
     }
-
-
 }

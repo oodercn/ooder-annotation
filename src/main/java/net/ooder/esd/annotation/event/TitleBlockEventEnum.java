@@ -4,44 +4,50 @@ import net.ooder.common.EventKey;
 
 public enum TitleBlockEventEnum implements EventKey {
     //module event
-    onFragmentChanged("onFragmentChanged"),
-    onMessage("onMessage"),
-    beforeCreated("beforeCreated"),
-    onLoadBaseClass("onLoadBaseClass"),
-
-    onLoadRequiredClass("onLoadRequiredClass"),
-    onLoadRequiredClassErr("onLoadRequiredClassErr"),
-    onIniResource("onIniResource"),
-
-    beforeIniComponents("beforeIniComponents"),
-    afterIniComponents("afterIniComponents"),
-    afterShow("afterShow"),
-    onModulePropChange("onModulePropChange"),
-    onReady("onReady"),
-    onRender("onRender"),
-    onDestroy("onDestroy"),
-    onContextmenu("onContextmenu"),
+    onFragmentChanged("onFragmentChanged", "框架初始化完成", "module", "fragment", "init", "newAdd"),
+    onMessage("onMessage", "收到消息", "module", "msg1", "msg2", "msg3", "msg4", "msg5", "source"),
+    beforeCreated("beforeCreated", "开始创建", "module", "threadid"),
+    onLoadBaseClass("onLoadBaseClass", "开始构建", "module", "threadid", "uri", "key"),
+    onLoadRequiredClass("onLoadRequiredClass", "加载依赖类", "module", "threadid", "uri", "key"),
+    onLoadRequiredClassErr("onLoadRequiredClassErr", "加载依赖类错误", "module", "threadid", "uri"),
+    onIniResource("onIniResource", "初始化资源", "module", "threadid"),
+    beforeIniComponents("beforeIniComponents", "开始初始化组件", "module", "threadid"),
+    afterIniComponents("afterIniComponents", "组件初始化完毕", "module", "threadid"),
+    afterShow("afterShow", "数据装载完毕", "module", "threadid"),
+    onModulePropChange("onModulePropChange", "模块属性改变", "module", "threadid"),
+    onReady("onReady", "开始准备", "module", "threadid"),
+    onRender("onRender", "开始渲染", "module", "threadid"),
+    onDestroy("onDestroy", "销毁时", "module"),
+    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
 
     //GalleryEventEnum event
-
-    onShowOptions("onShowOptions"),
-    onClick("onClick"),
-    beforeClick("beforeClick"),
-    afterClick("afterClick"),
-    onLabelClick("onLabelClick"),
-    onLabelDblClick("onLabelDblClick"),
-    onLabelActive("onLabelActive"),
-    onCmd("onCmd"),
-    onDblclick("onDblclick"),
-    onItemSelected("onItemSelected"),
-    onMoreClick("onMoreClick"),
-    onTitleClick("onTitleClick");
-
+    onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
+    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
+    afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
+    onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
+    onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
+    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
+    onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
+    onMoreClick("onMoreClick", "更多点击", "profile", "item", "e", "src"),
+    onTitleClick("onTitleClick", "标题点击", "profile", "item", "e", "src");
 
     private String event;
+    private String[] params;
+    private String name;
 
-    TitleBlockEventEnum(String event) {
+    TitleBlockEventEnum(String event, String name) {
         this.event = event;
+        this.name = name;
+        this.params = new String[0];
+    }
+
+    TitleBlockEventEnum(String event, String name, String... args) {
+        this.event = event;
+        this.name = name;
+        this.params = args;
     }
 
     @Override
@@ -49,11 +55,17 @@ public enum TitleBlockEventEnum implements EventKey {
         return event;
     }
 
+    @Override
+    public String[] getParams() {
+        return params;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
         return event;
     }
-
-
 }

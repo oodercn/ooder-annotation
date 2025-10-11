@@ -17,9 +17,9 @@ public enum CustomContentBlockEvent implements CustomEvent, Enumstype {
 
     ONMORECLICK(ContentBlockEventEnum.onMoreClick, "点击更多", "true", new CustomAction[]{CustomPageAction.MORE}),
 
-    SELECTED(ContentBlockEventEnum.onItemSelected, "选中", "true", new CustomAction[]{CustomPageAction.EDITOR}),
+    SELECTED(ContentBlockEventEnum.onItemSelected, "选中", "true", new CustomAction[]{CustomPageAction.EDITOR});
 
-    LOADMENU(ContentBlockEventEnum.onContextmenu, "右键菜单", "true", new CustomAction[]{CustomGridAction.LOADMENU});
+ //   LOADMENU(ContentBlockEventEnum.onContextmenu, "右键菜单", "true", new CustomAction[]{CustomGridAction.LOADMENU});
 
     private ContentBlockEventEnum eventEnum;
 

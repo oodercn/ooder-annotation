@@ -3,13 +3,35 @@ package net.ooder.esd.annotation.event;
 import net.ooder.common.EventKey;
 
 public enum FoldingListEventEnum implements EventKey {
-    onGetContent("onGetContent"),
-    onShowOptions("onShowOptions");
+    // List组件事件
+    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
+    afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
+    onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
+    onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
+    onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
+    onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
+    onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
+    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    
+    // FoldingList特有事件
+    onGetContent("onGetContent", "获取内容");
 
     private String event;
+    private String[] params;
+    private String name;
 
-    FoldingListEventEnum(String event) {
+    FoldingListEventEnum(String event, String name) {
         this.event = event;
+        this.name = name;
+        this.params = new String[0];
+    }
+
+    FoldingListEventEnum(String event, String name, String... args) {
+        this.event = event;
+        this.name = name;
+        this.params = args;
     }
 
     @Override
@@ -17,11 +39,17 @@ public enum FoldingListEventEnum implements EventKey {
         return event;
     }
 
+    @Override
+    public String[] getParams() {
+        return params;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
         return event;
     }
-
-
 }

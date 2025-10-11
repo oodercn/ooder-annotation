@@ -3,11 +3,22 @@ package net.ooder.esd.annotation.event;
 import net.ooder.common.EventKey;
 
 public enum IconEventEnum implements EventKey {
-    onClick("onClick");
-    private String event;
+    onClick("onClick", "点击时", "profile", "e", "src");
 
-    IconEventEnum(String event) {
+    private String event;
+    private String[] params;
+    private String name;
+
+    IconEventEnum(String event, String name) {
         this.event = event;
+        this.name = name;
+        this.params = new String[0];
+    }
+
+    IconEventEnum(String event, String name, String... args) {
+        this.event = event;
+        this.name = name;
+        this.params = args;
     }
 
     @Override
@@ -15,11 +26,17 @@ public enum IconEventEnum implements EventKey {
         return event;
     }
 
+    @Override
+    public String[] getParams() {
+        return params;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
         return event;
     }
-
-
 }

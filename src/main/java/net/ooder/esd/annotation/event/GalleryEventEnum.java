@@ -2,98 +2,70 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.common.EventKey;
 
+/**
+ * Gallery组件事件枚举
+ * 对应JS中的ood.UI.Gallery.EventHandlers定义
+ */
 public enum GalleryEventEnum implements EventKey {
-
-
-    //module event
-    onFragmentChanged("onFragmentChanged"),
-    onMessage("onMessage"),
-    beforeCreated("beforeCreated"),
-    onLoadBaseClass("onLoadBaseClass"),
-
-    onLoadRequiredClass("onLoadRequiredClass"),
-    onLoadRequiredClassErr("onLoadRequiredClassErr"),
-    onIniResource("onIniResource"),
-
-    beforeIniComponents("beforeIniComponents"),
-    afterIniComponents("afterIniComponents"),
-    afterShow("afterShow"),
-    onModulePropChange("onModulePropChange"),
-    onReady("onReady"),
-    onRender("onRender"),
-    onDestroy("onDestroy"),
-    onContextmenu("onContextmenu"),
-
-
-
-    onDrop("onDrop"),
-    onGetDragData("onGetDragData"),
-    onStartDrag("onStartDrag"),
-    onDragEnter("onDragEnter"),
-
-
-    onDragLeave("onDragLeave"),
-    onDragStop("onDragStop"),
-    onDropTest("onDropTest"),
-
-    beforeDrop("beforeDrop"),
-    onDropMarkShow("onDropMarkShow"),
-    afterDrop("afterDrop"),
-
-
-
-    pan("pan"),
-    panstart("panstart"),
-    panmove("panmove"),
-    panend("panend"),
-    pancancel("pancancel"),
-    panleft("panleft"),
-    panright("panright"),
-    panup("panup"),
-    pandown("pandown"),
-
-    pinch("pinch"),
-    pinchstart("pinchstart"),
-    pinchmove("pinchmove"),
-    pinchend("pinchend"),
-    pinchcancel("pinchcancel"),
-    pinchin("pinchin"),
-    pinchout("pinchout"),
-
-    rotate("rotate"),
-    rotatestart("rotatestart"),
-    rotatemove("rotatemove"),
-    rotateend("rotateend"),
-    rotatecancel("rotatecancel"),
-
-    press("press"),
-    pressup("pressup"),
-
-    swipe("swipe"),
-    swipeleft("swipeleft"),
-    swiperight("swiperight"),
-    swipeup("swipeup"),
-    swipedown("swipedown"),
-
-    //GalleryEventEnum event
-
-    onShowOptions("onShowOptions"),
-    onClick("onClick"),
-    beforeClick("beforeClick"),
-    afterClick("afterClick"),
-    onLabelClick("onLabelClick"),
-    onLabelDblClick("onLabelDblClick"),
-    onLabelActive("onLabelActive"),
-    onCmd("onCmd"),
-    onDblclick("onDblclick"),
-    onItemSelected("onItemSelected"),
-    onFlagClick("onFlagClick");
-
+    // List组件事件
+    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
+    beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
+    afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
+    onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
+    onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
+    onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
+    onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
+    onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
+    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    
+    // Gallery特有事件
+    onFlagClick("onFlagClick", "标记点击", "profile", "item", "e", "src"),
+    
+    // 触摸事件
+    touchstart("touchstart", "触摸开始", "profile", "item", "e", "src"),
+    touchmove("touchmove", "触摸移动", "profile", "item", "e", "src"),
+    touchend("touchend", "触摸结束", "profile", "item", "e", "src"),
+    touchcancel("touchcancel", "触摸取消", "profile", "item", "e", "src"),
+    
+    // 滑动事件
+    swipe("swipe", "滑动", "profile", "item", "e", "src"),
+    swipeleft("swipeleft", "向左滑动", "profile", "item", "e", "src"),
+    swiperight("swiperight", "向右滑动", "profile", "item", "e", "src"),
+    swipeup("swipeup", "向上滑动", "profile", "item", "e", "src"),
+    swipedown("swipedown", "向下滑动", "profile", "item", "e", "src"),
+    
+    // 按压事件
+    press("press", "按压", "profile", "item", "e", "src"),
+    pressup("pressup", "按压释放", "profile", "item", "e", "src"),
+    
+    // 父类事件
+    beforeRender("beforeRender", "渲染前", "profile"),
+    onRender("onRender", "渲染时", "profile"),
+    onLayout("onLayout", "布局时", "profile"),
+    onResize("onResize", "调整大小", "profile", "width", "height"),
+    onMove("onMove", "移动时", "profile", "left", "top", "right", "bottom"),
+    onDock("onDock", "停靠时", "profile", "region"),
+    beforePropertyChanged("beforePropertyChanged", "属性变更前", "profile", "name", "value", "ovalue"),
+    afterPropertyChanged("afterPropertyChanged", "属性变更后", "profile", "name", "value", "ovalue"),
+    beforeAppend("beforeAppend", "添加前", "profile", "child"),
+    afterAppend("afterAppend", "添加后", "profile", "child"),
+    beforeRemove("beforeRemove", "移除前", "profile", "child", "subId", "bdestroy"),
+    afterRemove("afterRemove", "移除后", "profile", "child", "subId", "bdestroy"),
+    onDestroy("onDestroy", "销毁时", "profile"),
+    beforeDestroy("beforeDestroy", "销毁前", "profile"),
+    afterDestroy("afterDestroy", "销毁后", "profile"),
+    onShowTips("onShowTips", "显示提示", "profile", "node", "pos"),
+    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos");
 
     private String event;
+    private String[] params;
+    private String name;
 
-    GalleryEventEnum(String event) {
+    GalleryEventEnum(String event, String name, String... args) {
         this.event = event;
+        this.name = name;
+        this.params = args;
     }
 
     @Override
@@ -101,11 +73,12 @@ public enum GalleryEventEnum implements EventKey {
         return event;
     }
 
-
     @Override
-    public String toString() {
-        return event;
+    public String[] getParams() {
+        return params;
     }
 
-
+    public String getName() {
+        return name;
+    }
 }
