@@ -18,7 +18,8 @@ public enum FoldingListEventEnum implements EventKey {
     onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
     
     // FoldingList特有事件
-    onGetContent("onGetContent", "获取内容");
+    onGetContent("onGetContent", "获取内容"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src");
 
     private String event;
     private String[] params;

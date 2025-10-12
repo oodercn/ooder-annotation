@@ -33,7 +33,8 @@ public enum TitleBlockEventEnum implements EventKey {
     onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
     onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
     onMoreClick("onMoreClick", "更多点击", "profile", "item", "e", "src"),
-    onTitleClick("onTitleClick", "标题点击", "profile", "item", "e", "src");
+    onTitleClick("onTitleClick", "标题点击", "profile", "item", "e", "src"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src");
 
     private String event;
     private String[] params;

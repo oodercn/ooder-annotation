@@ -23,6 +23,7 @@ public enum InfoBlockEventEnum implements EventKey {
     
     // InfoBlock特有事件
     onFlagClick("onFlagClick", "标记点击", "profile", "item", "e", "src"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src"),
     
     // 触摸事件
     touchstart("touchstart", "触摸开始", "profile", "item", "e", "src"),

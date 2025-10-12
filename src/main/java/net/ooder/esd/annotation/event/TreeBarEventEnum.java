@@ -11,6 +11,7 @@ public enum TreeBarEventEnum implements EventKey {
     onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
     onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
     onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
+    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
@@ -19,7 +20,8 @@ public enum TreeBarEventEnum implements EventKey {
     beforeFold("beforeFold", "折叠前", "profile", "item"),
     beforeExpand("beforeExpand", "展开前", "profile", "item"),
     afterFold("afterFold", "折叠后", "profile", "item"),
-    afterExpand("afterExpand", "展开后", "profile", "item");
+    afterExpand("afterExpand", "展开后", "profile", "item"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src");
 
     private String event;
     private String[] params;

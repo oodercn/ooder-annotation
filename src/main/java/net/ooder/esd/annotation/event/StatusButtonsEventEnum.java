@@ -37,7 +37,8 @@ public enum StatusButtonsEventEnum implements EventKey {
     beforeDestroy("beforeDestroy", "销毁前", "profile"),
     afterDestroy("afterDestroy", "销毁后", "profile"),
     onShowTips("onShowTips", "显示提示", "profile", "node", "pos"),
-    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos");
+    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src");
 
     private String event;
     private String[] params;
