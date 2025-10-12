@@ -24,7 +24,17 @@ public enum ContentBlockEventEnum implements EventKey {
     // ContentBlock特有事件
     onMoreClick("onMoreClick", "更多点击", "profile", "item", "e", "src"),
     onTitleClick("onTitleClick", "标题点击", "profile", "item", "e", "src"),
+    // 拖拽事件
+    onDrop("onDrop", "拖放", "profile", "e", "src"),
+    onGetDragData("onGetDragData", "获取拖拽数据", "profile", "e", "src"),
     onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src"),
+    onDragEnter("onDragEnter", "拖拽进入", "profile", "e", "src"),
+    onDragLeave("onDragLeave", "拖拽离开", "profile", "e", "src"),
+    onDragStop("onDragStop", "拖拽停止", "profile", "e", "src"),
+    onDropTest("onDropTest", "拖放测试", "profile", "e", "src"),
+    beforeDrop("beforeDrop", "拖放前", "profile", "e", "src"),
+    onDropMarkShow("onDropMarkShow", "显示拖放标记", "profile", "e", "src"),
+    afterDrop("afterDrop", "拖放后", "profile", "e", "src"),
     touchstart("touchstart", "触摸开始", "profile", "item", "e", "src"),
     touchmove("touchmove", "触摸移动", "profile", "item", "e", "src"),
     touchend("touchend", "触摸结束", "profile", "item", "e", "src"),

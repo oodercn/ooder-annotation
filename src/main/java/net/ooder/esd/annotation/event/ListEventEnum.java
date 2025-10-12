@@ -17,7 +17,18 @@ public enum ListEventEnum implements EventKey {
     onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
 
     onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
-    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src");
+    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    // 拖拽事件
+    onDrop("onDrop", "拖放", "profile", "e", "src"),
+    onGetDragData("onGetDragData", "获取拖拽数据", "profile", "e", "src"),
+    onStartDrag("onStartDrag", "开始拖拽", "profile", "e", "src"),
+    onDragEnter("onDragEnter", "拖拽进入", "profile", "e", "src"),
+    onDragLeave("onDragLeave", "拖拽离开", "profile", "e", "src"),
+    onDragStop("onDragStop", "拖拽停止", "profile", "e", "src"),
+    onDropTest("onDropTest", "拖放测试", "profile", "e", "src"),
+    beforeDrop("beforeDrop", "拖放前", "profile", "e", "src"),
+    onDropMarkShow("onDropMarkShow", "显示拖放标记", "profile", "e", "src"),
+    afterDrop("afterDrop", "拖放后", "profile", "e", "src");
 
     private String event;
     private String[] params;

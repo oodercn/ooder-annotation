@@ -85,7 +85,7 @@ public enum GridEventEnum implements EventKey {
 
 
 
-        pan("pan", "平移", "profile", "item", "e", "src"),
+ pan("pan", "平移", "profile", "item", "e", "src"),
     panstart("panstart", "平移开始", "profile", "item", "e", "src"),
     panmove("panmove", "平移移动", "profile", "item", "e", "src"),
     panend("panend", "平移结束", "profile", "item", "e", "src"),
