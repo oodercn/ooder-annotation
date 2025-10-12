@@ -10,10 +10,10 @@ public enum FieldEventEnum implements EventKey {
     onCancel("onCancel", "取消时", "profile"),
 
     onClick("onClick", "点击时", "profile", "e", "src"),
-    onChange("onChange", "变更时", "profile", "oldValue", "newValue"),
+   // onChange("onChange", "变更时", "profile", "oldValue", "newValue"),
 
     //image
-    onDblclick("onDblclick", "双击时", "profile", "e", "src"),
+   // onDblclick("onDblclick", "双击时", "profile", "e", "src"),
     onError("onError", "错误时", "profile"),
     beforeLoad("beforeLoad", "加载前", "profile"),
     afterLoad("afterLoad", "加载后", "profile", "path", "width", "height"),
@@ -33,24 +33,24 @@ public enum FieldEventEnum implements EventKey {
     beforeKeypress("beforeKeypress", "按键按下前", "profile", "caret", "keyboard", "e", "src"),
     afterUnitUpdated("afterUnitUpdated", "单位更新后", "profile", "unit"),
 
-    onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
-    onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
+    //onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
+    //onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
     onGetExcelCellValue("onGetExcelCellValue", "获取Excel单元格值", "profile", "excelCellId", "dftValue"),
     beforeApplyExcelFormula("beforeApplyExcelFormula", "应用Excel公式前", "profile", "excelCellFormula", "value"),
 
 
     //list
-    onClick("onClick", "点击时", "profile", "item", "e", "src"),
+    onListClick("onClick", "点击时", "profile", "item", "e", "src"),
     onCmd("onCmd", "命令执行", "profile", "item", "cmdkey", "e", "src"),
     onChange("onChange", "变更时", "profile", "oldValue", "newValue", "force", "tag"),
-    onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
+   // onContextmenu("onContextmenu", "上下文菜单", "profile", "e", "src", "item", "pos"),
     beforeClick("beforeClick", "点击前", "profile", "item", "e", "src"),
     afterClick("afterClick", "点击后", "profile", "item", "e", "src"),
 
     onDblclick("onDblclick", "双击时", "profile", "item", "e", "src"),
     onShowOptions("onShowOptions", "显示选项", "profile", "item", "e", "src"),
     onItemSelected("onItemSelected", "项目选中", "profile", "item", "e", "src", "type"),
-    onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
+   // onLabelClick("onLabelClick", "标签点击", "profile", "e", "src"),
 
     onLabelDblClick("onLabelDblClick", "标签双击", "profile", "e", "src"),
     onLabelActive("onLabelActive", "标签激活", "profile", "e", "src"),
