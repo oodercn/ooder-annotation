@@ -12,11 +12,8 @@ import java.lang.annotation.Annotation;
 public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
     CLOSE("关闭页面", CustomTarget.DYNCURRMODULENAME.getName(), CustomModuleMethod.destroy, new String[]{}, "true", true),
 
-
     RELOAD("刷新页面",
             CustomTarget.DYNCURRMODULENAME.getName(), CustomModuleMethod.initData, new String[]{}, "true", true),
-
-
 
     EDITOR("编辑",
             CustomTarget.DYNEDITORMODULENAME.getName(), CustomModuleMethod.show2, new String[]{"{page.show2()}", CustomTarget.DYNEDITORMODULETARGET.getName(), null, null, null, null, "{args[1]}", "{page}", "{" + CustomTarget.EDITERMODULEDIO.getName() + "}"}, "true", true),
@@ -32,7 +29,6 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
 
     POP("弹出菜单",
             CustomTarget.DYNEDITORMODULENAME.getName(), CustomModuleMethod.show2, new String[]{"{page.show2()}", null, null, null, null, null, "{args[1]}", "{page}"}, "true", true),
-
 
     CLOSEPARENT("关闭父级页面", CustomTarget.DYNCURRMODULENAME.getName(), CustomModuleMethod.destroyParent, new String[]{}, "true", true),
 

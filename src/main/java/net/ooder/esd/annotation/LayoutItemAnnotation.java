@@ -47,8 +47,7 @@ public @interface LayoutItemAnnotation {
 
     String itemClass() default "";
 
-    public Class[] getBindClass() default {};
-
+    Class[] bindClass() default {};
 
     String url() default "";
 
