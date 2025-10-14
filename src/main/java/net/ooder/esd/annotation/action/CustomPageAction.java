@@ -62,12 +62,11 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
-    String className;
-    String childName;
-    String okFlag;
-    String koFlag;
+    private String className;
+    private String childName;
+    private String okFlag;
+    private String koFlag;
     private String script;
-
     private String[] params;
 
     CustomPageAction(String script, String[] params) {

@@ -27,11 +27,19 @@ public @interface CustomAction {
 
     String target() default "";
 
+    String className() default "";
+
+    String childName() default "";
+
     String method() default "";
 
     boolean _return() default true;
 
     String redirection() default "";
+
+    String okFlag() default "";
+
+    String koFlag() default "";
 
     CustomCondition[] conditions() default {};
 
