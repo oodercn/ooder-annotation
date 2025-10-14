@@ -64,6 +64,10 @@ public enum CustomGridAction implements ActionType, CustomAction, Enumstype {
     private String script;
 
     private String[] params;
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
     CustomGridAction(String script, String[] params) {
         this.script = script;
@@ -186,7 +190,25 @@ public enum CustomGridAction implements ActionType, CustomAction, Enumstype {
         this.args = args;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String desc() {

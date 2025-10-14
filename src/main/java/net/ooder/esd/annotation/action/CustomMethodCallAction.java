@@ -29,7 +29,10 @@ public enum CustomMethodCallAction implements ActionType, CustomAction, Enumstyp
     private CustomCondition[] conditions;
     private String[] args;
 
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
     private String script;
 
@@ -126,7 +129,25 @@ public enum CustomMethodCallAction implements ActionType, CustomAction, Enumstyp
         return actionType;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String desc() {

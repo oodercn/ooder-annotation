@@ -26,7 +26,10 @@ public enum CustomMQTTAction implements ActionType, CustomAction, Enumstype {
     private String redirection;
     private CustomCondition[] conditions;
     private String[] args;
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
     private String script;
 
     private String[] params;
@@ -84,7 +87,25 @@ public enum CustomMQTTAction implements ActionType, CustomAction, Enumstype {
     public String getDesc() {
         return desc;
     }
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String getTarget() {

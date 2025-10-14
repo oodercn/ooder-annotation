@@ -36,7 +36,10 @@ public enum CustomGalleryAction implements ActionType, CustomAction, Enumstype {
     private String redirection = "other:callback:call";
     private CustomCondition[] conditions;
     private String[] args;
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
     private String script;
 
@@ -193,6 +196,8 @@ public enum CustomGalleryAction implements ActionType, CustomAction, Enumstype {
         return target;
     }
 
+
+
     @Override
     public String method() {
         return method.getType();
@@ -206,6 +211,26 @@ public enum CustomGalleryAction implements ActionType, CustomAction, Enumstype {
     @Override
     public String redirection() {
         return redirection;
+    }
+
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
+
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
     }
 
     @Override

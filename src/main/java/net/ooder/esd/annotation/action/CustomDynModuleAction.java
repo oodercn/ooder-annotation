@@ -31,7 +31,10 @@ public enum CustomDynModuleAction implements ActionType, CustomAction, Enumstype
     private CustomCondition[] conditions;
     private String[] args;
 
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
     private String script;
 
     private String[] params;
@@ -131,7 +134,25 @@ public enum CustomDynModuleAction implements ActionType, CustomAction, Enumstype
         this.desc = desc;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
     public void setExpression(String expression) {
         this.expression = expression;
     }

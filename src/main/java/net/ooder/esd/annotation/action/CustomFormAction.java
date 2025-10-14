@@ -41,6 +41,10 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
     private String script;
 
     private String[] params;
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
     CustomFormAction(String script, String[] params) {
         this.script = script;
@@ -170,7 +174,25 @@ public enum CustomFormAction implements ActionType, CustomAction, Enumstype {
         this.args = args;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
     @Override
     public String desc() {
         return desc;

@@ -1,53 +1,71 @@
 package net.ooder.esd.annotation.action;
 
 import com.alibaba.fastjson.annotation.JSONField;
-
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.action.args.ShowModuleArgs;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
+import net.ooder.esd.annotation.event.TreeEvent;
 
 import java.lang.annotation.Annotation;
 
 public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype {
-    tabShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "{args[1].id}", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    show2("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    IndexShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true),
-    GalleryShow("切换窗口", new String[]{"{ood.showModule2()}", null, null, "{args[1].euClassName}", "maincontent", "main", "{args[1].tagVar}", "{page.getData()}", null, "{page}"}, "other:callback:call", "true", true);
+    tabShow("{args[1].euClassName}", "maincontent", "{args[1].id}"),
+    show2("{args[1].euClassName}", "maincontent", "main"),
+    IndexShow("{args[1].euClassName}", "maincontent", "main"),
+    GalleryShow("{args[1].euClassName}", "maincontent", "main"),
+    none("无");
 
-
-    private String desc;
+    private String desc = "切换窗口";
     @JSONField(name = "type")
     private ActionTypeEnum actionType = ActionTypeEnum.other;
     private String expression;
     private String target = "url";
+
     private CustomGlobalMethod method = CustomGlobalMethod.showModule2;
     @JSONField(name = "return")
     private Boolean _return;
     private String redirection = "other:callback:call";
     private CustomCondition[] conditions;
     private String[] args;
-
     private String script;
-
     private String[] params;
 
-    CustomLoadClassAction(String script, String[] params) {
-        this.script=script;
-        this.params=params;
-    }
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
-    CustomLoadClassAction(String desc, String[] args, String redirection, String expression, boolean _return) {
+    CustomLoadClassAction(String desc) {
         this.desc = desc;
-        this.redirection = redirection;
-        this.expression = expression;
-        this.target = target;
-        this.method = method;
-        this.args = args;
-        this._return = _return;
-
     }
 
+    CustomLoadClassAction(TreeEvent treeEvent) {
+        reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
+    }
+
+    CustomLoadClassAction(String className, String targetFrame, String childName) {
+        reSet(className, targetFrame, childName);
+    }
+
+    public void reSet(TreeEvent treeEvent) {
+        reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
+    }
+
+    public void reSet(String className, String targetFrame, String childName) {
+        this.className = className;
+        this.childName = childName;
+        ShowModuleArgs showModuleArgs = new ShowModuleArgs(className, targetFrame, childName);
+        this.args = showModuleArgs.toArr().toArray(new String[]{});
+    }
+
+    public void reSet(String targetFrame, String childName) {
+        this.childName = childName;
+        ShowModuleArgs showModuleArgs = new ShowModuleArgs(className, targetFrame, childName);
+        this.args = showModuleArgs.toArr().toArray(new String[]{});
+    }
 
     @Override
     public String script() {
@@ -136,6 +154,25 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
         return desc;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
+
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String getTarget() {
@@ -217,5 +254,6 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
     public Class<? extends Annotation> annotationType() {
         return CustomAction.class;
     }
+
 
 }

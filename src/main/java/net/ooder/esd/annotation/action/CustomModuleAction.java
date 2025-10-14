@@ -28,6 +28,10 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
     private String redirection;
     private CustomCondition[] conditions;
     private String[] args;
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
 
 
@@ -140,6 +144,25 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
     }
 
     @Override
+    public String okFlag() {
+        return okFlag;
+    }
+
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
+    @Override
     public String method() {
         return method.getType();
     }
@@ -153,6 +176,8 @@ public enum CustomModuleAction implements ActionType, CustomAction, Enumstype {
     public String redirection() {
         return redirection;
     }
+
+
 
     @Override
     public CustomCondition[] conditions() {

@@ -5,11 +5,13 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
 
 import java.lang.annotation.Annotation;
 
 public enum CustomTreeAction implements ActionType, CustomAction, Enumstype {
+
 
     RELOAD("重新装载", "true", true),
 
@@ -48,15 +50,19 @@ public enum CustomTreeAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
 
     private String script;
 
     private String[] params;
 
+
     CustomTreeAction(String script, String[] params) {
-        this.script=script;
-        this.params=params;
+        this.script = script;
+        this.params = params;
     }
 
     CustomTreeAction(String desc, String expression, boolean _return) {
@@ -191,6 +197,25 @@ public enum CustomTreeAction implements ActionType, CustomAction, Enumstype {
         this.args = args;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
+
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String desc() {

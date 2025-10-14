@@ -4,12 +4,14 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
 
 import java.lang.annotation.Annotation;
 
 
 public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
+
     CLOSE("关闭页面", CustomTarget.DYNCURRMODULENAME.getName(), CustomModuleMethod.destroy, new String[]{}, "true", true),
 
     RELOAD("刷新页面",
@@ -60,14 +62,17 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
     private String script;
 
     private String[] params;
 
     CustomPageAction(String script, String[] params) {
-        this.script=script;
-        this.params=params;
+        this.script = script;
+        this.params = params;
     }
 
     CustomPageAction(String desc, String expression, boolean _return) {
@@ -86,6 +91,25 @@ public enum CustomPageAction implements ActionType, CustomAction, Enumstype {
         this._return = _return;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
+
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
 
     @Override
     public String script() {

@@ -33,7 +33,10 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     private Boolean _return =  true;
 
     private CustomCondition[] conditions;
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
     private String[] args;
 
     private String script;
@@ -159,7 +162,25 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     public CustomCondition[] conditions() {
         return new CustomCondition[0];
     }
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
     @Override
     public String[] args() {
         return args;

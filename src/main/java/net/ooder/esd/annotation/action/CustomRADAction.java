@@ -25,7 +25,10 @@ public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
     private CustomCondition[] conditions;
     private String[] args;
 
-
+    String className;
+    String childName;
+    String okFlag;
+    String koFlag;
     private String script;
 
     private String[] params;
@@ -115,7 +118,25 @@ public enum CustomRADAction implements ActionType, CustomAction, Enumstype {
         return redirection;
     }
 
+    @Override
+    public String okFlag() {
+        return okFlag;
+    }
 
+    @Override
+    public String koFlag() {
+        return koFlag;
+    }
+
+    @Override
+    public String className() {
+        return className;
+    }
+
+    @Override
+    public String childName() {
+        return childName;
+    }
     @Override
     public ActionTypeEnum getActionType() {
         return actionType;
