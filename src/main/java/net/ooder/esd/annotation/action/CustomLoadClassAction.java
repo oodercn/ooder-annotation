@@ -26,7 +26,7 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
 
     private CustomGlobalMethod method = CustomGlobalMethod.showModule2;
     @JSONField(name = "return")
-    private Boolean _return;
+    private boolean _return;
     private String redirection = "other:callback:call";
     private CustomCondition[] conditions;
     private String[] args;

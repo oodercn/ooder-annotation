@@ -5,12 +5,16 @@ import java.util.List;
 
 public class ShowModuleArgs {
 
-    String methodName = "{page.showModule2()}";
+    String methodName = "{ood.showModule2()}";
     String params = "{args[1].tagVar}";
     String data = "{page.getData()}";
     String euClassName;
     String targetFrame;
     String childName;
+
+    public ShowModuleArgs() {
+
+    }
 
     public ShowModuleArgs(String euClassName, String targetFrame, String childName) {
         this.euClassName = euClassName;
@@ -18,17 +22,18 @@ public class ShowModuleArgs {
         this.childName = childName;
     }
 
-   public List<Object> toArr() {
-        List<Object> args = new ArrayList<>();
+    public List<String> toArr() {
+        List<String> args = new ArrayList<>();
         args.add(methodName);
         args.add(null);
         args.add(null);
+        args.add(euClassName);
         args.add(targetFrame);
         args.add(childName);
         args.add(params);
         args.add(data);
         args.add("{page}");
-        args.add(true);
+        args.add("{true}");
         return args;
     }
 
