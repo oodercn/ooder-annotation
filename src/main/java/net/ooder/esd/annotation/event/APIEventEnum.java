@@ -5,21 +5,21 @@ import net.ooder.common.EventKey;
 
 public enum APIEventEnum implements EventKey, IconEnumstype {
 
-    beforeData("beforeData", "开始准备数据", "fa-solid fa-database"),
-    onData("onData", "数据准备完成", "fa-solid fa-check-circle"),
-    beforeInvoke("beforeInvoke", "开始调用", "fa-solid fa-play"),
-    onError("onError", "调用失败", "fa-solid fa-times-circle"),
-    afterInvoke("afterInvoke", "调用后", "fa-solid fa-backward"),
-    onExecuteSuccess("onExecuteSuccess", "执行成功", "fa-solid fa-check"),
-    onExecuteError("onExecuteError", "执行失败", "fa-solid fa-exclamation-triangle"),
-    callback("callback", "回调函数", "fa-solid fa-code"),
+    beforeData("beforeData", "开始准备数据", "ri-database-line"),
+    onData("onData", "数据准备完成", "ri-check-circle-line"),
+    beforeInvoke("beforeInvoke", "开始调用", "ri-play-line"),
+    onError("onError", "调用失败", "ri-times-circle-line"),
+    afterInvoke("afterInvoke", "调用后", "ri-backward-line"),
+    onExecuteSuccess("onExecuteSuccess", "执行成功", "ri-check-line"),
+    onExecuteError("onExecuteError", "执行失败", "ri-exclamation-triangle-line"),
+    callback("callback", "回调函数", "ri-code-line"),
     
     // 父类事件
-    beforePropertyChanged("beforePropertyChanged", "属性变更前", "fa-solid fa-cog", "profile", "name", "value", "ovalue"),
-    afterPropertyChanged("afterPropertyChanged", "属性变更后", "fa-solid fa-cog", "profile", "name", "value", "ovalue"),
-    onDestroy("onDestroy", "销毁时", "fa-solid fa-trash", "profile"),
-    beforeDestroy("beforeDestroy", "销毁前", "fa-solid fa-trash", "profile"),
-    afterDestroy("afterDestroy", "销毁后", "fa-solid fa-trash", "profile");
+    beforePropertyChanged("beforePropertyChanged", "属性变更前", "ri-cog-line", "profile", "name", "value", "ovalue"),
+    afterPropertyChanged("afterPropertyChanged", "属性变更后", "ri-cog-line", "profile", "name", "value", "ovalue"),
+    onDestroy("onDestroy", "销毁时", "ri-trash-line", "profile"),
+    beforeDestroy("beforeDestroy", "销毁前", "ri-trash-line", "profile"),
+    afterDestroy("afterDestroy", "销毁后", "ri-trash-line", "profile");
 
     private String event;
     private String name;

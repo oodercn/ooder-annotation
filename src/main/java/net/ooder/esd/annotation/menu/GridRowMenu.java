@@ -10,17 +10,17 @@ import java.lang.annotation.Annotation;
 
 public enum GridRowMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "fa-solid fa-times", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
+    DELETE("删除", "ri-times-line", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
 
-    SORTDOWN("向上", "fa-solid fa-arrow-up", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SORTUP}),
+    SORTDOWN("向上", "ri-arrow-up-line", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SORTUP}),
 
-    SORTUP("向下", "fa-solid fa-arrow-down", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SORTDOWN}),
+    SORTUP("向下", "ri-arrow-down-line", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SORTDOWN}),
 
-    EDITOR("编辑", "fa-solid fa-edit", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.EDITOR}),
+    EDITOR("编辑", "ri-edit-line", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.EDITOR}),
 
-    SAVEALLROW("保存全部", "fa-solid fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEALLROW}),
+    SAVEALLROW("保存全部", "ri-save-line", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEALLROW}),
 
-    SAVEROW("保存", "fa-solid fa-save", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEROW});
+    SAVEROW("保存", "ri-save-line", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.SAVEROW});
 
     private TagCmdsAlign tagCmdsAlign;
 

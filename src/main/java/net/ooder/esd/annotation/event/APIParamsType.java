@@ -5,9 +5,9 @@ import net.ooder.annotation.IconEnumstype;
 
 public enum APIParamsType implements IconEnumstype {
 
-    RequestData("请求参数", "fa-solid fa-paper-plane"),
-    ResponseData("数据绑定", "fa-solid fa-plug"),
-    ResponseCall("回调函数", "fa-solid fa-code");
+    RequestData("请求参数", "ri-paper-plane-line"),
+    ResponseData("数据绑定", "ri-plug-line"),
+    ResponseCall("回调函数", "ri-code-line");
 
     private final String imageClass;
 

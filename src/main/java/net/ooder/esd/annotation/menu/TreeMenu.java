@@ -1,9 +1,7 @@
 package net.ooder.esd.annotation.menu;
 
-
 import net.ooder.annotation.IconEnumstype;
-import net.ooder.esd.annotation.CustomAction;
-import net.ooder.esd.annotation.CustomMenu;
+import net.ooder.esd.annotation.*;
 import net.ooder.esd.annotation.action.CustomPageAction;
 import net.ooder.esd.annotation.action.CustomTreeAction;
 import net.ooder.esd.annotation.ui.*;
@@ -12,23 +10,11 @@ import java.lang.annotation.Annotation;
 
 public enum TreeMenu implements CustomMenu, IconEnumstype {
 
-    SAVEROW("保存", CustomImageType.save.getImageClass(), "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
-
-    SORTDOWN("向下", CustomImageType.down.getImageClass(), "true", IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
-
-    SORTUP("向上", CustomImageType.up.getImageClass(), "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
-
-    RESET("重置", CustomImageType.resetpath.getImageClass(), "true", IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.RESET}),
-
-    SAVE("确定", CustomImageType.save.getImageClass(), "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVE}),
-
-    DELETE("删除", CustomImageType.delete.getImageClass(), "true", IconColorEnum.PINK, new CustomAction[]{CustomTreeAction.DELETE, CustomPageAction.RELOAD}),
-
     ADD("添加", CustomImageType.add.getImageClass(), "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
     LOADCHILD("刷新", CustomImageType.refresh.getImageClass(), "true", IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.RELOADCHILD}),
 
-    CLOSE("关闭", "fa-solid fa-times", "true", IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
+    CLOSE("关闭", "ri-times-line", "true", IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
 
     RELOAD("刷新", CustomImageType.refresh.getImageClass(), "true", IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.RELOAD});
 

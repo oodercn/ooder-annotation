@@ -9,14 +9,14 @@ import java.lang.annotation.Annotation;
 
 public enum TreeRowMenu implements CustomMenu, IconEnumstype {
     // 将所有"fa"前缀改为"fas"，并更新特定图标名称
-    MSG("消息", "fa-solid fa-volume-high", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    EDITOR("编辑", "fa-solid fa-code", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
-    CONFIG("配置", "fa-solid fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
-    SORTDOWN("向上", "fa-solid fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
-    SORTUP("向下", "fa-solid fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
-    DELETE("删除", "fa-solid fa-lg fa-times", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
-    SAVEROW("保存", "fa-solid fa-floppy-disk", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
-    LOADMENU("菜单", "fa-solid fa-bars", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
+    MSG("消息", "ri-volume-high-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    EDITOR("编辑", "ri-code-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
+    CONFIG("配置", "ri-cog-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    SORTDOWN("向上", "ri-arrow-down-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
+    SORTUP("向下", "ri-arrow-up-line", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
+    DELETE("删除", "ri-times-line", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
+    SAVEROW("保存", "ri-floppy-disk-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
+    LOADMENU("菜单", "ri-bars-line", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
 
 
     private String tag;

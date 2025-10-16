@@ -11,12 +11,12 @@ import java.lang.annotation.Annotation;
 
 public enum CardMenu implements CustomMenu, IconEnumstype {
 
-    OUT("消息", "fas fa-comment-alt", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    END("结束", "fas fa-cog", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
-    RELOAD("刷新", "fas fa-sync-alt", "true", "left", ComboInputType.text, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD}),
-    LAST("上一步", "fas fa-arrow-up", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
-    NEXT("下一步", "fas fa-arrow-down", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
-    SAVE("暂存", "fas fa-save", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW});
+    OUT("消息", "ri-comment-alt-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    END("结束", "ri-cog-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    RELOAD("刷新", "ri-sync-alt-line", "true", "left", ComboInputType.text, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD}),
+    LAST("上一步", "ri-arrow-up-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
+    NEXT("下一步", "ri-arrow-down-line", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
+    SAVE("暂存", "ri-save-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW});
 
     private String tag;
 

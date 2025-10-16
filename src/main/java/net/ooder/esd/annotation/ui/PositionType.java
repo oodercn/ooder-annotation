@@ -3,7 +3,7 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum PositionType implements IconEnumstype {
-    inner("内部渲染", "fa-solid fa-box"), module("模块", "fa-solid fa-cubes"), top("最上层", "fa-solid fa-layer-group");
+    inner("内部渲染", "ri-box-line"), module("模块", "ri-crop-line"), top("最上层", "ri-layout-row-line");
 
 
     private final String name;

@@ -12,17 +12,17 @@ import java.lang.annotation.Annotation;
 public enum GridMenu implements CustomMenu, IconEnumstype {
 
 
-    DELETE("删除", "delPath", "fa-solid fa-times", "true", IconColorEnum.PINK, new CustomAction[]{CustomGridAction.DELETE}),
+    DELETE("删除", "delPath", "ri-times-line", "true", IconColorEnum.PINK, new CustomAction[]{CustomGridAction.DELETE}),
 
-    ADD("添加", "addPath", "fa-solid fa-plus", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    ADD("添加", "addPath", "ri-plus-line", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
-    SUBMITFORM("确定", "saveUrl", "fa-solid fa-check", "true", IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SAVEALLROW}),
+    SUBMITFORM("确定", "saveUrl", "ri-check-line", "true", IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SAVEALLROW}),
 
-    SAVE("保存", "saveUrl", "fa-solid fa-save", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    SAVE("保存", "saveUrl", "ri-save-line", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
-    SEARCH("查询", "Search", "fa-solid fa-search", "true", IconColorEnum.LIGHTPURPLE, new CustomAction[]{CustomGridAction.SEARCH}),
+    SEARCH("查询", "Search", "ri-search-line", "true", IconColorEnum.LIGHTPURPLE, new CustomAction[]{CustomGridAction.SEARCH}),
 
-    RELOAD("刷新", "dataPath", "fa-solid fa-sync-alt", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-sync-alt-line", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;

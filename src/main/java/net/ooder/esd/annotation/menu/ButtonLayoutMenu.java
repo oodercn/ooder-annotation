@@ -12,13 +12,13 @@ import java.lang.annotation.Annotation;
 
 public enum ButtonLayoutMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "delPath", "fa-solid fa-times", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    DELETE("删除", "delPath", "ri-times-line", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
 
-    ADD("添加", "addPath", "fa-solid fa-plus", "true",IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    ADD("添加", "addPath", "ri-plus-line", "true",IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
-    SORT("排序", "sortUrl", "fa-solid fa-sort", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    SORT("排序", "sortUrl", "ri-sort-line", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
-    RELOAD("刷新", "dataPath", "fa-solid fa-sync-alt", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-sync-alt-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
