@@ -11,7 +11,10 @@ public enum RouteToType implements IconEnumstype {
     RouteBack("退回", "fa-solid fa-arrow-rotate-left", "$currActivityInst.isCanRouteBack()"),
 
     TackBack("收回", "bpmfont bpmshouhui", "$currActivityInst.isCanTakeBack()"),
-    
+
+
+    SignReceive("签收", "bpmfont bpmziyuan1", "$currActivityInst.isCanSignReceive()"),
+
     EndRead("阅毕", "fa-solid fa-book-open", "$currActivityInst.isCanEndRead()"),
     EndTask("结束办理", "fa-solid fa-list-check", "$currActivityInst.isCanTakeBack()"),
     RouteTo("发送", "fa-solid fa-paper-plane", "$currActivityInst.activityDef.split.type!='AND'"),
