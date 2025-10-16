@@ -1,14 +1,14 @@
 package net.ooder.annotation;
 
 public enum RefType implements IconEnumstype {
-    NONE("无", "fa-solid fa-ban"),
-    REF("引用", "fa-solid fa-link"),
-    O2M("一对多", "fa-solid fa-arrow-right"),
-    M2O("多对一", "fa-solid fa-arrow-left"),
-    F2F("自循环", "fa-solid fa-sync-alt"),
-    O2O("一对一", "fa-solid fa-exchange-alt"),
-    FIND("查找", "fa-solid fa-search"),
-    M2M("多对多", "fa-solid fa-exchange-alt");
+    NONE("无", "ri-forbid-line"),
+    REF("引用", "ri-link"),
+    O2M("一对多", "ri-arrow-right-line"),
+    M2O("多对一", "ri-arrow-left-line"),
+    F2F("自循环", "ri-refresh-line"),
+    O2O("一对一", "ri-swap-line"),
+    FIND("查找", "ri-search-line"),
+    M2M("多对多", "ri-swap-line");
 
     private final String imageClass;
     private final String name;

@@ -3,9 +3,9 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum AppendType implements IconEnumstype {
-    append("内部渲染", "fa-solid fa-box"), 
-    ref("引用MODULE", "fa-solid fa-cubes"), 
-    runtime("运行期", "fa-solid fa-magic");
+    append("内部渲染", "ri-box-line"), 
+    ref("引用MODULE", "ri-stack-line"), 
+    runtime("运行期", "ri-magic-line");
     
     private final String name;
 
