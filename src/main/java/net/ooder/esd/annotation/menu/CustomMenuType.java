@@ -10,21 +10,21 @@ import java.util.List;
 public enum CustomMenuType implements Enumstype {
 
 
-    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "fa fa-toolbox"),
-    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "fa fa-toolbox"),
-    BOTTOMBAR("下标栏", SysMenuType.CustomBottomBar, "fa fa-square"),
-    MENUBAR("菜单栏", SysMenuType.CustomMenusBar, "fa fa-menu"),
-    ROWCMD("行控制按钮", SysMenuType.CustomToolsBar, "fa fa-square"),
-    CONTEXTMENU("右键菜单", SysMenuType.CustomContextBar, "fa fa-menu"),
-    SUB("子菜单", SysMenuType.CustomSubBar, "fa fa-menu"),
-    BPM("流程控制栏", SysMenuType.RouteInstToolBar, "fa fa-sitemap"),
-    BPMBOTTOM("流程控制栏", SysMenuType.RouteInstBottomBar, "fa fa-sitemap"),
+    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "ri-toolbox-line"),
+    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "ri-toolbox-line"),
+    BOTTOMBAR("下标栏", SysMenuType.CustomBottomBar, "ri-checkbox-blank-line"),
+    MENUBAR("菜单栏", SysMenuType.CustomMenusBar, "ri-menu-line"),
+    ROWCMD("行控制按钮", SysMenuType.CustomToolsBar, "ri-checkbox-blank-line"),
+    CONTEXTMENU("右键菜单", SysMenuType.CustomContextBar, "ri-menu-line"),
+    SUB("子菜单", SysMenuType.CustomSubBar, "ri-menu-line"),
+    BPM("流程控制栏", SysMenuType.RouteInstToolBar, "ri-node-tree"),
+    BPMBOTTOM("流程控制栏", SysMenuType.RouteInstBottomBar, "ri-node-tree"),
     //  java("JAVA调试", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
-    COMPONENT("RAD通用组件", SysMenuType.CustomToolsBar, "fa fa-menu"),
-    PLUGINS("RAD顶部插件", SysMenuType.RADTopMenu, "fa fa-menu"),
+    COMPONENT("RAD通用组件", SysMenuType.CustomToolsBar, "ri-menu-line"),
+    PLUGINS("RAD顶部插件", SysMenuType.RADTopMenu, "ri-menu-line"),
     //   page("RAD页面插件", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
     //   RADDebug("RAD主菜单", SysMenuType.RADTopMenu, "spafont spa-icon-tools"),
-    TOP("RAD工具栏菜单", SysMenuType.CustomToolsBar, "fa fa-menu");
+    TOP("RAD工具栏菜单", SysMenuType.CustomToolsBar, "ri-menu-line");
 
 
     private String name;

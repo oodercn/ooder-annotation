@@ -3,10 +3,10 @@ package net.ooder.common;
 import net.ooder.annotation.IconEnumstype;
 
 public enum EngineType implements IconEnumstype {
-    CUSTOM("fa-solid fa-cogs", "通用操作"),
-    ESD("fa-solid fa-upload", "内部应用"),
-    IOT("fa-solid fa-industry", "IOT引擎"),
-    ESB("fa-solid fa-server", "服务调度引擎");
+    CUSTOM("ri-settings-3-line", "通用操作"),
+    ESD("ri-upload-line", "内部应用"),
+    IOT("ri-industry-line", "IOT引擎"),
+    ESB("ri-server-line", "服务调度引擎");
     
     private String type;
 

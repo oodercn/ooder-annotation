@@ -3,8 +3,8 @@ package net.ooder.annotation;
 
 public enum RoleOtherType implements IconEnumstype {
 
-    Person("用户角色", "fa-solid fa-user-tag"),
-    Org("部门角色", "fa-solid fa-building");
+    Person("用户角色", "ri-user-shared-line"),
+    Org("部门角色", "ri-building-line");
     private String type;
 
     private String name;

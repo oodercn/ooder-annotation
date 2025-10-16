@@ -6,13 +6,13 @@ import java.util.Set;
 
 public enum RoleType implements IconEnumstype {
 
-    Duty("职位", "fa-solid fa-briefcase", RoleOtherType.Person),
-    Role("角色", "fa-solid fa-user-shield", RoleOtherType.Person),
-    Position("岗位", "fa-solid fa-layer-group", RoleOtherType.Person),
-    PersonLevel("职级", "fa-solid fa-sitemap", RoleOtherType.Person),
-    Group("用户组", "fa-solid fa-users", RoleOtherType.Person),
-    OrgLevel("部门级别", "fa-solid fa-sitemap", RoleOtherType.Org),
-    OrgRole("部门角色", "fa-solid fa-building-user", RoleOtherType.Org);;
+    Duty("职位", "ri-briefcase-line", RoleOtherType.Person),
+    Role("角色", "ri-shield-user-line", RoleOtherType.Person),
+    Position("岗位", "ri-stack-line", RoleOtherType.Person),
+    PersonLevel("职级", "ri-node-tree", RoleOtherType.Person),
+    Group("用户组", "ri-group-line", RoleOtherType.Person),
+    OrgLevel("部门级别", "ri-node-tree", RoleOtherType.Org),
+    OrgRole("部门角色", "ri-building-user-line", RoleOtherType.Org);;
     private String type;
 
     private String name;

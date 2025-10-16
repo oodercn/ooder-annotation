@@ -3,11 +3,11 @@ package net.ooder.annotation;
 
 public enum PersonRoleType implements IconEnumstype {
 
-    Duty("职位", "fa-solid fa-briefcase", RoleOtherType.Person),
-    Role("角色", "fa-solid fa-user-shield", RoleOtherType.Person),
-    Position("岗位", "fa-solid fa-layer-group", RoleOtherType.Person),
-    PersonLevel("职级", "fa-solid fa-sitemap", RoleOtherType.Person),
-    Group("用户组", "fa-solid fa-users", RoleOtherType.Person);
+    Duty("职位", "ri-briefcase-line", RoleOtherType.Person),
+    Role("角色", "ri-shield-user-line", RoleOtherType.Person),
+    Position("岗位", "ri-stack-line", RoleOtherType.Person),
+    PersonLevel("职级", "ri-node-tree", RoleOtherType.Person),
+    Group("用户组", "ri-group-line", RoleOtherType.Person);
     private String type;
 
     private String name;

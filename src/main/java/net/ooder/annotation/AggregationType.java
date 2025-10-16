@@ -1,15 +1,15 @@
 package net.ooder.annotation;
 
 public enum AggregationType implements IconEnumstype {
-    API("通用API", "fas fa-plug"),
-    MENU("菜单", "fas fa-bars"),
-    VIEW("视图", "fas fa-eye"),
-    NAVIGATION("导航", "fas fa-compass"),
-    BAR("BAR组件", "fas fa-toolbox"),
-    MODULE("模块", "fas fa-cube"),
-    REPOSITORY("仓储", "fas fa-database"),
-    DOMAIN("领域", "fas fa-layer-group"),
-    ENTITY("实体", "fas fa-cubes");
+    API("通用API", "ri-plug-line"),
+    MENU("菜单", "ri-menu-line"),
+    VIEW("视图", "ri-eye-line"),
+    NAVIGATION("导航", "ri-compass-line"),
+    BAR("BAR组件", "ri-toolbox-line"),
+    MODULE("模块", "ri-cube-line"),
+    REPOSITORY("仓储", "ri-database-2-line"),
+    DOMAIN("领域", "ri-stack-line"),
+    ENTITY("实体", "ri-cubes-line");
 
     private final String name;
     private final String imageClass;

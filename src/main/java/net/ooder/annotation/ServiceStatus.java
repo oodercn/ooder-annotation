@@ -1,9 +1,9 @@
 package net.ooder.annotation;
 
 public enum ServiceStatus implements IconEnumstype {
-    unsupported("不支持", "fa-solid fa-sync-alt"),
-    unavailable("不可用", "fa-solid fa-trash-alt"),
-    normal("正常", "fa-solid fa-check");
+    unsupported("不支持", "ri-refresh-line"),
+    unavailable("不可用", "ri-delete-bin-line"),
+    normal("正常", "ri-check-line");
 
     private String type;
 

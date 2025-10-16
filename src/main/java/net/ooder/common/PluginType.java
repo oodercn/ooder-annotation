@@ -5,13 +5,13 @@ import net.ooder.annotation.IconEnumstype;
 
 public enum PluginType implements IconEnumstype {
 
-    Process("流程插件", "fa-solid fa-sitemap"),
+    Process("流程插件", "ri-node-tree"),
 
-    Activity("活动插件", "fa-solid fa-tasks"),
+    Activity("活动插件", "ri-task-line"),
 
-    Route("路由插件", "fa-solid fa-random"),
+    Route("路由插件", "ri-shuffle-line"),
 
-    Classification("工程自定义插件", "fa-solid fa-puzzle-piece");
+    Classification("工程自定义插件", "ri-puzzle-line");
 
     private String type;
 

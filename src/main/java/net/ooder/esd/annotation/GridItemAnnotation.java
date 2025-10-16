@@ -29,7 +29,7 @@ public @interface GridItemAnnotation {
     @NotNull
     boolean autoReload() default true;
 
-    String imageClass() default "fa-solid fa-tree";
+    String imageClass() default "ri-tree-line";
 
     String valueSeparator() default ";";
 

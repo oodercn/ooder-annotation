@@ -3,9 +3,9 @@ package net.ooder.esd.annotation.action;
 import net.ooder.annotation.IconEnumstype;
 
 public enum FormServiceType implements IconEnumstype {
-    CustomService("绑定服务", "CustomService", "fa-solid fa-cogs"),
-    CustomMenuService("绑定菜单", "CustomMenuService", "fa-solid fa-th-list"),
-    CustomBottombarService("底部工具栏", "CustomBottombarService", "fa-solid fa-toolbox");
+    CustomService("绑定服务", "CustomService", "ri-settings-3-line"),
+    CustomMenuService("绑定菜单", "CustomMenuService", "ri-menu-line"),
+    CustomBottombarService("底部工具栏", "CustomBottombarService", "ri-toolbox-line");
 
     private final String imageClass;
     private String name;
