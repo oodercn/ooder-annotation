@@ -2,14 +2,9 @@ package net.ooder.esd.annotation.ui;
 
 import net.ooder.annotation.Enumstype;
 import net.ooder.annotation.IconEnumstype;
-import net.ooder.esd.annotation.action.CustomButtonLayoutEvent;
-import net.ooder.esd.annotation.action.CustomContentBlockEvent;
-import net.ooder.esd.annotation.action.CustomFieldEvent;
-import net.ooder.esd.annotation.action.CustomFormEvent;
-import net.ooder.esd.annotation.action.CustomGalleryEvent;
-import net.ooder.esd.annotation.action.CustomGridEvent;
-import net.ooder.esd.annotation.action.CustomTabsEvent;
-import net.ooder.esd.annotation.action.CustomTreeEvent;
+import net.ooder.esd.annotation.ViewGroupType;
+import net.ooder.esd.annotation.ViewType;
+import net.ooder.esd.annotation.event.*;
 import net.ooder.esd.annotation.menu.ButtonLayoutMenu;
 import net.ooder.esd.annotation.menu.ContentBlockMenu;
 import net.ooder.esd.annotation.menu.CustomFormMenu;
