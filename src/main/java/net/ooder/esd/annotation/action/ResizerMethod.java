@@ -3,7 +3,6 @@ package net.ooder.esd.annotation.action;
 import net.ooder.annotation.Enumstype;
 
 public enum ResizerMethod implements Enumstype {
-    _attachTo("attachTo", "附加到目标", "target", "parent"),
     show("show", "显示"),
     hide("hide", "隐藏");
 
