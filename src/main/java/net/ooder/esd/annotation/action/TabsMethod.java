@@ -75,9 +75,6 @@ public enum TabsMethod implements Enumstype {
     getSubNodeByItemId("getSubNodeByItemId", "根据项目ID获取子节点", "key", "itemId", "tag"),
     
     // 从ood.absValue继承的方法
-    _getCtrlValue("_getCtrlValue", "获取控件值"),
-    _setCtrlValue("_setCtrlValue", "设置控件值", "value"),
-    _setDirtyMark("_setDirtyMark", "设置脏标记", "key"),
     getCaptionValue("getCaptionValue", "获取标题值", "key"),
     getUICationValue("getUICationValue", "获取UI标题值", "returnArr"),
     

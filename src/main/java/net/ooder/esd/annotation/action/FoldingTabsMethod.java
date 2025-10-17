@@ -27,9 +27,6 @@ public enum FoldingTabsMethod implements Enumstype {
     getSubNodeByItemId("getSubNodeByItemId", "根据项目ID获取子节点", "key", "itemId", "tag"),
     
     // 从父类ood.UI.Tabs继承的方法 (ood.absValue方法)
-    _getCtrlValue("_getCtrlValue", "获取控件值"),
-    _setCtrlValue("_setCtrlValue", "设置控件值", "value"),
-    _setDirtyMark("_setDirtyMark", "设置脏标记", "key"),
     getValue("getValue", "获取值", "returnArr"),
     getUIValue("getUIValue", "获取UI值", "returnArr"),
     resetValue("resetValue", "重置值", "value"),
@@ -85,8 +82,7 @@ public enum FoldingTabsMethod implements Enumstype {
     enhanceAccessibility("enhanceAccessibility", "增强可访问性支持"),
     adjustLayout("adjustLayout", "响应式布局调整"),
     getTheme("getTheme", "获取当前主题"),
-    toggleTheme("toggleTheme", "切换主题"),
-    _updateUIValue("_updateUIValue", "更新UI值", "box", "value", "profile", "item", "event", "source", "checktype");
+    toggleTheme("toggleTheme", "切换主题");
 
     private final String type;
     private final String name;
