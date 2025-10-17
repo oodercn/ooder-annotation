@@ -1,39 +1,39 @@
 package net.ooder.esd.annotation.action;
 
 import com.alibaba.fastjson.annotation.JSONField;
-
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
 
 import java.lang.annotation.Annotation;
 
 public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
 
-    OPENTONODE(CustomTreeMethod.openToNode, "{args[1].ids[0]}", "{true}",  true),
+    OPENTONODE(CustomTreeMethod.openToNode, "{true}", true, "{args[1].ids[0]}"),
 
-    TOGGLENODE(CustomTreeMethod.toggleNode, "{args[1].ids[0]}", "{true}",  true),
+    TOGGLENODE(CustomTreeMethod.toggleNode, "{true}", true, "{args[1].ids[0]}"),
 
-    INSERTITEMS(CustomTreeMethod.insertItems, "{args[1].data}", "{true}",  true),
+    INSERTITEMS(CustomTreeMethod.insertItems, "{true}", true, "{args[1].data}"),
 
-    REMOVEITEMS(CustomTreeMethod.insertItems, "{args[1].ids}", "{true}",  true),
+    REMOVEITEMS(CustomTreeMethod.insertItems, "{true}", true, "{args[1].ids}"),
 
-    CLEARITEMS(CustomTreeMethod.clearItems, "{args[1].ids[0]}", "{true}",  true),
+    CLEARITEMS(CustomTreeMethod.clearItems, "{true}", true, "{args[1].ids[0]}"),
 
-    RELOADNODE(CustomTreeMethod.reloadNode, "{args[1].ids[0]}", "{true}",  true),
+    RELOADNODE(CustomTreeMethod.reloadNode, "{true}", true, "{args[1].ids[0]}"),
 
-    FIRETOGGLENODE(CustomTreeMethod.toggleNode, "{args[1].id}", "{true}",  true),
+    FIRETOGGLENODE(CustomTreeMethod.toggleNode, "{true}", true, "{args[1].id}"),
 
-    FIREITEMCLICKEVENT(CustomTreeMethod.fireItemClickEvent, "{args[1].ids[0]}", "{true}",  true);
+    FIREITEMCLICKEVENT(CustomTreeMethod.fireItemClickEvent, "{true}", true, "{args[1].ids[0]}");
 
 
     private String desc;
     @JSONField(name = "type")
-    private ActionTypeEnum actionType = ActionTypeEnum.other;
+    private ActionTypeEnum actionType = ActionTypeEnum.control;
     private String expression;
-    private String target = "callback";
-    private CustomGlobalMethod method;
+    private String target = "@{CurrModule.component.currComponent.alias}";
+    private CustomTreeMethod method;
     private Boolean _return;
     private CustomCondition[] conditions;
     private String redirection;
@@ -47,16 +47,16 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
     private String[] params;
 
     LocalTreeAction(String script, String[] params) {
-        this.script=script;
-        this.params=params;
+        this.script = script;
+        this.params = params;
     }
 
 
-    LocalTreeAction(CustomTreeMethod method, String source, String expression, Boolean _return) {
+    LocalTreeAction(CustomTreeMethod method, String expression, Boolean _return, String... args) {
         this.desc = method.getName();
-        this.method = CustomGlobalMethod.call;
+        this.method = method;
         this.expression = expression;
-        this.args = new String[]{"{page." + CustomTarget.DYNCOMPONENTNAME.getName() + "." + method.getType() + "()}", null, null, source, "true"};
+        this.args = args;
         this._return = _return;
 
     }
@@ -113,9 +113,85 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
         return args;
     }
 
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public void setActionType(ActionTypeEnum actionType) {
+        this.actionType = actionType;
+    }
+
+    public void setExpression(String expression) {
+        this.expression = expression;
+    }
+
+    public void setTarget(String target) {
+        this.target = target;
+    }
+
     @Override
-    public CustomGlobalMethod getMethod() {
+    public CustomTreeMethod getMethod() {
         return method;
+    }
+
+    public void setMethod(CustomTreeMethod method) {
+        this.method = method;
+    }
+
+    public void set_return(Boolean _return) {
+        this._return = _return;
+    }
+
+    public void setConditions(CustomCondition[] conditions) {
+        this.conditions = conditions;
+    }
+
+    public void setRedirection(String redirection) {
+        this.redirection = redirection;
+    }
+
+    public void setArgs(String[] args) {
+        this.args = args;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
+    }
+
+    public String getChildName() {
+        return childName;
+    }
+
+    public void setChildName(String childName) {
+        this.childName = childName;
+    }
+
+    public String getOkFlag() {
+        return okFlag;
+    }
+
+    public void setOkFlag(String okFlag) {
+        this.okFlag = okFlag;
+    }
+
+    public String getKoFlag() {
+        return koFlag;
+    }
+
+    public void setKoFlag(String koFlag) {
+        this.koFlag = koFlag;
+    }
+
+    public void setScript(String script) {
+        this.script = script;
+    }
+
+    public void setParams(String[] params) {
+        this.params = params;
     }
 
     @Override
