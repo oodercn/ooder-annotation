@@ -24,10 +24,10 @@ public @interface BlockFormAnnotation {
     int defaultRowHeight() default 24;
 
     @NotNull
-    int defaultColWidth() default 150;
+    int defaultColWidth() default 200;
 
     @NotNull
-    int defaultLabelWidth() default 150;
+    int defaultLabelWidth() default 100;
 
     int col() default 0;
 
