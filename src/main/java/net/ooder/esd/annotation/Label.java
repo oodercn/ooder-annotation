@@ -18,7 +18,7 @@ public @interface Label {
     String labelCaption() default "";
 
     @NotNull
-    String labelSize() default "4.0em";
+    String labelSize() default "6.0em";
 
     String labelGap() default "";
 
