@@ -19,6 +19,8 @@ public @interface GroupItemAnnotation {
 
     String height() default "150";
 
+    String width() default "auto";
+
     String image() default "";
 
     ImagePos imagePos() default ImagePos.center;
