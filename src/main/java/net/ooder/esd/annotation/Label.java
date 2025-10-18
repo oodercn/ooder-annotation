@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation;
 
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.HAlignType;
 import net.ooder.esd.annotation.ui.LabelPos;
 import net.ooder.esd.annotation.ui.VAlignType;
@@ -16,15 +17,20 @@ public @interface Label {
 
     String labelCaption() default "";
 
+    @NotNull
     String labelSize() default "4.0em";
 
     String labelGap() default "";
 
+    @NotNull
     int manualWidth() default 150;
 
-    LabelPos labelPos() default LabelPos.none;
+    @NotNull
+    LabelPos labelPos() default LabelPos.left;
+
 
     HAlignType labelHAlign() default HAlignType.right;
+
 
     VAlignType labelVAlign() default VAlignType.top;
 

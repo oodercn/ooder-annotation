@@ -1,10 +1,12 @@
 package net.ooder.esd.annotation;
 
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.event.CustomFormEvent;
 import net.ooder.esd.annotation.menu.CustomFormMenu;
 import net.ooder.esd.annotation.ui.BorderType;
 import net.ooder.esd.annotation.ui.SideBarStatusType;
+import net.ooder.esd.annotation.ui.StretchType;
 
 import java.lang.annotation.*;
 
@@ -17,8 +19,26 @@ public @interface BlockFormAnnotation {
 
     boolean resizer() default false;
 
-//    @NotNull
-//    Dock dock() default Dock.fill;
+
+    @NotNull
+    int defaultRowHeight() default 35;
+
+    int defaultColWidth() default 150;
+
+    @NotNull
+    int defaultLabelWidth() default 150;
+
+    int col() default 0;
+
+    @NotNull
+    int lineSpacing() default 10;
+
+    @NotNull
+    StretchType stretchH() default StretchType.all;
+
+    @NotNull
+    StretchType stretchHeight() default StretchType.none;
+
 
     String sideBarCaption() default "";
 
