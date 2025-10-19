@@ -63,7 +63,7 @@ public enum ComponentType implements IconEnumstype {
     CSSBOX("ood.UI.CSSBox", "CSSBoxComponent", "样式渲染器", new ComponentBaseType[]{}, "ri-paint-brush-line", ComponentType.SPAN),
     BLOCK("ood.UI.Block", "BlockComponent", "块容器", new ComponentBaseType[]{ComponentBaseType.Widget}, "ri-layout-5-line"),
     GROUP("ood.UI.Group", "GroupComponent", "组容器", new ComponentBaseType[]{}, "ri-group-line", ComponentType.UI),
-    TREEVIEW("ood.UI.TreeView", "TreeViewComponent", "树形视图", new ComponentBaseType[]{}, "ri-file-tree-line", ComponentType.TREEBAR),
+    TREEVIEW("ood.UI.TreeView", "TreeViewComponent", "Tree数据导航", new ComponentBaseType[]{}, "ri-file-tree-line", ComponentType.TREEBAR),
     MTREEVIEW("ood.UI.MTreeView", "MTreeViewComponent", "树形视图", new ComponentBaseType[]{}, "ri-file-tree-line", ComponentType.TREEBAR),
     LAYOUT("ood.UI.Layout", "LayoutComponent", "布局容器", new ComponentBaseType[]{ComponentBaseType.absList}, "ri-layout-4-line", ComponentType.UI),
     DATABINDER("ood.DataBinder", "DataBinderComponent", "数据绑定器", new ComponentBaseType[]{ComponentBaseType.absObj}, "ri-link-m-line"),
@@ -94,7 +94,7 @@ public enum ComponentType implements IconEnumstype {
     BUTTONLAYOUT("ood.UI.ButtonLayout", "ButtonLayoutComponent", "按钮导航布局", new ComponentBaseType[]{}, "ri-menu-line", ComponentType.TABS),
     TITLEBLOCK("ood.UI.TitleBlock", "TitleBlockComponent", "磁贴布局", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.LIST),
     CONTENTBLOCK("ood.UI.ContentBlock", "ContentBlockComponent", "内容列表", new ComponentBaseType[]{}, "ri-list-unordered", ComponentType.LIST),
-    TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-table-line", new ComponentType[]{ComponentType.LIST}),
+    TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "列表视图", new ComponentBaseType[]{}, "ri-table-line", new ComponentType[]{ComponentType.LIST}),
     MTREEGRID("ood.UI.MTreeGrid", "MTreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-table-line", new ComponentType[]{ComponentType.TREEGRID}),
     FOLDINGTABS("ood.UI.FoldingTabs", "FoldingTabsComponent", "FoldingTAB容器", new ComponentBaseType[]{}, "ri-layout-2-line", ComponentType.TABS),
 
