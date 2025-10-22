@@ -14,7 +14,7 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.CONSTRUCTOR, ElementType.TYPE})
 public @interface TabItemAnnotation {
-    int index() default 1;
+    int index() default -1;
 
     String imageClass() default "";
 
