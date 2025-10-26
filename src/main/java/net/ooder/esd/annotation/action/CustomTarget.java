@@ -4,7 +4,7 @@ import net.ooder.annotation.Enumstype;
 
 public enum CustomTarget implements Enumstype {
     CALLBACK("callback"),
-    DYNCURRMODULENAME("@{CurrModule.realClassName}"),
+    DYNCURRMODULENAME("@{CurrModule!=null?CurrModule.realClassName}"),
     DYNCURRTOPCOMPONENTNAME("@{TopModule.component.topComponentBox==null?CurrModule.component.topComponentBox.alias:TopModule.component.topComponentBox.alias}"),
     PARENTMODULE("{page.parentModule}"),
     DYNCOMPONENTNAME("@{CurrModule.component.navComponent!=null?CurrModule.component.navComponent.alias:CurrModule.component.currComponent.alias}"),
