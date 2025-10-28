@@ -10,29 +10,29 @@ public enum RequestPathEnum implements UrlPath<RequestPathTypeEnum>, RequestPath
 
     STAGVAR(RequestPathTypeEnum.STAGVAR, "STAGVAR", ""),
 
-    CURRFORM(RequestPathTypeEnum.FORM, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    CURRFORM(RequestPathTypeEnum.FORM, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    TOPFORM(RequestPathTypeEnum.FORM, "@{TopModule.component.topComponentBox.alias}", ""),
+    TOPFORM(RequestPathTypeEnum.FORM, "@{(topCurrComponent!=null && topCurrComponent.topComponentBox!=null)?topCurrComponent.topComponentBox.alias}", ""),
 
-    TREEGRID(RequestPathTypeEnum.TREEGRID, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    TREEGRID(RequestPathTypeEnum.TREEGRID, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    TREEVIEW(RequestPathTypeEnum.TREEVIEW, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    TREEVIEW(RequestPathTypeEnum.TREEVIEW, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    TREEGRIDROW(RequestPathTypeEnum.TREEGRIDROW, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    TREEGRIDROW(RequestPathTypeEnum.TREEGRIDROW, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    TREEGRIDROWVALUE(RequestPathTypeEnum.TREEGRIDROWVALUE, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    TREEGRIDROWVALUE(RequestPathTypeEnum.TREEGRIDROWVALUE, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    TREEGRIDALLVALUE(RequestPathTypeEnum.TREEGRIDALLVALUE, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", ""),
+    TREEGRIDALLVALUE(RequestPathTypeEnum.TREEGRIDALLVALUE, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
 
-    GALLERY(RequestPathTypeEnum.GALLERY, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias：CurrModule.component.alias}", ""),
+    GALLERY(RequestPathTypeEnum.GALLERY, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
 
-    TITLEBLOCK(RequestPathTypeEnum.TITLEBLOCK, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias：CurrModule.component.alias}", ""),
+    TITLEBLOCK(RequestPathTypeEnum.TITLEBLOCK, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
 
-    OPINION(RequestPathTypeEnum.OPINION, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias：CurrModule.component.alias}", ""),
+    OPINION(RequestPathTypeEnum.OPINION, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
 
-    PAGEBAR(RequestPathTypeEnum.PAGEBAR, "@{CurrModule.component.pageBarComponent!=null?CurrModule.component.pageBarComponent.alias：CurrModule.component.alias}", ""),
+    PAGEBAR(RequestPathTypeEnum.PAGEBAR, "@{(moduleComponent!=null && moduleComponent.pageBarComponent!=null)?moduleComponent.pageBarComponent.alias：moduleComponent.alias}", ""),
 
-    PAGENEXT(RequestPathTypeEnum.PAGENEXT, "@{CurrModule.component.pageBarComponent!=null?CurrModule.component.pageBarComponent.alias：CurrModule.component.alias}", ""),
+    PAGENEXT(RequestPathTypeEnum.PAGENEXT, "@{(moduleComponent!=null && moduleComponent.pageBarComponent!=null)?moduleComponent.pageBarComponent.alias：moduleComponent.alias}", ""),
 
     SPA_PROJECTNAME(RequestPathTypeEnum.SPA, "curProjectName", "projectName"),
 

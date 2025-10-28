@@ -12,17 +12,17 @@ public enum ResponsePathEnum implements UrlPath<ResponsePathTypeEnum>, ResponseP
     SPACOMPONENT(ResponsePathTypeEnum.SPA, "PAGECTX", "data"),
     POPMENU(ResponsePathTypeEnum.POPMENU, "PAGECTX", "data"),
     LIST(ResponsePathTypeEnum.LIST, "PAGECTX", "data"),
-    SVGCOMPONENT(ResponsePathTypeEnum.SVGPAPER, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    BLOCKCOMPONENT(ResponsePathTypeEnum.COMPONENT, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
+    SVGCOMPONENT(ResponsePathTypeEnum.SVGPAPER, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    BLOCKCOMPONENT(ResponsePathTypeEnum.COMPONENT, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
     //panelcomponent(ResponsePathTypeEnum.component, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    TREEGRID(ResponsePathTypeEnum.TREEGRID, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    TITLEBLOCK(ResponsePathTypeEnum.TITLEBLOCK, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    OPINION(ResponsePathTypeEnum.OPINION, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    GRIDNEXT(ResponsePathTypeEnum.GRIDNEXT, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    FORM(ResponsePathTypeEnum.FORM, "@{TopModule.component.topComponentBox.alias}", "data"),
-    TREEVIEW(ResponsePathTypeEnum.TREEVIEW, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias:CurrModule.component.alias}", "data"),
-    GALLERY(ResponsePathTypeEnum.GALLERY, "@{CurrModule.component.currComponent!=null?CurrModule.component.currComponent.alias：CurrModule.component.alias}", "data"),
-    PAGEBAR(ResponsePathTypeEnum.PAGEBAR, "@{CurrModule.component.pageBarComponent!=null?CurrModule.component.pageBarComponent.alias：CurrModule.component.alias}", "size");
+    TREEGRID(ResponsePathTypeEnum.TREEGRID, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    TITLEBLOCK(ResponsePathTypeEnum.TITLEBLOCK, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    OPINION(ResponsePathTypeEnum.OPINION, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    GRIDNEXT(ResponsePathTypeEnum.GRIDNEXT, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    FORM(ResponsePathTypeEnum.FORM, "@{(moduleComponent!=null && moduleComponent.topComponentBox!=null)? moduleComponent.topComponentBox.alias}", "data"),
+    TREEVIEW(ResponsePathTypeEnum.TREEVIEW, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", "data"),
+    GALLERY(ResponsePathTypeEnum.GALLERY, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", "data"),
+    PAGEBAR(ResponsePathTypeEnum.PAGEBAR, "@{(moduleComponent!=null&& moduleComponent.pageBarComponent!=null)?moduleComponent.pageBarComponent.alias：moduleComponent.alias}", "size");
 
 
     ResponsePathEnum(ResponsePathTypeEnum type, String pathname, String path) {
