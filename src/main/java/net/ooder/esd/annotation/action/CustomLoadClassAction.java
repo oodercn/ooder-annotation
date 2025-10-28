@@ -39,9 +39,6 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
     String okFlag;
     String koFlag;
 
-    CustomLoadClassAction(String desc) {
-        this.desc = desc;
-    }
 
     CustomLoadClassAction(TreeEvent treeEvent) {
         reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
@@ -51,10 +48,19 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
         reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
     }
 
-
     CustomLoadClassAction(String className, String targetFrame, String childName) {
         reSet(className, targetFrame, childName);
     }
+
+    CustomLoadClassAction(String desc) {
+
+        this.desc = desc;
+    }
+
+    public void reSet(ToolBarEvent toolBarEvent) {
+        reSet(toolBarEvent.className(), toolBarEvent.targetFrame(), toolBarEvent.childName());
+    }
+
 
     public void reSet(TreeEvent treeEvent) {
         reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
