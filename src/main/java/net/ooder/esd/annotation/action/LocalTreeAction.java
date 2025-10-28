@@ -32,7 +32,7 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
     @JSONField(name = "type")
     private ActionTypeEnum actionType = ActionTypeEnum.control;
     private String expression;
-    private String target = "@{CurrModule.component.currComponent.alias}";
+    private String target = "@{currComponent.alias}";
     private CustomTreeMethod method;
     private Boolean _return;
     private CustomCondition[] conditions;
