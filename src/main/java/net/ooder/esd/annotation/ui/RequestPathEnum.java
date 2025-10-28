@@ -12,7 +12,7 @@ public enum RequestPathEnum implements UrlPath<RequestPathTypeEnum>, RequestPath
 
     CURRFORM(RequestPathTypeEnum.FORM, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TOPFORM(RequestPathTypeEnum.FORM, "@{(topthis.currComponent!=null && topthis.currComponent.topComponentBox!=null)?topthis.currComponent.topComponentBox.alias}", ""),
+    TOPFORM(RequestPathTypeEnum.FORM, "@{(this.topCurrComponent!=null && this.this.moduleComponent.topComponentBox!=null)?this.moduleComponent.topComponentBox.alias}", ""),
 
     TREEGRID(RequestPathTypeEnum.TREEGRID, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
