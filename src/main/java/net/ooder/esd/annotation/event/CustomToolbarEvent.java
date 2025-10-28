@@ -3,41 +3,27 @@ package net.ooder.esd.annotation.event;
 
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
-import net.ooder.esd.annotation.action.CustomPageAction;
-import net.ooder.esd.annotation.action.CustomTreeAction;
 import net.ooder.esd.annotation.menu.TreeMenu;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public enum CustomTreeEvent implements CustomEvent, Enumstype {
+public enum CustomToolbarEvent implements CustomEvent, Enumstype {
 
-    CLICKDELETE(TreeViewEventEnum.onCmd, TreeMenu.DELETE),
+    CLICKDELETE(ToolBarEventEnum.onClick, TreeMenu.DELETE),
 
-    CLICKSAVEROW(TreeViewEventEnum.onCmd, TreeMenu.SAVEROW),
+    CLICKSAVEROW(ToolBarEventEnum.onClick, TreeMenu.SAVEROW),
 
-    CLICKRESET(TreeViewEventEnum.onCmd, TreeMenu.RESET),
+    CLICKRESET(ToolBarEventEnum.onClick, TreeMenu.RESET),
 
-    CLICKSORTDOWN(TreeViewEventEnum.onCmd, TreeMenu.SORTDOWN),
+    CLICKSORTDOWN(ToolBarEventEnum.onClick, TreeMenu.SORTDOWN),
 
-    CLICKSORTUP(TreeViewEventEnum.onCmd, TreeMenu.SORTUP),
+    CLICKSORTUP(ToolBarEventEnum.onClick, TreeMenu.SORTUP),
 
-    CLICKLOADCHILD(TreeViewEventEnum.onCmd, TreeMenu.LOADCHILD),
-
-    TREESAVE(TreeViewEventEnum.onDestroy, "保存选择对象", "true", new CustomAction[]{CustomTreeAction.SAVE}),
-
-    RELOADCHILD(TreeViewEventEnum.onGetContent, "装载子节点", "true", new CustomAction[]{CustomTreeAction.RELOADCHILD}),
-
-    LOADMENU(TreeViewEventEnum.onContextmenu, "右键菜单", "true", new CustomAction[]{CustomTreeAction.LOADMENU}),
-
-    TREERELOAD(TreeViewEventEnum.onRender, "装载数据", "true", new CustomAction[]{CustomTreeAction.RELOAD}),
-
-    TREENODECLICK(TreeViewEventEnum.onClick, "点击节点", "true", new CustomAction[]{}),
-
-    TREENODEEDITOR(TreeViewEventEnum.onClick, "编辑", "true", new CustomAction[]{CustomPageAction.EDITOR});
+    CLICKLOADCHILD(ToolBarEventEnum.onClick, TreeMenu.LOADCHILD);
 
 
-    private TreeViewEventEnum eventEnum;
+    private ToolBarEventEnum eventEnum;
 
     private TreeMenu bindMenu;
 
@@ -48,7 +34,7 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
     public CustomAction[] actions;
 
 
-    CustomTreeEvent(TreeViewEventEnum eventEnum, TreeMenu bindMenu) {
+    CustomToolbarEvent(ToolBarEventEnum eventEnum, TreeMenu bindMenu) {
         this.eventEnum = eventEnum;
         this.name = bindMenu.getName();
         this.expression = bindMenu.getExpression();
@@ -57,7 +43,7 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
     }
 
 
-    CustomTreeEvent(TreeViewEventEnum eventEnum, String name, String expression, CustomAction[] actions) {
+    CustomToolbarEvent(ToolBarEventEnum eventEnum, String name, String expression, CustomAction[] actions) {
         this.eventEnum = eventEnum;
         this.name = name;
         this.expression = expression;
@@ -70,11 +56,7 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
         List<CustomAction> actionTypes = new ArrayList<CustomAction>();
         for (CustomAction actionType : this.actions) {
             actionTypes.add(actionType);
-//            if (EsbUtil.parExpression(getExpression(), Boolean.class) || expar) {
-////                actionTypes.add(actionType);
-////            }
         }
-
         return actionTypes.toArray(new CustomAction[]{});
     }
 
@@ -88,14 +70,15 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
         return name;
     }
 
-    public TreeViewEventEnum getEventEnum() {
+
+    @Override
+    public ToolBarEventEnum getEventEnum() {
         return eventEnum;
     }
 
-    public void setEventEnum(TreeViewEventEnum eventEnum) {
+    public void setEventEnum(ToolBarEventEnum eventEnum) {
         this.eventEnum = eventEnum;
     }
-
 
     public void setActions(CustomAction[] actions) {
         this.actions = actions;
