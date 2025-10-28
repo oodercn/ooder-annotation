@@ -53,7 +53,6 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
     }
 
     CustomLoadClassAction(String desc) {
-
         this.desc = desc;
     }
 
