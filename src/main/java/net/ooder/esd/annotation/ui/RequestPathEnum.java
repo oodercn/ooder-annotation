@@ -10,29 +10,29 @@ public enum RequestPathEnum implements UrlPath<RequestPathTypeEnum>, RequestPath
 
     STAGVAR(RequestPathTypeEnum.STAGVAR, "STAGVAR", ""),
 
-    CURRFORM(RequestPathTypeEnum.FORM, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    CURRFORM(RequestPathTypeEnum.FORM, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TOPFORM(RequestPathTypeEnum.FORM, "@{(topCurrComponent!=null && topCurrComponent.topComponentBox!=null)?topCurrComponent.topComponentBox.alias}", ""),
+    TOPFORM(RequestPathTypeEnum.FORM, "@{(topthis.currComponent!=null && topthis.currComponent.topComponentBox!=null)?topthis.currComponent.topComponentBox.alias}", ""),
 
-    TREEGRID(RequestPathTypeEnum.TREEGRID, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    TREEGRID(RequestPathTypeEnum.TREEGRID, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TREEVIEW(RequestPathTypeEnum.TREEVIEW, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    TREEVIEW(RequestPathTypeEnum.TREEVIEW, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TREEGRIDROW(RequestPathTypeEnum.TREEGRIDROW, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    TREEGRIDROW(RequestPathTypeEnum.TREEGRIDROW, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TREEGRIDROWVALUE(RequestPathTypeEnum.TREEGRIDROWVALUE, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    TREEGRIDROWVALUE(RequestPathTypeEnum.TREEGRIDROWVALUE, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TREEGRIDALLVALUE(RequestPathTypeEnum.TREEGRIDALLVALUE, "@{currComponent!=null?currComponent.alias:moduleComponent.alias}", ""),
+    TREEGRIDALLVALUE(RequestPathTypeEnum.TREEGRIDALLVALUE, "@{this.currComponent!=null?this.currComponent.alias:(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    GALLERY(RequestPathTypeEnum.GALLERY, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
+    GALLERY(RequestPathTypeEnum.GALLERY, "@{this.currComponent!=null?this.currComponent.alias：(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    TITLEBLOCK(RequestPathTypeEnum.TITLEBLOCK, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
+    TITLEBLOCK(RequestPathTypeEnum.TITLEBLOCK, "@{this.currComponent!=null?this.currComponent.alias：(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    OPINION(RequestPathTypeEnum.OPINION, "@{currComponent!=null?currComponent.alias：moduleComponent.alias}", ""),
+    OPINION(RequestPathTypeEnum.OPINION, "@{this.currComponent!=null?this.currComponent.alias：(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    PAGEBAR(RequestPathTypeEnum.PAGEBAR, "@{(moduleComponent!=null && moduleComponent.pageBarComponent!=null)?moduleComponent.pageBarComponent.alias：moduleComponent.alias}", ""),
+    PAGEBAR(RequestPathTypeEnum.PAGEBAR, "@{(this.moduleComponent!=null && this.moduleComponent.pageBarComponent!=null)?this.moduleComponent.pageBarComponent.alias：(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
-    PAGENEXT(RequestPathTypeEnum.PAGENEXT, "@{(moduleComponent!=null && moduleComponent.pageBarComponent!=null)?moduleComponent.pageBarComponent.alias：moduleComponent.alias}", ""),
+    PAGENEXT(RequestPathTypeEnum.PAGENEXT, "@{(this.moduleComponent!=null && this.moduleComponent.pageBarComponent!=null)?this.moduleComponent.pageBarComponent.alias：(this.moduleComponent!=null?this.moduleComponent.alias)}", ""),
 
     SPA_PROJECTNAME(RequestPathTypeEnum.SPA, "curProjectName", "projectName"),
 

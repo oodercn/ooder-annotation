@@ -5,17 +5,16 @@ import net.ooder.annotation.Enumstype;
 public enum CustomTarget implements Enumstype {
     CALLBACK("callback"),
     DYNCURRMODULENAME("@{CurrModule!=null?CurrModule.realClassName}"),
-    DYNCURRTOPCOMPONENTNAME("@{TopModule.component.topComponentBox==null?moduleComponent.topComponentBox.alias:TopModule.component.topComponentBox.alias}"),
+    DYNCURRTOPCOMPONENTNAME("@{(this.topModuleComponent!=null && this.topModuleComponent.topComponentBox!=null) ? this.topModuleComponent.topComponentBox.alias: (this.moduleComponent!=null && this.moduleComponent.topComponentBox!=null)?this.moduleComponent.topComponentBox.alias}"),
     PARENTMODULE("{page.parentModule}"),
-    DYNCOMPONENTNAME("@{moduleComponent.navComponent!=null?moduleComponent.navComponent.alias:currComponent.alias}"),
-    //dynTreeComponentName("@{CurrModule.component.treeComponent==null?CurrModule.component.currComponent.alias:CurrModule.component.treeComponent.alias}"),
+    DYNCOMPONENTNAME("@{this.moduleComponent.navComponent!=null?this.moduleComponent.navComponent.alias:(currComponent!=null?currComponent.alias)}"),
     TOPMODULE("@{TopModule.realClassName}"),
-    DYNADDMODULENAME("@{moduleComponent.addModule!=null?CurrModule.component.addModule.realClassName:CurrModule.component.editorModule}"),
-    ADDMODULEDIO("@{moduleComponent.addModule!=null?CurrModule.component.addModule.component.dio:true}"),
-    EDITERMODULEDIO("@{moduleComponent.editorModule!=null?CurrModule.component.editorModule.component.dio:true}"),
-    MOREMODULEDIO("@{moduleComponent.moreModule!=null?CurrModule.component.moreModule.component.dio:true}"),
-    DYNEDITORMODULETARGET("@{moduleComponent.editorModule!=null?CurrModule.component.editorModule.component.target:CurrModule.component.target}"),
-    DYNEDITORMODULENAME("@{moduleComponent.editorModule!=null?CurrModule.component.editorModule.realClassName:CurrModule.realClassName}");
+    DYNADDMODULENAME("@{this.moduleComponent.addModule!=null?CurrModule.component.addModule.realClassName:CurrModule.component.editorModule}"),
+    ADDMODULEDIO("@{this.moduleComponent.addModule!=null?CurrModule.component.addModule.component.dio:true}"),
+    EDITERMODULEDIO("@{this.moduleComponent.editorModule!=null?CurrModule.component.editorModule.component.dio:true}"),
+    MOREMODULEDIO("@{this.moduleComponent.moreModule!=null?CurrModule.component.moreModule.component.dio:true}"),
+    DYNEDITORMODULETARGET("@{this.moduleComponent.editorModule!=null?this.moduleComponent.editorModule.component.target:this.moduleComponent.target}"),
+    DYNEDITORMODULENAME("@{this.moduleComponent.editorModule!=null?this.moduleComponent.editorModule.realClassName:CurrModule.realClassName}");
 
     private final String name;
 
