@@ -24,7 +24,6 @@ public @interface TreeEvent {
 
     CustomAction[] actions() default {};
 
-
     String desc() default "";
 
     String name() default "";
