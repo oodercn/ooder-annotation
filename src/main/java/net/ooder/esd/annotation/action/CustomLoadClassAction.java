@@ -7,6 +7,7 @@ import net.ooder.esd.annotation.CustomCondition;
 import net.ooder.esd.annotation.action.args.ShowModuleArgs;
 import net.ooder.esd.annotation.event.ActionType;
 import net.ooder.esd.annotation.event.ActionTypeEnum;
+import net.ooder.esd.annotation.event.ToolBarEvent;
 import net.ooder.esd.annotation.event.TreeEvent;
 
 import java.lang.annotation.Annotation;
@@ -45,6 +46,11 @@ public enum CustomLoadClassAction implements ActionType, CustomAction, Enumstype
     CustomLoadClassAction(TreeEvent treeEvent) {
         reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
     }
+
+    CustomLoadClassAction(ToolBarEvent treeEvent) {
+        reSet(treeEvent.className(), treeEvent.targetFrame(), treeEvent.childName());
+    }
+
 
     CustomLoadClassAction(String className, String targetFrame, String childName) {
         reSet(className, targetFrame, childName);
