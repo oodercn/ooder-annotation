@@ -1,11 +1,7 @@
 package net.ooder.esd.annotation;
 
 import net.ooder.esd.annotation.menu.CustomMenuType;
-import net.ooder.esd.annotation.ui.CustomViewType;
-import net.ooder.esd.annotation.ui.ComponentType;
-import net.ooder.esd.annotation.ui.Dock;
-import net.ooder.esd.annotation.ui.HAlignType;
-import net.ooder.esd.annotation.ui.VAlignType;
+import net.ooder.esd.annotation.ui.*;
 import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
@@ -17,6 +13,8 @@ import java.lang.annotation.*;
 public @interface MenuBarMenu {
     @NotNull
     CustomMenuType menuType() default CustomMenuType.MENUBAR;
+
+    PositionType position() default PositionType.module;
 
     String caption() default "";
 

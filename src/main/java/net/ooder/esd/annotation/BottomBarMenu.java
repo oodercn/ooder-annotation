@@ -1,18 +1,20 @@
 package net.ooder.esd.annotation;
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.menu.CustomMenuType;
 import net.ooder.esd.annotation.ui.*;
-import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.CONSTRUCTOR, ElementType.TYPE})
-public @interface BottomBarMenu{
+public @interface BottomBarMenu {
 
     @NotNull
     CustomMenuType menuType() default CustomMenuType.BOTTOMBAR;
+
+    PositionType position() default PositionType.module;
 
     @NotNull
     boolean lazy() default false;

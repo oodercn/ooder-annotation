@@ -14,11 +14,12 @@ import java.lang.annotation.*;
 @Target({ElementType.CONSTRUCTOR, ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
 public @interface ToolBarMenu {
 
-    CustomMenu[] menus() default {};
 
     HAlignType hAlign() default HAlignType.left;
 
     VAlignType vAlign() default VAlignType.middle;
+
+    PositionType position() default PositionType.module;
 
     @NotNull
     String iconFontSize() default "1.5em";
@@ -29,6 +30,7 @@ public @interface ToolBarMenu {
 
     Dock dock() default Dock.top;
 
+    CustomMenu[] menus() default {};
 
     boolean autoIconColor() default true;
 
