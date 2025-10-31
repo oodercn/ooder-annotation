@@ -1,20 +1,19 @@
 package net.ooder.esd.annotation.field;
 
 
-import net.ooder.esd.annotation.*;
+import net.ooder.esd.annotation.CallBackPathAnnotation;
+import net.ooder.esd.annotation.CustomAction;
+import net.ooder.esd.annotation.RequestPathAnnotation;
+import net.ooder.esd.annotation.ResponsePathAnnotation;
 import net.ooder.esd.annotation.event.*;
-import net.ooder.esd.annotation.event.CustomContentBlockEvent;
-import net.ooder.esd.annotation.event.CustomGalleryEvent;
-import net.ooder.esd.annotation.event.CustomTitleBlockEvent;
-import net.ooder.esd.annotation.event.CustomGridEvent;
-import net.ooder.esd.annotation.event.CustomMGridEvent;
-import net.ooder.esd.annotation.event.CustomTabsEvent;
-import net.ooder.esd.annotation.event.CustomTreeEvent;
 import net.ooder.esd.annotation.menu.CustomFormMenu;
 import net.ooder.esd.annotation.menu.CustomGalleryMenu;
 import net.ooder.esd.annotation.menu.GridMenu;
 import net.ooder.esd.annotation.menu.TreeMenu;
-import net.ooder.esd.annotation.ui.*;
+import net.ooder.esd.annotation.ui.CallBackPathEnum;
+import net.ooder.esd.annotation.ui.CustomMenuItem;
+import net.ooder.esd.annotation.ui.RequestPathEnum;
+import net.ooder.esd.annotation.ui.ResponsePathEnum;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -34,6 +33,10 @@ public @interface APIEventAnnotation {
     public boolean autoDisplay() default false;
 
     public boolean isAllform() default false;
+
+    public boolean checkValid() default false;
+
+    public boolean checkRequired() default false;
 
     public int index() default -1;
 
