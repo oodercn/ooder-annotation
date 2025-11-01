@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation;
 
 
+import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
@@ -9,17 +10,21 @@ import java.lang.annotation.*;
 @Target({ElementType.CONSTRUCTOR, ElementType.TYPE, ElementType.METHOD})
 public @interface BtnAnnotation {
 
+    @NotNull
+    boolean infoBtn() default true;
 
-    boolean infoBtn() default false;
-
+    @NotNull
     boolean optBtn() default false;
 
-    boolean toggleBtn() default true;
+    @NotNull
+    boolean toggleBtn() default false;
 
-    boolean refreshBtn() default false;
+    @NotNull
+    boolean refreshBtn() default true;
 
-    boolean closeBtn() default false;
+    @NotNull
+    boolean closeBtn() default true;
 
-    boolean popBtn() default true;
+    boolean popBtn() default false;
 
 }

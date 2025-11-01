@@ -12,6 +12,7 @@ public @interface PanelAnnotation {
 
     Dock dock() default Dock.none;
 
+    @NotNull
     String caption() default "";
 
     String html() default "";
@@ -25,18 +26,6 @@ public @interface PanelAnnotation {
     String imageClass() default "";
 
     String iconFontCode() default "";
-
-    @NotNull
-    boolean optBtn() default true;
-
-    @NotNull
-    boolean refreshBtn() default true;
-
-    boolean infoBtn() default false;
-
-    @NotNull
-    boolean closeBtn() default true;
-
 
     BorderType borderType() default BorderType.inset;
 
