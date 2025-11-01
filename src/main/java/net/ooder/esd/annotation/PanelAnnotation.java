@@ -1,12 +1,13 @@
 package net.ooder.esd.annotation;
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.*;
 
 import java.lang.annotation.*;
 
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD,ElementType.FIELD,ElementType.TYPE})
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 public @interface PanelAnnotation {
 
     Dock dock() default Dock.none;
@@ -25,13 +26,15 @@ public @interface PanelAnnotation {
 
     String iconFontCode() default "";
 
-
+    @NotNull
     boolean optBtn() default true;
 
+    @NotNull
     boolean refreshBtn() default true;
 
     boolean infoBtn() default false;
 
+    @NotNull
     boolean closeBtn() default true;
 
 

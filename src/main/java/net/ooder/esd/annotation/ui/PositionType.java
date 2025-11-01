@@ -10,7 +10,7 @@ public enum PositionType implements IconEnumstype {
 
     private final String imageClass;
 
-    PositionType(String name, String imageClass) {
+        PositionType(String name, String imageClass) {
         this.name = name;
         this.imageClass = imageClass;
     }
