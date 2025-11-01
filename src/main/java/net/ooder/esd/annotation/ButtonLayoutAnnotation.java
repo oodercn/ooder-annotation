@@ -1,5 +1,5 @@
 package net.ooder.esd.annotation;
-;
+
 import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.event.CustomOpinionEvent;
 import net.ooder.esd.annotation.menu.OpinionMenu;
