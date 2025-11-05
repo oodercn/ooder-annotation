@@ -1,10 +1,9 @@
 package net.ooder.esd.annotation;
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.event.CustomFormEvent;
 import net.ooder.esd.annotation.menu.CustomFormMenu;
-import net.ooder.esd.annotation.menu.TreeRowMenu;
 import net.ooder.esd.annotation.ui.*;
-import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
@@ -42,23 +41,11 @@ public @interface ButtonViewsAnnotation {
 
     Class[] customService() default {};
 
-    CustomMenu[] menu() default {};
-
     CustomFormMenu[] customMenu() default {};
 
     CustomFormEvent[] event() default {};
 
     CustomFormMenu[] bottombarMenu() default {};
-
-    CustomMenu[] bottombar() default {};
-
-    TreeRowMenu[] rowMenu() default {};
-
-    Class[] customRowMenuService() default {};
-
-    Class[] customMenuService() default {};
-
-    Class[] customBottombarService() default {};
 
     @NotNull
     Class<? extends Enum> enumClass() default Enum.class;

@@ -15,7 +15,9 @@
     </properties>
 
     <url>https://github.com/oodercn/ooder-annotation</url>
-    <description>ooder-annotation is a lightweight annotation library designed to simplify code marking, enhance readability, and streamline development workflows for developers working with programming projects.</description>
+    <description>ooder-annotation is a lightweight annotation library designed to simplify code marking, enhance
+        readability, and streamline development workflows for developers working with programming projects.
+    </description>
     <organization>
         <name>ooder</name>
         <url>http://net.ooder</url>
@@ -83,6 +85,15 @@
     </dependencies>
 
     <build>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.java;**/*.js</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
@@ -126,40 +137,40 @@
 
             <!--&lt;!&ndash; Javadoc插件 &ndash;&gt;-->
             <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-javadoc-plugin</artifactId>-->
-                <!--<version>3.3.2</version>-->
-                <!--<configuration>-->
-                    <!--<source>${java.version}</source>-->
-                    <!--<additionalJOption>-Xdoclint:none</additionalJOption>-->
-                    <!--<failOnError>false</failOnError>-->
-                    <!--<charset>UTF-8</charset>-->
-                    <!--<encoding>UTF-8</encoding>-->
-                    <!--<docencoding>UTF-8</docencoding>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>attach-javadocs</id>-->
-                        <!--<goals>-->
-                            <!--<goal>jar</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+            <!--<version>3.3.2</version>-->
+            <!--<configuration>-->
+            <!--<source>${java.version}</source>-->
+            <!--<additionalJOption>-Xdoclint:none</additionalJOption>-->
+            <!--<failOnError>false</failOnError>-->
+            <!--<charset>UTF-8</charset>-->
+            <!--<encoding>UTF-8</encoding>-->
+            <!--<docencoding>UTF-8</docencoding>-->
+            <!--</configuration>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<id>attach-javadocs</id>-->
+            <!--<goals>-->
+            <!--<goal>jar</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
             <!--</plugin>-->
 
             <!--&lt;!&ndash; GPG签名插件 &ndash;&gt;-->
             <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-gpg-plugin</artifactId>-->
-                <!--<version>1.6</version>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<phase>verify</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>sign</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-gpg-plugin</artifactId>-->
+            <!--<version>1.6</version>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<phase>verify</phase>-->
+            <!--<goals>-->
+            <!--<goal>sign</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
             <!--</plugin>-->
 
             <!-- 部署插件 -->
