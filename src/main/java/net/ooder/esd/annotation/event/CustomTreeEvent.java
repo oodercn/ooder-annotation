@@ -34,6 +34,8 @@ public enum CustomTreeEvent implements CustomEvent, Enumstype {
 
     TREENODECLICK(TreeViewEventEnum.onClick, "点击节点", "true", new CustomAction[]{}),
 
+    TREENODEDBCLICK(TreeViewEventEnum.onDblclick, "双击节点", "true", new CustomAction[]{}),
+
     TREENODEEDITOR(TreeViewEventEnum.onClick, "编辑", "true", new CustomAction[]{CustomPageAction.EDITOR});
 
 
