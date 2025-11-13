@@ -2,6 +2,7 @@ package net.ooder.esd.annotation.event;
 
 import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.esd.annotation.CustomAction;
+import net.ooder.esd.annotation.action.CustomFormAction;
 import net.ooder.esd.annotation.action.CustomMsgAction;
 import net.ooder.esd.annotation.action.CustomModuleAction;
 
@@ -9,6 +10,7 @@ import java.lang.annotation.Annotation;
 
 
 public enum CustomBeforInvoke implements APIEvent {
+
 
     BUSY(APIEventEnum.beforeInvoke, "增加遮罩", new CustomAction[]{CustomMsgAction.BUSY}),
     MESSAGE(APIEventEnum.beforeInvoke, "开始执行", new CustomAction[]{CustomMsgAction.MESSAGE}),
