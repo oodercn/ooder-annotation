@@ -14,6 +14,7 @@ public @interface BottomBarMenu {
     @NotNull
     CustomMenuType menuType() default CustomMenuType.BOTTOMBAR;
 
+    @NotNull
     PositionType position() default PositionType.module;
 
     @NotNull
@@ -41,6 +42,8 @@ public @interface BottomBarMenu {
     @NotNull
     BorderType barBorderType() default BorderType.none;
 
+    AlignType align() default AlignType.center;
+
     AlignType itemAlign() default AlignType.center;
 
     String id() default "";
@@ -57,7 +60,6 @@ public @interface BottomBarMenu {
     @NotNull
     Dock barDock() default Dock.bottom;
 
-
     @NotNull
     Dock dock() default Dock.fill;
 
@@ -66,7 +68,7 @@ public @interface BottomBarMenu {
     @NotNull
     Class[] menuClasses() default {};
 
-    boolean autoIconColor() default true;
+    boolean autoIconColor() default false;
 
     boolean autoItemColor() default false;
 

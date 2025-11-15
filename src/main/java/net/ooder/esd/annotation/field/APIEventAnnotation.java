@@ -106,9 +106,9 @@ public @interface APIEventAnnotation {
 
     public CustomAction[] callbackAction() default {};
 
-    public CustomCallBack[] afterInvok() default {};
+    public CustomCallBack[] afterInvoke() default {};
 
-    public CustomAction[] afterInvokAction() default {};
+    public CustomAction[] afterInvokeAction() default {};
 
     //调用出错
     public CustomOnError[] onError() default {};
