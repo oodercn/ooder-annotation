@@ -7,7 +7,7 @@ import net.ooder.esd.annotation.action.CustomGalleryAction;
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
+@Target({ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.TYPE})
 public @interface FieldEvent {
 
     FieldEventEnum eventEnum();
