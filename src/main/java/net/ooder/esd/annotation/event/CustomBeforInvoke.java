@@ -14,6 +14,8 @@ public enum CustomBeforInvoke implements APIEvent {
 
     BUSY(APIEventEnum.beforeInvoke, "增加遮罩", new CustomAction[]{CustomMsgAction.BUSY}),
     MESSAGE(APIEventEnum.beforeInvoke, "开始执行", new CustomAction[]{CustomMsgAction.MESSAGE}),
+    CONFIRM(APIEventEnum.beforeInvoke, "确认操作", new CustomAction[]{CustomMsgAction.CONFIRM}),
+    MSG(APIEventEnum.beforeInvoke, "等候消息", new CustomAction[]{CustomMsgAction.MSG}),
     CHECKVALID(APIEventEnum.beforeInvoke, "检查必填项", new CustomAction[]{CustomModuleAction.CHECKVALID});
 
     APIEventEnum event;

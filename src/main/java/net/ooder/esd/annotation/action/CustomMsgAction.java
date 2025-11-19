@@ -12,7 +12,7 @@ import java.lang.annotation.Annotation;
 public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0]}", "{args[1].msg.alert}"}),
     ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[1].msg.title}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
-    CONFIRM("确认框", CustomMsgMethod.busy, new String[]{"{args[1].msg.title}", "{args[1].msg.busy}"}),
+    CONFIRM("确认框", CustomMsgMethod.confirm, new String[]{"{args[1].msg.title}", "{args[1].msg.confirm}"}),
     PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[1].msg.title}", "{args[1].msg.prompt}"}),
     MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message}"}),
     SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message|'操作成功'}"}),
