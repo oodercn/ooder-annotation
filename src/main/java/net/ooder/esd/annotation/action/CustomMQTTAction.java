@@ -22,7 +22,7 @@ public enum CustomMQTTAction implements ActionType, CustomAction, Enumstype {
     private String target;
     private CustomMQTTMethod method;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private String redirection;
     private CustomCondition[] conditions;
     private String[] args;

@@ -21,7 +21,7 @@ public enum CustomModuleEventEnum implements ModuleEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private  String eventReturn;
     CustomModuleEventEnum(ModuleEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;

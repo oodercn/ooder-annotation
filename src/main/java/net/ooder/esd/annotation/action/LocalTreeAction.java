@@ -34,7 +34,7 @@ public enum LocalTreeAction implements ActionType, CustomAction, Enumstype {
     private String expression;
     private String target = "@{this.currComponent.alias}";
     private CustomTreeMethod method;
-    private Boolean _return;
+    private Boolean _return=true;
     private CustomCondition[] conditions;
     private String redirection;
     private String[] args;

@@ -19,7 +19,7 @@ public enum CustomMQTTEventEnum implements MQTTEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private  String eventReturn;
     CustomMQTTEventEnum(MQTTEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;

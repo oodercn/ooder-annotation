@@ -28,7 +28,7 @@ public enum CustomOnExecueError implements APIEvent {
     String desc;
 
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
 
     private String eventReturn;
 

@@ -13,8 +13,8 @@ public enum CustomBeforInvoke implements APIEvent {
 
     BUSY(APIEventEnum.beforeInvoke, "增加遮罩", new CustomAction[]{CustomMsgAction.BUSY}),
     MESSAGE(APIEventEnum.beforeInvoke, "开始执行", new CustomAction[]{CustomMsgAction.MESSAGE}),
-    CONFIRM(APIEventEnum.beforeInvoke, "{temp._confirm_ok}", "确认操作", new CustomAction[]{CustomMsgAction.CONFIRM}),
-    WARN(APIEventEnum.beforeInvoke, "{temp._confirm_yes}", "警告操作", new CustomAction[]{CustomMsgAction.WARN}),
+    CONFIRM(APIEventEnum.beforeInvoke, "确认操作", "{temp._confirm_ok}", new CustomAction[]{CustomMsgAction.CONFIRM}),
+    WARN(APIEventEnum.beforeInvoke, "警告操作", "{temp._confirm_yes}", new CustomAction[]{CustomMsgAction.WARN}),
     MSG(APIEventEnum.beforeInvoke, "等候消息", new CustomAction[]{CustomMsgAction.MSG}),
     CHECKVALID(APIEventEnum.beforeInvoke, "检查必填项", new CustomAction[]{CustomModuleAction.CHECKVALID});
 
@@ -22,7 +22,7 @@ public enum CustomBeforInvoke implements APIEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return = true;
 
     private String eventReturn;
 
@@ -78,7 +78,6 @@ public enum CustomBeforInvoke implements APIEvent {
     public boolean _return() {
         return _return;
     }
-
 
 
     public APIEventEnum getEvent() {

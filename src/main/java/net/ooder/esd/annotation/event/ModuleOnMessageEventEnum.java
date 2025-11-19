@@ -20,7 +20,7 @@ public enum ModuleOnMessageEventEnum implements ModuleEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private  String eventReturn;
     ModuleOnMessageEventEnum(String desc, CustomAction[] actions) {
         this.event = ModuleEventEnum.onMessage;

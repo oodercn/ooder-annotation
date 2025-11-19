@@ -21,7 +21,7 @@ public enum BPMAPIAction implements ActionType, CustomAction, Enumstype {
     private String target;
     private CustomAPIMethod method = CustomAPIMethod.invoke;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private String redirection = "other:callback:call";
     private CustomCondition[] conditions;
     private String[] args;

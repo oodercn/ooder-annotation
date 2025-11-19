@@ -23,7 +23,7 @@ public enum CustomBeforData implements APIEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private String eventReturn;
     CustomBeforData(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;

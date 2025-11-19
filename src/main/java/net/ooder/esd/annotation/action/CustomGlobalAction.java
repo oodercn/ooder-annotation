@@ -26,7 +26,7 @@ public enum CustomGlobalAction implements ActionType, CustomAction, Enumstype {
     private String target;
     private CustomGlobalMethod method;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private String redirection;
     private CustomCondition[] conditions;
     private String[] args;

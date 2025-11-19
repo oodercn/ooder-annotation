@@ -26,7 +26,7 @@ public enum CustomTabsEvent implements CustomEvent, Enumstype {
 
     public CustomAction[] actions;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
 
     CustomTabsEvent(TabsEventEnum eventEnum, String name, String expression, CustomAction[] actions) {
         this.eventEnum = eventEnum;

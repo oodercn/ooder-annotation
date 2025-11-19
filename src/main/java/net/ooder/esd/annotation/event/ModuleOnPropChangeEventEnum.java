@@ -20,7 +20,7 @@ public enum ModuleOnPropChangeEventEnum implements ModuleEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return;
+    private Boolean _return=true;
     private  String eventReturn;
     ModuleOnPropChangeEventEnum(String desc, CustomAction[] actions) {
         this.event = ModuleEventEnum.onModulePropChange;
