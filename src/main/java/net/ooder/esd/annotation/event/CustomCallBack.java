@@ -63,6 +63,7 @@ public enum CustomCallBack implements APIEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private String eventReturn;
 
     CustomCallBack(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
@@ -73,6 +74,19 @@ public enum CustomCallBack implements APIEvent {
     @Override
     public boolean _return() {
         return true;
+    }
+
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
+
+    @Override
+    public String eventReturn() {
+        return eventReturn;
     }
 
     ;

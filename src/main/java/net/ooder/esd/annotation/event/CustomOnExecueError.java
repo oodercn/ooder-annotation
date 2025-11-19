@@ -30,6 +30,9 @@ public enum CustomOnExecueError implements APIEvent {
     @JSONField(name = "return")
     private Boolean _return;
 
+    private String eventReturn;
+
+
     CustomOnExecueError(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -92,6 +95,20 @@ public enum CustomOnExecueError implements APIEvent {
     public boolean _return() {
         return true;
     }
+
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
+
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
+
 
     @Override
     public Class<? extends Annotation> annotationType() {

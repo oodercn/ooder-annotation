@@ -15,6 +15,7 @@ public enum CustomBeforData implements APIEvent {
     BUSY(APIEventEnum.beforeData, "增加遮罩", new CustomAction[]{CustomMsgAction.BUSY}),
     MESSAGE(APIEventEnum.beforeData, "开始执行", new CustomAction[]{CustomMsgAction.MESSAGE}),
     SAVE(APIEventEnum.beforeData, "保存表单", new CustomAction[]{CustomFormAction.SAVE}),
+
     SAVEONLY(APIEventEnum.beforeData, "仅保存", new CustomAction[]{BPMAPIAction.SAVEONLY}),
     RELOAD(APIEventEnum.beforeData, "重新装载", new CustomAction[]{CustomFormAction.RELOAD}),
     CHECKVALID(APIEventEnum.beforeData, "检查必填项", new CustomAction[]{CustomModuleAction.CHECKVALID});
@@ -23,6 +24,7 @@ public enum CustomBeforData implements APIEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private String eventReturn;
     CustomBeforData(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -86,6 +88,20 @@ public enum CustomBeforData implements APIEvent {
     public boolean _return() {
         return true;
     }
+
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
+
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
+
 
     @Override
     public Class<? extends Annotation> annotationType() {

@@ -14,6 +14,7 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[1].msg.title}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
     CONFIRM("确认框", CustomMsgMethod.confirm, new String[]{"{args[1].msg.title}", "{args[1].msg.confirm}"}),
     PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[1].msg.title}", "{args[1].msg.prompt}"}),
+    WARN("警告确认","{args[1].msg.title}", CustomMsgMethod.prompt, new String[]{"确认该操作？", "确认操作吗？该操作可能不可恢复！"}),
     MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message}"}),
     SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message|'操作成功'}"}),
     ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null, "{args[1].msg.title}", "{args[1].errdes}"}),
@@ -33,6 +34,8 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     @JSONField(name = "return")
     private Boolean _return = true;
 
+    private String dynReturn ;
+
     private CustomCondition[] conditions;
     String className;
     String childName;
@@ -49,11 +52,19 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
         this.params = params;
     }
 
-
-    CustomMsgAction(String desc, CustomMsgMethod method, String[] args) {
+    CustomMsgAction(String desc,CustomMsgMethod method, String[] args) {
         this.desc = desc;
         this.actionType = ActionTypeEnum.other;
         this.target = "msg";
+        this.method = method;
+        this.args = args;
+    }
+
+    CustomMsgAction(String desc, String dynReturn,CustomMsgMethod method, String[] args) {
+        this.desc = desc;
+        this.actionType = ActionTypeEnum.other;
+        this.target = "msg";
+        this.dynReturn=dynReturn;
         this.method = method;
         this.args = args;
     }

@@ -27,6 +27,7 @@ public enum CustomOnData implements APIEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private String eventReturn;
     CustomOnData(APIEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -54,6 +55,12 @@ public enum CustomOnData implements APIEvent {
     public boolean _return() {
         return true;
     }
+
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
+
 
     public APIEventEnum getEvent() {
         return event;
