@@ -20,4 +20,6 @@ public @interface PageEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

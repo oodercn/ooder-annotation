@@ -20,4 +20,6 @@ public @interface FileUploadEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

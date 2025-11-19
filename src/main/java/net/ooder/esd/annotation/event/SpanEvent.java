@@ -21,4 +21,6 @@ public @interface SpanEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

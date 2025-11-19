@@ -20,4 +20,6 @@ public @interface LabelEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

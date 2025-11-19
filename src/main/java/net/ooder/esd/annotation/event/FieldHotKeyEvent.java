@@ -27,5 +27,7 @@ public @interface FieldHotKeyEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 
 }

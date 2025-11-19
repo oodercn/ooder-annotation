@@ -20,4 +20,6 @@ public @interface ButtonEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

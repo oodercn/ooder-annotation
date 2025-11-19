@@ -26,6 +26,7 @@ public enum CustomOnDestroyEventEnum implements ModuleEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private  String eventReturn;
     CustomOnDestroyEventEnum(String desc, CustomAction[] actions) {
         this.event = ModuleEventEnum.onDestroy;
         this.actions = actions;
@@ -87,6 +88,18 @@ public enum CustomOnDestroyEventEnum implements ModuleEvent {
         return desc;
     }
 
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
+
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
     @Override
     public Class<? extends Annotation> annotationType() {
         return ModuleEvent.class;

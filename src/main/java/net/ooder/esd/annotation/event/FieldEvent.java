@@ -24,4 +24,6 @@ public @interface FieldEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

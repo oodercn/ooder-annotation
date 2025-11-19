@@ -21,6 +21,7 @@ public enum ModuleOnMessageEventEnum implements ModuleEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private  String eventReturn;
     ModuleOnMessageEventEnum(String desc, CustomAction[] actions) {
         this.event = ModuleEventEnum.onMessage;
         this.actions = actions;
@@ -45,7 +46,18 @@ public enum ModuleOnMessageEventEnum implements ModuleEvent {
     public void setDesc(String desc) {
         this.desc = desc;
     }
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
 
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
     @Override
     public boolean _return() {
         return true;

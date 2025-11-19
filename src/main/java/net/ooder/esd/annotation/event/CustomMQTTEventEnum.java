@@ -20,6 +20,7 @@ public enum CustomMQTTEventEnum implements MQTTEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private  String eventReturn;
     CustomMQTTEventEnum(MQTTEventEnum event, String desc, CustomAction[] actions) {
         this.event = event;
         this.actions = actions;
@@ -87,7 +88,18 @@ public enum CustomMQTTEventEnum implements MQTTEvent {
     public String expression() {
         return null;
     }
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
 
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
     @Override
     public Class<? extends Annotation> annotationType() {
         return MQTTEvent.class;

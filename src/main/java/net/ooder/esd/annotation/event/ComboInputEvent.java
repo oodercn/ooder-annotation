@@ -19,4 +19,6 @@ public @interface ComboInputEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

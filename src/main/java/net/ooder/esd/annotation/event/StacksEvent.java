@@ -20,4 +20,6 @@ public @interface StacksEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }

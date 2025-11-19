@@ -24,4 +24,6 @@ public @interface GridEvent {
     String expression() default "";
 
     boolean _return() default true;
+
+    String eventReturn() default "{true}";
 }

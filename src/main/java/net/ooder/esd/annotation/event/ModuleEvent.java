@@ -21,4 +21,6 @@ public @interface ModuleEvent {
     String desc() default "";
 
     boolean _return() default true;
+
+    String eventReturn() default "{true}";
 }

@@ -28,6 +28,8 @@ public @interface ToolBarEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
     String className() default "{args[1].euClassName}";
 
     String targetFrame() default "{args[1].targetFrame}";

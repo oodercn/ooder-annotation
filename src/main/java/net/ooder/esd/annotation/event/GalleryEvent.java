@@ -28,5 +28,7 @@ public @interface GalleryEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 
 }

@@ -20,6 +20,7 @@ public enum ModuleAfterShowEventEnum implements ModuleEvent {
     String desc;
     @JSONField(name = "return")
     private Boolean _return;
+    private  String eventReturn;
     ModuleAfterShowEventEnum(String desc, CustomAction[] actions) {
         this.event = ModuleEventEnum.afterShow;
         this.actions = actions;
@@ -67,7 +68,18 @@ public enum ModuleAfterShowEventEnum implements ModuleEvent {
     }
 
 
+    @Override
+    public String eventReturn() {
+        return eventReturn;
+    }
 
+    public String getEventReturn() {
+        return eventReturn;
+    }
+
+    public void setEventReturn(String eventReturn) {
+        this.eventReturn = eventReturn;
+    }
     @Override
     public ModuleEventEnum event() {
         return event;

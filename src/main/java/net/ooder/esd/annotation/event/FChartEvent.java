@@ -17,5 +17,8 @@ public @interface FChartEvent {
     String expression() default "";
 
     CustomAction[] actions();
+
     boolean _return() default true;
+
+    String eventReturn() default "{true}";
 }

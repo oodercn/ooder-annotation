@@ -23,4 +23,6 @@ public @interface MQTTEvent {
 
     boolean _return() default true;
 
+    String eventReturn() default "{true}";
+
 }
