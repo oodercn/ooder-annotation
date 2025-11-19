@@ -128,6 +128,7 @@ public class ResultModel<T> implements Future<T> {
     }
 
     public class Msg {
+        String title;
         String message;
         String errdes;
         String prompt;
@@ -139,6 +140,14 @@ public class ResultModel<T> implements Future<T> {
 
         public Msg() {
 
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public void setTitle(String title) {
+            this.title = title;
         }
 
         public String getMessage() {

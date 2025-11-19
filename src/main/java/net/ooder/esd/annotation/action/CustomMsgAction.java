@@ -4,22 +4,23 @@ import com.alibaba.fastjson.annotation.JSONField;
 import net.ooder.annotation.Enumstype;
 import net.ooder.esd.annotation.CustomAction;
 import net.ooder.esd.annotation.CustomCondition;
-import net.ooder.esd.annotation.event.*;
+import net.ooder.esd.annotation.event.ActionType;
+import net.ooder.esd.annotation.event.ActionTypeEnum;
 
 import java.lang.annotation.Annotation;
 
 public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0]}", "{args[1].msg.alert}"}),
-    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[0]}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
-    CONFIRM("确认框", CustomMsgMethod.busy, new String[]{"{args[0]}", "{args[1].msg.busy}"}),
-    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[0]}", "{args[1].msg.prompt}"}),
-    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[0]}", "{args[1].msg.message}"}),
-    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{null,"{args[1].msg.message|'操作成功'}"}),
-    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null,"{args[1].msg.errdes}","{args[1].errdes}"}),
-    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}","{args[1].msg.busy|'正在处理...'}"}),
+    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[1].msg.title}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
+    CONFIRM("确认框", CustomMsgMethod.busy, new String[]{"{args[1].msg.title}", "{args[1].msg.busy}"}),
+    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[1].msg.title}", "{args[1].msg.prompt}"}),
+    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message}"}),
+    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{"{args[1].msg.title}", "{args[1].msg.message|'操作成功'}"}),
+    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null, "{args[1].msg.title}", "{args[1].errdes}"}),
+    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}", "{args[1].msg.busy|'正在处理...'}"}),
     FREE("解除遮罩", CustomMsgMethod.free, new String[]{}),
     MSG("消息", CustomMsgMethod.msg, new String[]{"{args[0]}", "{args[1].msg.msg}", "200", "5000"}),
-    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[0]}", "{args[1].msg.log}"});
+    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[1].msg.title}", "{args[1].msg.log}"});
 
     private String desc;
 
@@ -30,7 +31,7 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     private String expression;
     private String redirection;
     @JSONField(name = "return")
-    private Boolean _return =  true;
+    private Boolean _return = true;
 
     private CustomCondition[] conditions;
     String className;
@@ -44,8 +45,8 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     private String[] params;
 
     CustomMsgAction(String script, String[] params) {
-        this.script=script;
-        this.params=params;
+        this.script = script;
+        this.params = params;
     }
 
 
@@ -162,6 +163,7 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     public CustomCondition[] conditions() {
         return new CustomCondition[0];
     }
+
     @Override
     public String okFlag() {
         return okFlag;
@@ -181,6 +183,7 @@ public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
     public String childName() {
         return childName;
     }
+
     @Override
     public String[] args() {
         return args;
