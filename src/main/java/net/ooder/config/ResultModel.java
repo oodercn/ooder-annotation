@@ -20,6 +20,8 @@ public class ResultModel<T> implements Future<T> {
 
     public Map<String, Object> ctx;
 
+    public Msg msg = new Msg();
+
     @JSONField(serialize = false)
     public String getToken() {
         return token;
@@ -113,8 +115,95 @@ public class ResultModel<T> implements Future<T> {
 
     @JSONField(serialize = false)
     public boolean isDone() {
-
         return false;
+    }
+
+
+    public Msg getMsg() {
+        return msg;
+    }
+
+    public void setMsg(Msg msg) {
+        this.msg = msg;
+    }
+
+    public class Msg {
+        String message;
+        String errdes;
+        String prompt;
+        String confirm;
+        String busy;
+        String log;
+        String alert;
+        String msg;
+
+        public Msg() {
+
+        }
+
+        public String getMessage() {
+            return message;
+        }
+
+        public void setMessage(String message) {
+            this.message = message;
+        }
+
+        public String getErrdes() {
+            return errdes;
+        }
+
+        public void setErrdes(String errdes) {
+            this.errdes = errdes;
+        }
+
+        public String getPrompt() {
+            return prompt;
+        }
+
+        public void setPrompt(String prompt) {
+            this.prompt = prompt;
+        }
+
+        public String getConfirm() {
+            return confirm;
+        }
+
+        public void setConfirm(String confirm) {
+            this.confirm = confirm;
+        }
+
+        public String getBusy() {
+            return busy;
+        }
+
+        public void setBusy(String busy) {
+            this.busy = busy;
+        }
+
+        public String getLog() {
+            return log;
+        }
+
+        public void setLog(String log) {
+            this.log = log;
+        }
+
+        public String getAlert() {
+            return alert;
+        }
+
+        public void setAlert(String alert) {
+            this.alert = alert;
+        }
+
+        public String getMsg() {
+            return msg;
+        }
+
+        public void setMsg(String msg) {
+            this.msg = msg;
+        }
     }
 
 }

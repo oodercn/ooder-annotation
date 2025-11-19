@@ -9,17 +9,17 @@ import net.ooder.esd.annotation.event.*;
 import java.lang.annotation.Annotation;
 
 public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
-    ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0]}", "{args[1]}"}),
-    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[0]}", "{args[1]}", "{page.projectName}", "{page.getValue()}"}),
-    CONFIRM("确认框", CustomMsgMethod.busy, new String[]{"{args[0]}", "{args[1]}"}),
-    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[0]}", "{args[1]}"}),
-    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[0]}", "{args[1]}"}),
-    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{null,"操作成功"}),
-    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null,"操作成功","{args[1].errdes}"}),
-    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}","正在处理..."}),
+    ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0]}", "{args[1].msg.alert}"}),
+    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[0]}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
+    CONFIRM("确认框", CustomMsgMethod.busy, new String[]{"{args[0]}", "{args[1].msg.busy}"}),
+    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[0]}", "{args[1].msg.prompt}"}),
+    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[0]}", "{args[1].msg.message}"}),
+    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{null,"{args[1].msg.message|'操作成功'}"}),
+    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null,"{args[1].msg.errdes}","{args[1].errdes}"}),
+    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}","{args[1].msg.busy|'正在处理...'}"}),
     FREE("解除遮罩", CustomMsgMethod.free, new String[]{}),
-    MSG("消息", CustomMsgMethod.msg, new String[]{"{args[0]}", "{args[1]}", "200", "5000"}),
-    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[0]}", "{args[1]}"});
+    MSG("消息", CustomMsgMethod.msg, new String[]{"{args[0]}", "{args[1].msg.msg}", "200", "5000"}),
+    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[0]}", "{args[1].msg.log}"});
 
     private String desc;
 
