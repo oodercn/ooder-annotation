@@ -19,6 +19,8 @@ public enum CustomCallBack implements APIEvent {
 
     MESSAGE(APIEventEnum.afterInvoke, "执行完毕", new CustomAction[]{CustomMsgAction.MESSAGE}),
 
+    ECHO(APIEventEnum.afterInvoke, "调试日志", new CustomAction[]{CustomMsgAction.ECHO}),
+
     TREEOPENTONODE(APIEventEnum.afterInvoke, LocalTreeAction.OPENTONODE.getDesc(), new CustomAction[]{LocalTreeAction.OPENTONODE}),
 
     TREETOGGLENODE(APIEventEnum.afterInvoke, LocalTreeAction.TOGGLENODE.getDesc(), new CustomAction[]{LocalTreeAction.TOGGLENODE}),
@@ -62,7 +64,7 @@ public enum CustomCallBack implements APIEvent {
     CustomAction[] actions;
     String desc;
     @JSONField(name = "return")
-    private Boolean _return=true;
+    private Boolean _return = true;
     private String eventReturn;
 
     CustomCallBack(APIEventEnum event, String desc, CustomAction[] actions) {
