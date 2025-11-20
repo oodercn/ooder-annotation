@@ -10,18 +10,18 @@ import net.ooder.esd.annotation.event.ActionTypeEnum;
 import java.lang.annotation.Annotation;
 
 public enum CustomMsgAction implements ActionType, CustomAction, Enumstype {
-    ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0]}", "{args[1].msg.alert}"}),
-    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[1].msg.title}", "{args[1].msg.echo}", "{page.projectName}", "{page.getValue()}"}),
-    CONFIRM("确认框", CustomMsgMethod.confirm, new String[]{"{args[1].msg.title}", "{args[1].msg.confirm}"}),
-    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[1].msg.title}", "{args[1].msg.prompt}"}),
-    WARN("警告确认", "{args[1].msg.title}", CustomMsgMethod.confirm, new String[]{"确认操作？", "确认操作吗？该操作可能不可恢复！"}),
-    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[1].msg.title}"}),
-    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{"{args[1].msg.title||'操作成功'}"}),
-    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null, "{args[1].msg.title}", "{args[1].errdes}"}),
-    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}", "{args[1].msg.busy||'正在处理...'}"}),
+    ALERT("警告", CustomMsgMethod.alert, new String[]{"{args[0].title}", "{args[1].message}"}),
+    ECHO("调试框", CustomMsgMethod.echo, new String[]{"{args[1].title}", "{args[1].message}", "{page.projectName}", "{page.getValue()}"}),
+    CONFIRM("确认框", CustomMsgMethod.confirm, new String[]{"{args[1].title}", "{args[1].message}"}),
+    PROMPT("提示对话框", CustomMsgMethod.prompt, new String[]{"{args[1].title}", "{args[1].message}"}),
+    WARN("警告确认", "{args[1].title}", CustomMsgMethod.confirm, new String[]{"确认操作？", "确认操作吗？该操作可能不可恢复！"}),
+    MESSAGE("提示框", CustomMsgMethod.message, new String[]{"{args[1].title}"}),
+    SUCCESSMSG("成功调用提示", CustomMsgMethod.message, new String[]{"{args[1].title||'操作成功'}"}),
+    ERRORMSG("错误信息提示", CustomMsgMethod.alert, new String[]{null, "{args[1].title}", "{args[1].errdes||args[1].message}"}),
+    BUSY("遮罩", CustomMsgMethod.busy, new String[]{"{false}", "{args[1].message||'正在处理...'}"}),
     FREE("解除遮罩", CustomMsgMethod.free, new String[]{}),
-    MSG("消息", CustomMsgMethod.msg, new String[]{"{args[0]}", "{args[1].msg.msg}", "200", "5000"}),
-    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[1].msg.title}", "{args[1].msg.log}"});
+    MSG("消息", CustomMsgMethod.msg, new String[]{"{args[1].title}", "{args[1].message}", "200", "5000"}),
+    LOG("console日志", CustomMsgMethod.log, new String[]{"{args[1].title}", "{args[1].message}"});
 
     private String desc;
 
