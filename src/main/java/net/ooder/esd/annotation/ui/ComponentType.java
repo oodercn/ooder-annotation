@@ -236,6 +236,13 @@ public enum ComponentType implements IconEnumstype {
         };
     }
 
+    public static ComponentType[] getContainerComponents() {
+        return new ComponentType[]{
+                PANEL, DIV, BLOCK, FORMLAYOUT
+        };
+    }
+
+
     public static ComponentType[] getCustomConnComponents() {
         return new ComponentType[]{
                 PANEL, DIV, BLOCK, GROUP, TIMER, ANIMBINDER
