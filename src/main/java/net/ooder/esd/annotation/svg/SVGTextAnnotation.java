@@ -1,16 +1,19 @@
 package net.ooder.esd.annotation.svg;
 
-import net.ooder.esd.annotation.ui.CursorType;
 import net.ooder.annotation.NotNull;
+import net.ooder.esd.annotation.CustomClass;
+import net.ooder.esd.annotation.ui.ComponentType;
+import net.ooder.esd.annotation.ui.CursorType;
+import net.ooder.esd.annotation.ui.CustomViewType;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
+@CustomClass(viewType = CustomViewType.COMPONENT, componentType = ComponentType.SVGTEXT)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
-public @interface SVGText {
+public @interface SVGTextAnnotation {
     String text() default "";
 
     @NotNull

@@ -73,7 +73,7 @@ public @interface SVGAttrAnnotation {
 
     PathKeyAnnotation KEY();
 
-    SVGText TEXT() default @SVGText;
+    SVGTextAnnotation TEXT() default @SVGTextAnnotation;
 
     SVGBGText BG() default @SVGBGText;
 }

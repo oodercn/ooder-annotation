@@ -10,13 +10,13 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD, ElementType.FIELD})
 public @interface SVGKeyAnnotation {
 
-    int x()default 0;
+    String x() default "0";
 
-    int y()default 0;
+    String y() default "0";
 
-    String fill()default "";
+    String fill() default "";
 
-    String stroke()default "";
+    String stroke() default "";
 
-    String title()default "";
+    String title() default "";
 }

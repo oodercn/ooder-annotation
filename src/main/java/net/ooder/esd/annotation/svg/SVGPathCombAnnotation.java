@@ -75,7 +75,7 @@ public @interface SVGPathCombAnnotation {
 
     String title() default "";
 
-    SVGText TEXT() default @SVGText;
+    SVGTextAnnotation TEXT() default @SVGTextAnnotation;
 
     SVGBGText BG() default @SVGBGText;
 }
