@@ -29,7 +29,7 @@ public @interface BeforeLayoutAnnotation {
     @NotNull
     OverflowType overflow() default OverflowType.auto;
 
-    PosType pos()default PosType.before;
+    PosType pos()default PosType.befor;
 
     String expression() default "";
 
