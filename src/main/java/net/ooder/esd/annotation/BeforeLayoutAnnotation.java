@@ -1,8 +1,8 @@
 package net.ooder.esd.annotation;
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.OverflowType;
 import net.ooder.esd.annotation.ui.PosType;
-import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
@@ -26,10 +26,11 @@ public @interface BeforeLayoutAnnotation {
     boolean hidden() default false;
 
     boolean cmd() default true;
+
     @NotNull
     OverflowType overflow() default OverflowType.auto;
 
-    PosType pos()default PosType.befor;
+    PosType pos() default PosType.before;
 
     String expression() default "";
 
@@ -38,8 +39,10 @@ public @interface BeforeLayoutAnnotation {
     String itemClass() default "";
 
     String url() default "";
+
     @NotNull
     boolean flexSize() default false;
+
     @NotNull
     boolean transparent() default true;
 
