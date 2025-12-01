@@ -10,6 +10,7 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
 @CustomClass(viewType = CustomViewType.COMPONENT, componentType = ComponentType.SVGTEXT)
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
@@ -31,6 +32,12 @@ public @interface SVGTextAnnotation {
     String fontStyle() default "";
 
     CursorType cursor() default CursorType.crosshair;
+
+    String path() default "";
+
+    String fontFamily() default "";
+
+    String title() default "";
 
 
 }
