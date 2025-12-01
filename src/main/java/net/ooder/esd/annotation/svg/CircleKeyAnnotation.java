@@ -13,16 +13,16 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.FIELD})
 public @interface CircleKeyAnnotation {
-    int cx() default 0;
+    String cx() default "0";
 
-    int cy() default 0;
+    String cy() default "0";
 
     @NotNull
-    int r() default 25;
+    String r() default "25";
 
-    int x() default 0;
+    String x() default "0";
 
-    int y() default 0;
+    String y() default "0";
 
     @NotNull
     String fill() default "90-#5198D3-#A1C8F6";

@@ -13,19 +13,19 @@ import java.lang.annotation.Target;
 public @interface SVGAttrAnnotation {
 
 
-    int rx() default 0;
+    String rx() default "0";
 
-    int ry() default 0;
+    String ry() default "0";
 
     String x() default "0";
 
-    String y() default  "0";
+    String y() default "0";
 
-    int r() default 0;
+    String r() default "0";
 
-    int cx() default 0;
+    String cx() default "0";
 
-    int cy() default 0;
+    String cy() default "0";
 
     String stroke() default "";
 
@@ -71,7 +71,7 @@ public @interface SVGAttrAnnotation {
 
     String title() default "";
 
-    PathKeyAnnotation KEY();
+    PathKeyAnnotation KEY() default @PathKeyAnnotation(path = "");
 
     SVGTextAnnotation TEXT() default @SVGTextAnnotation;
 

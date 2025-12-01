@@ -22,9 +22,9 @@ public @interface RectKeyAnnotation {
 
     int height() default 40;
 
-    int x() default 0;
+    String x() default "0";;
 
-    int y() default 0;
+    String y() default "0";;
 
     String fill() default "";
 

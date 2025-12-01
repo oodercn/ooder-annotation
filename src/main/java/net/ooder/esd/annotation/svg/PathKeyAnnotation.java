@@ -10,9 +10,9 @@ import java.lang.annotation.Target;
 public @interface PathKeyAnnotation {
     String path();
 
-    int x() default -1;
+    String x() default "-1";;
 
-    int y() default -1;
+    String y() default "-1";;
 
     String fill() default "";
 
