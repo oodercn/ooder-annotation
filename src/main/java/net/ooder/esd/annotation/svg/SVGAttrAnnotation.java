@@ -17,9 +17,9 @@ public @interface SVGAttrAnnotation {
 
     int ry() default 0;
 
-    int x() default 0;
+    String x() default "0";
 
-    int y() default 0;
+    String y() default  "0";
 
     int r() default 0;
 
