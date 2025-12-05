@@ -40,7 +40,7 @@ public @interface SVGAttrAnnotation {
     String src() default "";
 
 
-    String transform() default "";
+    String[] transform() default {};
 
 
     @JSONField(name = "stroke-width")
