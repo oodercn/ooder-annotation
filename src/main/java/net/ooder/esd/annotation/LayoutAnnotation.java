@@ -1,10 +1,10 @@
 package net.ooder.esd.annotation;
 
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.BorderType;
 import net.ooder.esd.annotation.ui.LayoutType;
 import net.ooder.esd.annotation.ui.NavComboType;
-import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
@@ -16,7 +16,7 @@ public @interface LayoutAnnotation {
     LayoutItemAnnotation[] layoutItems() default {};
 
     @NotNull
-    LayoutType type() default LayoutType.horizontal;
+    LayoutType layoutType() default LayoutType.horizontal;
 
     boolean dragSortable() default false;
 
