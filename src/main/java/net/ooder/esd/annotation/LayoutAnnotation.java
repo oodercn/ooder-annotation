@@ -16,7 +16,7 @@ public @interface LayoutAnnotation {
     LayoutItemAnnotation[] layoutItems() default {};
 
     @NotNull
-    LayoutType layoutType() default LayoutType.horizontal;
+    LayoutType layoutType() default LayoutType.vertical;
 
     boolean dragSortable() default false;
 
