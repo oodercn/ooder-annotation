@@ -5,7 +5,7 @@ import net.ooder.annotation.Enumstype;
 public enum UIPositionType implements Enumstype {
     STATIC("static"),
     RELATIVE("relative"),
-    ABSOLUTE("right");
+    ABSOLUTE("absolute");
 
     private final String name;
 

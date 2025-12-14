@@ -2,6 +2,7 @@ package net.ooder.esd.annotation;
 
 
 import net.ooder.esd.annotation.ui.Dock;
+import net.ooder.esd.annotation.ui.UIPositionType;
 import net.ooder.esd.annotation.ui.VisibilityType;
 import net.ooder.annotation.NotNull;
 
@@ -43,6 +44,6 @@ public @interface UIAnnotation {
 
     public String height() default "";
 
-    public String position() default "";
+    public UIPositionType position() default UIPositionType.STATIC;
 
 }
