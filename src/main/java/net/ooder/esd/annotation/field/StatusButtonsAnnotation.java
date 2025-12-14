@@ -19,7 +19,7 @@ public @interface StatusButtonsAnnotation {
     String barHeight() default "2.5em";
 
     @NotNull
-    String position() default "static";
+    UIPositionType position() default UIPositionType.STATIC;
 
     @NotNull
     String width() default "auto";

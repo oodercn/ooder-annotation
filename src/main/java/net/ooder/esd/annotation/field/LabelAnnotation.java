@@ -1,11 +1,7 @@
 package net.ooder.esd.annotation.field;
 
 import net.ooder.esd.annotation.CustomClass;
-import net.ooder.esd.annotation.ui.CustomViewType;
-import net.ooder.esd.annotation.ui.ComponentType;
-import net.ooder.esd.annotation.ui.HAlignType;
-import net.ooder.esd.annotation.ui.ImagePos;
-import net.ooder.esd.annotation.ui.VAlignType;
+import net.ooder.esd.annotation.ui.*;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -45,7 +41,7 @@ public @interface LabelAnnotation {
 
     String fontFamily() default "";
 
-    String position() default "";
+    UIPositionType position() default UIPositionType.STATIC;
 
     boolean isFormField() default true;
 

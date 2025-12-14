@@ -1,6 +1,7 @@
 package net.ooder.esd.annotation.svg;
 
 
+import net.ooder.esd.annotation.ui.UIPositionType;
 import net.ooder.esd.annotation.ui.VisibilityType;
 
 import java.lang.annotation.ElementType;
@@ -23,7 +24,7 @@ public @interface SVGAnnotation {
 
     String renderer() default "";
 
-    String position() default "";
+    UIPositionType position() default UIPositionType.RELATIVE;
 
     String path() default "";
 

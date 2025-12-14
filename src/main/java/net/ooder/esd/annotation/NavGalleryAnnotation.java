@@ -3,6 +3,7 @@ package net.ooder.esd.annotation;
 import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.BorderType;
 import net.ooder.esd.annotation.ui.Dock;
+import net.ooder.esd.annotation.ui.UIPositionType;
 
 import java.lang.annotation.*;
 
@@ -29,7 +30,7 @@ public @interface NavGalleryAnnotation {
     @NotNull
     String iconFontSize() default "4em";
 
-    String position() default "";
+    UIPositionType position() default UIPositionType.RELATIVE;
 
     @NotNull
     BorderType borderType() default BorderType.none;
