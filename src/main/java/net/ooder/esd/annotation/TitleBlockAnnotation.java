@@ -76,7 +76,7 @@ public @interface TitleBlockAnnotation {
 
     boolean autoIconColor() default true;
 
-    boolean autoItemColor() default false;
+    boolean autoItemColor() default true;
 
     boolean autoFontColor() default false;
 
