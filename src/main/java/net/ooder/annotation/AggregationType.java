@@ -1,5 +1,10 @@
 package net.ooder.annotation;
 
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 public enum AggregationType implements IconEnumstype {
     API("通用API", "ri-plug-line"),
     MENU("菜单", "ri-menu-line"),
@@ -50,5 +55,27 @@ public enum AggregationType implements IconEnumstype {
     @Override
     public String getName() {
         return name;
+    }
+
+    /**
+     * 标记AgentAction方法的参数元数据
+     */
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.PARAMETER)
+    public static @interface AgentParam {
+        /** 参数名称 */
+        String name();
+
+        /** 参数描述 */
+        String description() default "";
+
+        /** 是否必填 */
+        boolean required() default true;
+
+        /** 默认值 */
+        String defaultValue() default "";
+
+        /** 参数验证规则 */
+        String validationRule() default "";
     }
 }

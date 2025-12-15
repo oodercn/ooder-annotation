@@ -2,7 +2,7 @@ package net.ooder.annotation;
 
 /**
  * 参数验证规则枚举
- * 用于{@link AgentParam}注解指定参数验证类型
+ * 用于{@link AggregationType.AgentParam}注解指定参数验证类型
  */
 public enum ValidationRule {
     /** 非空验证 - 检查参数值不为null且不为空字符串 */
