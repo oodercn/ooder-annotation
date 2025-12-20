@@ -5,7 +5,7 @@ import net.ooder.common.EngineType;
 
 public enum Attributetype implements IconEnumstype {
 
-    ADVANCE("ri-headset-line", "引擎内部属性", EngineType.ESD),
+    ADVANCE("ri-headphone-line", "引擎内部属性", EngineType.ESD),
 
     TOOL("ri-video-line", "自动活动属性", EngineType.ESD),
 
@@ -43,13 +43,13 @@ public enum Attributetype implements IconEnumstype {
 
     EVENT("ri-notification-line", "事件属性", EngineType.IOT),
 
-    DEVICE("ri-chip-line", "事件属性", EngineType.IOT),
+    DEVICE("ri-cpu-line", "事件属性", EngineType.IOT),
 
-    DEVICEEVENT("ri-chip-line", "设备事件属性", EngineType.IOT),
+    DEVICEEVENT("ri-cpu-line", "设备事件属性", EngineType.IOT),
 
     USEREVENT("ri-user-line", "用户事件属性", EngineType.IOT),
 
-    COMMAND("ri-satellite-line", "命令", EngineType.IOT);
+    COMMAND("ri-satellite-dish-line", "命令", EngineType.IOT);
 
     public EngineType getEngineType() {
         return engineType;

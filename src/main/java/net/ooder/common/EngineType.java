@@ -5,7 +5,7 @@ import net.ooder.annotation.IconEnumstype;
 public enum EngineType implements IconEnumstype {
     CUSTOM("ri-settings-3-line", "通用操作"),
     ESD("ri-upload-line", "内部应用"),
-    IOT("ri-industry-line", "IOT引擎"),
+    IOT("ri-industrial-line", "IOT引擎"),
     ESB("ri-server-line", "服务调度引擎");
     
     private String type;

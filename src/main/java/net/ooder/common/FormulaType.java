@@ -16,7 +16,7 @@ public enum FormulaType implements IconEnumstype {
 
     FormRight(Attributetype.PAGERIGHT, "ri-file-text-line", "表单项授权"),
 
-    BarRight(Attributetype.PAGERIGHT, "ri-toolbox-line", "按钮组授权"),
+    BarRight(Attributetype.PAGERIGHT, "ri-tools-line", "按钮组授权"),
 
     ActionRight(Attributetype.PAGERIGHT, "ri-play-line", "动作组授权"),
 
@@ -58,7 +58,7 @@ public enum FormulaType implements IconEnumstype {
 
     CommandSelectedID(Attributetype.COMMAND, "ri-terminal-line", "执行命令"),
 
-    DeviceSelectedID(Attributetype.DEVICE, "ri-chip-line", "选择设备"),
+    DeviceSelectedID(Attributetype.DEVICE, "ri-cpu-line", "选择设备"),
 
     ServiceSelectedID(Attributetype.SERVICE, "ri-server-line", "内部接口"),
 

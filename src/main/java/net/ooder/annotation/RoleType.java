@@ -12,7 +12,7 @@ public enum RoleType implements IconEnumstype {
     PersonLevel("职级", "ri-node-tree", RoleOtherType.Person),
     Group("用户组", "ri-group-line", RoleOtherType.Person),
     OrgLevel("部门级别", "ri-node-tree", RoleOtherType.Org),
-    OrgRole("部门角色", "ri-building-user-line", RoleOtherType.Org);;
+    OrgRole("部门角色", "ri-building-line", RoleOtherType.Org);;
     private String type;
 
     private String name;

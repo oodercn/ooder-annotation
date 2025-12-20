@@ -4,7 +4,7 @@ package net.ooder.esd.annotation.ui;
 public enum FileImgCssType implements UIType {
     html("html", "ri-code-line"),
     css("css", "ri-css3-line"),
-    js("js", "ri-js-line"),
+    js("js", "ri-javascript-line"),
     cls("cls", "ri-file-code-line"),
     json("json", "ri-code-line"),
     xml("xml", "ri-code-line"),
@@ -15,7 +15,7 @@ public enum FileImgCssType implements UIType {
     png("png", "ri-image-line"),
     gif("gif", "ri-image-line"),
     bmp("bmp", "ri-image-line"),
-    unkown("unkown", "ri-question-circle-line");
+    unkown("unkown", "ri-question-line");
 
 
     private String type;

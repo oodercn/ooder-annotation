@@ -3,8 +3,8 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.esd.annotation.ui.ItemType;
 
 public enum DebugButtonType implements ItemType {
-    clear("clear", "清空", "ri-circle-notch-line"),
-    config("config", "配置", "ri-cog-line"),
+    clear("clear", "清空", "ri-refresh-line"),
+    config("config", "配置", "ri-settings-3-line"),
     edit("edit", "编辑页面", "ri-code-line");
 
     private String id;

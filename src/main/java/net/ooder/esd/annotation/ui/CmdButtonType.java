@@ -4,10 +4,10 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum CmdButtonType implements IconEnumstype {
-    button("按钮", "ri-button-line"),
+    button("按钮", "ri-checkbox-blank-line"),
     image("图片", "ri-image-line"),
-    text("文本", "ri-font-line"),
-    split("分隔符", "ri-grip-lines-line");
+    text("文本", "ri-font-size"),
+    split("分隔符", "ri-divider-line");
     private final String name;
     private final String imageClass;
 

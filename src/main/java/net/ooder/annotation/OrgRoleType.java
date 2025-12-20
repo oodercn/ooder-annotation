@@ -4,7 +4,7 @@ package net.ooder.annotation;
 public enum OrgRoleType implements IconEnumstype {
 
     OrgLevel("部门级别", "ri-node-tree", RoleOtherType.Org),
-    OrgRole("部门角色", "ri-building-user-line", RoleOtherType.Org);;
+    OrgRole("部门角色", "ri-building-line", RoleOtherType.Org);;
     private String type;
 
     private String name;
