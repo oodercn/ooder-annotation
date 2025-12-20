@@ -4,7 +4,7 @@ package net.ooder.esd.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum EmbedType implements IconEnumstype {
-    module("完整模块", "ri-layers-line"), component("组件植入", "ri-tools-line");
+    module("完整模块", "ri-stack-line"), component("组件植入", "ri-tools-line");
 
 
     private final String name;

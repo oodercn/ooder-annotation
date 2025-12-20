@@ -7,7 +7,7 @@ public enum CmdButtonType implements IconEnumstype {
     button("按钮", "ri-checkbox-blank-line"),
     image("图片", "ri-image-line"),
     text("文本", "ri-font-size"),
-    split("分隔符", "ri-divider-line");
+    split("分隔符", "ri-separator");
     private final String name;
     private final String imageClass;
 

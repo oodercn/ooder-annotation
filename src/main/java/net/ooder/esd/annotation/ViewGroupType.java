@@ -10,7 +10,7 @@ public enum ViewGroupType implements Enumstype {
     LAYOUT("布局容器", "ri-layout-line"),
     VIEW("通用视图", "ri-eye-line"),
     NAV("框架导航", "ri-compass-line"),
-    NAVTREE("菜单导航", "ri-sitemap-line");
+    NAVTREE("菜单导航", "ri-node-tree");
 
 
     private final String name;
