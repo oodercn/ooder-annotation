@@ -47,7 +47,7 @@ public @interface DialogAnnotation {
     String name() default "";
 
     @NotNull
-    String imageClass() default "ri-window-maximize-line";
+    String imageClass() default "ri-window-line";
 
     String id() default "";
 

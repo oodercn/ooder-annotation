@@ -45,7 +45,7 @@ public enum ComponentType implements IconEnumstype {
     STATUSBUTTONS("ood.UI.StatusButtons", "StatusButtonsComponent", "状态按钮", new ComponentBaseType[]{ComponentBaseType.absList}, "ri-toggle-line", ComponentType.BAR),
     AUDIO("ood.UI.Audio", "AudioComponent", "音频播放", new ComponentBaseType[]{}, "ri-volume-up-line", ComponentType.UI),
     OPINION("ood.UI.Opinion", "OpinionComponent", "意见框", new ComponentBaseType[]{}, "ri-chat-3-line", ComponentType.LIST),
-    MODLUEPLACEHOLDER("ood.UI.MoudluePlaceHolder", "ModulePlaceHolder", "Module Placeholder", new ComponentBaseType[]{}, "ri-box-line", ComponentType.COMBOINPUT),
+    MODLUEPLACEHOLDER("ood.UI.MoudluePlaceHolder", "ModulePlaceHolder", "Module Placeholder", new ComponentBaseType[]{}, "ri-box-2-line", ComponentType.COMBOINPUT),
     BUTTONVIEWS("ood.UI.ButtonViews", "ButtonViewsComponent", "Button Views", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.TABS),
     MBUTTONVIEWS("ood.UI.MTabs", "MButtonViewsComponent", "Mobile Tabs", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.TABS),
     PAGEBAR("ood.UI.PageBar", "PageBarComponent", "翻页栏", new ComponentBaseType[]{}, "ri-skip-left-line", ComponentType.UI),
@@ -93,9 +93,9 @@ public enum ComponentType implements IconEnumstype {
     GALLERY("ood.UI.Gallery", "GalleryComponent", "Gallery画廊", new ComponentBaseType[]{}, "ri-image-line", ComponentType.LIST),
     BUTTONLAYOUT("ood.UI.ButtonLayout", "ButtonLayoutComponent", "按钮导航布局", new ComponentBaseType[]{}, "ri-menu-line", ComponentType.TABS),
     TITLEBLOCK("ood.UI.TitleBlock", "TitleBlockComponent", "磁贴布局", new ComponentBaseType[]{}, "ri-grid-line", ComponentType.LIST),
-    CONTENTBLOCK("ood.UI.ContentBlock", "ContentBlockComponent", "内容列表", new ComponentBaseType[]{}, "ri-list-ordered"), ComponentType.LIST),
-    TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "列表视图", new ComponentBaseType[]{}, "ri-table-line", new ComponentType[]{ComponentType.LIST}),
-    MTREEGRID("ood.UI.MTreeGrid", "MTreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-table-line", new ComponentType[]{ComponentType.TREEGRID}),
+    CONTENTBLOCK("ood.UI.ContentBlock", "ContentBlockComponent", "内容列表", new ComponentBaseType[]{}, "ri-list-ordered", ComponentType.LIST),
+    TREEGRID("ood.UI.TreeGrid", "TreeGridComponent", "列表视图", new ComponentBaseType[]{}, "ri-table-line",ComponentType.LIST),
+    MTREEGRID("ood.UI.MTreeGrid", "MTreeGridComponent", "树形列表", new ComponentBaseType[]{}, "ri-table-line", ComponentType.TREEGRID),
     FOLDINGTABS("ood.UI.FoldingTabs", "FoldingTabsComponent", "FoldingTAB容器", new ComponentBaseType[]{}, "ri-layout-2-line", ComponentType.TABS),
 
 

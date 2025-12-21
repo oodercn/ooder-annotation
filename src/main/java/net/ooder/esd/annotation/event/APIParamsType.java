@@ -5,7 +5,7 @@ import net.ooder.annotation.IconEnumstype;
 
 public enum APIParamsType implements IconEnumstype {
 
-    RequestData("请求参数", "ri-paper-plane-line"),
+    RequestData("请求参数", "ri-send-plane-line"),
     ResponseData("数据绑定", "ri-plug-line"),
     ResponseCall("回调函数", "ri-code-line");
 

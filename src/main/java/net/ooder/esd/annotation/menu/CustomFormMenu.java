@@ -14,7 +14,7 @@ import java.lang.annotation.Annotation;
 public enum CustomFormMenu implements CustomMenu, IconEnumstype {
 
 
-    RELOAD("刷新", "ri-sync-alt-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.RELOAD}),
+    RELOAD("刷新", "ri-refresh-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.RELOAD}),
 
     SAVE("保存", "ri-save-line", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
@@ -22,15 +22,15 @@ public enum CustomFormMenu implements CustomMenu, IconEnumstype {
 
     SUBMITFORM("确定", "ri-check-line", "true",IconColorEnum.GREEN, new CustomAction[]{CustomFormAction.SAVE}),
 
-    CLOSE("关闭", "ri-times-line", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
+    CLOSE("关闭", "ri-close-line", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSE}),
 
-    CLOSETOP("关闭", "ri-times-line", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSETOP}),
+    CLOSETOP("关闭", "ri-close-line", "true",IconColorEnum.CYAN, new CustomAction[]{CustomPageAction.CLOSETOP}),
 
     SEARCH("查找", "ri-search-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomFormAction.SEARCH}),
 
-    RESET("重置", "ri-redo-line", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomFormAction.RESET}),
+    RESET("重置", "ri-refresh-line", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomFormAction.RESET}),
 
-    PRINT("打印", "ri-print-line", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
+    PRINT("打印", "ri-printer-line", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomGlobalAction.Print}),;
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 

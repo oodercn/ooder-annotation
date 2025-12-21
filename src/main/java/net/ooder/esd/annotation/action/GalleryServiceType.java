@@ -6,7 +6,7 @@ import net.ooder.annotation.IconEnumstype;
 public enum GalleryServiceType implements IconEnumstype {
     CustomService("绑定服务", "CustomService", "ri-settings-3-line"),
     CustomMenuService("绑定菜单", "CustomMenuService", "ri-menu-line"),
-    CustomRowMenuService("行按钮绑定", "CustomRowMenuService", "ri-toolbox-line");
+    CustomRowMenuService("行按钮绑定", "CustomRowMenuService", "ri-tools-line");
 
     private String name;
 

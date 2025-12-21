@@ -3,7 +3,7 @@ package net.ooder.esd.annotation.action;
 import net.ooder.annotation.IconEnumstype;
 
 public enum DYNAppendType implements IconEnumstype {
-    append("内部渲染", "ri-box-line"), ref("引用MODULE", "ri-cubes-line"), dyn("动态装载", "ri-magic-line");
+    append("内部渲染", "ri-box-2-line"), ref("引用MODULE", "ri-box-2-line"), dyn("动态装载", "ri-magic-line");
 
 
     private final String name;

@@ -11,15 +11,15 @@ import java.lang.annotation.Annotation;
 
 public enum OpinionMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "delPath", "ri-times-line", "true",IconColorEnum.YELLOW,  new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    DELETE("删除", "delPath", "ri-close-line", "true",IconColorEnum.YELLOW,  new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
 
-    ADD("添加", "addPath", "ri-plus-line", "true",IconColorEnum.GREEN,  new CustomAction[]{CustomPageAction.ADD}),
+    ADD("添加", "addPath", "ri-add-line", "true",IconColorEnum.GREEN,  new CustomAction[]{CustomPageAction.ADD}),
 
     FLAGCLICK("下标点击", "flagClick", "ri-flag-line", "true",IconColorEnum.NONE,  new CustomAction[]{}),
 
     SUBMITFORM("确定", "saveUrl", "ri-check-line", "true",IconColorEnum.DARKBLUE,  new CustomAction[]{CustomFormAction.SAVE}),
 
-    RELOAD("刷新", "dataPath", "ri-sync-alt-line", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-refresh-line", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;

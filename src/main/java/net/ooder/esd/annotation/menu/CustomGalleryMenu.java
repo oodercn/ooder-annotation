@@ -11,11 +11,11 @@ import java.lang.annotation.Annotation;
 
 public enum CustomGalleryMenu implements CustomMenu, IconEnumstype {
     
-    DELETE("删除", "delPath", "ri-times-line", "true", IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
-    ADD("添加", "addPath", "ri-calendar-plus-line", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
-    FLAGCLICK("下标点击", "flagClick", "ri-calendar-plus-line", "true", IconColorEnum.NONE, new CustomAction[]{}),
+    DELETE("删除", "delPath", "ri-close-line", "true", IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    ADD("添加", "addPath", "ri-add-line", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    FLAGCLICK("下标点击", "flagClick", "ri-calendar-event-line", "true", IconColorEnum.NONE, new CustomAction[]{}),
     SUBMITFORM("确定", "saveUrl", "ri-check-line", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
-    RELOAD("刷新", "dataPath", "ri-circle-notch-line", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-refresh-line", "true", IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;
 

@@ -3,7 +3,7 @@ package net.ooder.esd.annotation.annotation.ui;
 import net.ooder.annotation.IconEnumstype;
 
 public enum AppendType implements IconEnumstype {
-    append("内部渲染", "ri-cube-line"), ref("引用MODULE", "ri-link-line"), runtime("运行期", "ri-settings-3-line");
+    append("内部渲染", "ri-box-2-line"), ref("引用MODULE", "ri-links-line"), runtime("运行期", "ri-settings-3-line");
 
 
     private final String name;

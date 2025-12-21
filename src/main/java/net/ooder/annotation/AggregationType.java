@@ -10,11 +10,11 @@ public enum AggregationType implements IconEnumstype {
     MENU("菜单", "ri-menu-line"),
     VIEW("视图", "ri-eye-line"),
     NAVIGATION("导航", "ri-compass-line"),
-    BAR("BAR组件", "ri-box-line"),
-    MODULE("模块", "ri-box-line"),
+    BAR("BAR组件", "ri-box-2-line"),
+    MODULE("模块", "ri-box-2-line"),
     REPOSITORY("仓储", "ri-database-2-line"),
     DOMAIN("领域", "ri-stack-line"),
-    ENTITY("实体", "ri-box-line");
+    ENTITY("实体", "ri-box-2-line");
 
     private final String name;
     private final String imageClass;

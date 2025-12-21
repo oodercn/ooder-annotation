@@ -6,20 +6,20 @@ import net.ooder.common.EventKey;
 public enum APIEventEnum implements EventKey, IconEnumstype {
 
     beforeData("beforeData", "开始准备数据", "ri-database-line"),
-    onData("onData", "数据准备完成", "ri-check-circle-line"),
+    onData("onData", "数据准备完成", "ri-check-line"),
     beforeInvoke("beforeInvoke", "开始调用", "ri-play-line"),
-    onError("onError", "调用失败", "ri-times-circle-line"),
-    afterInvoke("afterInvoke", "调用后", "ri-backward-line"),
+    onError("onError", "调用失败", "ri-close-circle-line"),
+    afterInvoke("afterInvoke", "调用后", "ri-arrow-go-back-line"),
     onExecuteSuccess("onExecuteSuccess", "执行成功", "ri-check-line"),
-    onExecuteError("onExecuteError", "执行失败", "ri-exclamation-triangle-line"),
+    onExecuteError("onExecuteError", "执行失败", "ri-error-warning-line"),
     callback("callback", "回调函数", "ri-code-line"),
     
     // 父类事件
-    beforePropertyChanged("beforePropertyChanged", "属性变更前", "ri-cog-line", "profile", "name", "value", "ovalue"),
-    afterPropertyChanged("afterPropertyChanged", "属性变更后", "ri-cog-line", "profile", "name", "value", "ovalue"),
-    onDestroy("onDestroy", "销毁时", "ri-trash-line", "profile"),
-    beforeDestroy("beforeDestroy", "销毁前", "ri-trash-line", "profile"),
-    afterDestroy("afterDestroy", "销毁后", "ri-trash-line", "profile");
+    beforePropertyChanged("beforePropertyChanged", "属性变更前", "ri-settings-line", "profile", "name", "value", "ovalue"),
+    afterPropertyChanged("afterPropertyChanged", "属性变更后", "ri-settings-line", "profile", "name", "value", "ovalue"),
+    onDestroy("onDestroy", "销毁时", "ri-delete-bin-line", "profile"),
+    beforeDestroy("beforeDestroy", "销毁前", "ri-delete-bin-line", "profile"),
+    afterDestroy("afterDestroy", "销毁后", "ri-delete-bin-line", "profile");
 
     private String event;
     private String name;

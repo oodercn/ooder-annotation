@@ -11,9 +11,9 @@ import java.lang.annotation.Annotation;
 
 public enum CardMenu implements CustomMenu, IconEnumstype {
 
-    OUT("消息", "ri-comment-alt-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
-    END("结束", "ri-cog-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
-    RELOAD("刷新", "ri-sync-alt-line", "true", "left", ComboInputType.text, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD}),
+    OUT("消息", "ri-chat-3-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    END("结束", "ri-settings-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    RELOAD("刷新", "ri-refresh-line", "true", "left", ComboInputType.text, IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD}),
     LAST("上一步", "ri-arrow-up-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
     NEXT("下一步", "ri-arrow-down-line", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
     SAVE("暂存", "ri-save-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW});

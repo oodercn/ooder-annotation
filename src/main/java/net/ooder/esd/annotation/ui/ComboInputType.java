@@ -24,7 +24,7 @@ public enum ComboInputType implements IconEnumstype {
     getter("动态字典", "ri-list-check", ComboType.list),
     helpinput("帮助索引", "ri-question-line", ComboType.list),
     button("按钮", "ri-square-line", ComboType.button),
-    cmd("普通按钮", "ri-box-line", ComboType.button),
+    cmd("普通按钮", "ri-box-2-line", ComboType.button),
     dropbutton("状态按钮", "ri-square-line", ComboType.button),
     cmdbox("按钮组", "ri-keyboard-line", ComboType.button),
     popbox("弹出框", "ri-window-line", ComboType.module),

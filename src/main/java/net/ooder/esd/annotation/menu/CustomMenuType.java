@@ -10,8 +10,8 @@ import java.util.List;
 public enum CustomMenuType implements Enumstype {
 
 
-    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "ri-toolbox-line"),
-    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "ri-toolbox-line"),
+    TOOLBAR("工具栏", SysMenuType.CustomToolsBar, "ri-tools-line"),
+    LISTMENU("弹出菜单", SysMenuType.CustomListBar, "ri-tools-line"),
     BOTTOMBAR("下标栏", SysMenuType.CustomBottomBar, "ri-checkbox-blank-line"),
     MENUBAR("菜单栏", SysMenuType.CustomMenusBar, "ri-menu-line"),
     ROWCMD("行控制按钮", SysMenuType.CustomToolsBar, "ri-checkbox-blank-line"),

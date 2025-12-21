@@ -12,9 +12,9 @@ import java.lang.annotation.Annotation;
 public enum GridMenu implements CustomMenu, IconEnumstype {
 
 
-    DELETE("删除", "delPath", "ri-times-line", "true", IconColorEnum.PINK, new CustomAction[]{CustomGridAction.DELETE}),
+    DELETE("删除", "delPath", "ri-close-line", "true", IconColorEnum.PINK, new CustomAction[]{CustomGridAction.DELETE}),
 
-    ADD("添加", "addPath", "ri-plus-line", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    ADD("添加", "addPath", "ri-add-line", "true", IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
     SUBMITFORM("确定", "saveUrl", "ri-check-line", "true", IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SAVEALLROW}),
 
@@ -22,7 +22,7 @@ public enum GridMenu implements CustomMenu, IconEnumstype {
 
     SEARCH("查询", "Search", "ri-search-line", "true", IconColorEnum.LIGHTPURPLE, new CustomAction[]{CustomGridAction.SEARCH}),
 
-    RELOAD("刷新", "dataPath", "ri-sync-alt-line", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-refresh-line", "true", IconColorEnum.DARKBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;

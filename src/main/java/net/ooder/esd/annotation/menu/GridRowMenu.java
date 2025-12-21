@@ -10,7 +10,7 @@ import java.lang.annotation.Annotation;
 
 public enum GridRowMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "ri-times-line", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
+    DELETE("删除", "ri-close-line", "true", TagCmdsAlign.floatright, ComboInputType.button, IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE}),
 
     SORTDOWN("向上", "ri-arrow-up-line", "true", TagCmdsAlign.left, ComboInputType.button, IconColorEnum.CYAN, new CustomAction[]{CustomGridAction.SORTUP}),
 

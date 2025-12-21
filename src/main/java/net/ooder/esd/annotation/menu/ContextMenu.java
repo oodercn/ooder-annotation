@@ -9,14 +9,14 @@ import java.lang.annotation.Annotation;
 
 public enum ContextMenu implements CustomMenu, IconEnumstype {
 
-    Msg("消息", "ri-comment-alt-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
+    Msg("消息", "ri-chat-3-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.MSG}),
     Editor("编辑", "ri-edit-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.EDITOR}),
-    Config("配置", "ri-cog-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
+    Config("配置", "ri-settings-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.CONFIG}),
     SortDown("向上", "ri-arrow-up-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SORTUP}),
     SortUP("向下", "ri-arrow-down-line", "true", "left", ComboInputType.text, IconColorEnum.CYAN, new CustomAction[]{CustomTreeAction.SORTDOWN}),
-    Delete("删除", "ri-times-line", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
+    Delete("删除", "ri-close-line", "true", "left", ComboInputType.text, IconColorEnum.YELLOW, new CustomAction[]{CustomTreeAction.DELETE}),
     saveRow("保存", "ri-save-line", "true", "left", ComboInputType.text, IconColorEnum.DARKBLUE, new CustomAction[]{CustomTreeAction.SAVEROW}),
-    LoadMenu("菜单", "ri-bars-line", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
+    LoadMenu("菜单", "ri-menu-line", "true", "left", ComboInputType.text, IconColorEnum.NONE, new CustomAction[]{CustomTreeAction.LOADMENU});
 
     private String tag;
 

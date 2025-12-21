@@ -39,7 +39,7 @@ public enum FormulaParams implements IconEnumstype {
     FILE("ri-file-line", "VFS文件", Attributetype.PAGE),
     STYLE("ri-paint-brush-line", "样式", Attributetype.PAGE),
     API("ri-plug-line", "API", Attributetype.TASK),
-    TOPIC("ri-satellite-dish-line", "MQTT主题", Attributetype.SERVICE),
+    TOPIC("ri-base-station-line", "MQTT主题", Attributetype.SERVICE),
     MSG("ri-information-line", "消息", Attributetype.SERVICE),
     CLASSNAME("ri-file-text-line", "页面名称", Attributetype.PAGE),
     ANIMATION("ri-map-pin-line", "动画", Attributetype.PAGE),

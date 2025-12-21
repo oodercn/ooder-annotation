@@ -49,7 +49,7 @@ public enum Attributetype implements IconEnumstype {
 
     USEREVENT("ri-user-line", "用户事件属性", EngineType.IOT),
 
-    COMMAND("ri-satellite-dish-line", "命令", EngineType.IOT);
+    COMMAND("ri-base-station-line", "命令", EngineType.IOT);
 
     public EngineType getEngineType() {
         return engineType;

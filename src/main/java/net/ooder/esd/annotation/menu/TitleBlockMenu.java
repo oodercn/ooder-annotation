@@ -11,13 +11,13 @@ import java.lang.annotation.Annotation;
 
 public enum TitleBlockMenu implements CustomMenu, IconEnumstype {
 
-    DELETE("删除", "delPath", "ri-times-line", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
+    DELETE("删除", "delPath", "ri-close-line", "true",IconColorEnum.YELLOW, new CustomAction[]{CustomGridAction.DELETE, CustomPageAction.RELOAD}),
 
-    ADD("添加", "addPath", "ri-plus-line", "true",IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
+    ADD("添加", "addPath", "ri-add-line", "true",IconColorEnum.GREEN, new CustomAction[]{CustomPageAction.ADD}),
 
-    SORT("排序", "sortUrl", "ri-sort-line", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
+    SORT("排序", "sortUrl", "ri-sort-asc", "true",IconColorEnum.DARKBLUE, new CustomAction[]{CustomFormAction.SAVE}),
 
-    RELOAD("刷新", "dataPath", "ri-sync-alt-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
+    RELOAD("刷新", "dataPath", "ri-refresh-line", "true",IconColorEnum.BABYBLUE, new CustomAction[]{CustomGridAction.RELOAD});
 
 
     TagCmdsAlign tagCmdsAlign = TagCmdsAlign.floatright;

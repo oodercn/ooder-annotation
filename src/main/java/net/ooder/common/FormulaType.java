@@ -20,7 +20,7 @@ public enum FormulaType implements IconEnumstype {
 
     ActionRight(Attributetype.PAGERIGHT, "ri-play-line", "动作组授权"),
 
-    TabRight(Attributetype.PAGERIGHT, "ri-table-2", "TAB过滤"),
+    TabRight(Attributetype.PAGERIGHT, "ri-table-line", "TAB过滤"),
 
 
     UserRightCon(Attributetype.CONDITION, "ri-shield-user-line", "用户权限"),
