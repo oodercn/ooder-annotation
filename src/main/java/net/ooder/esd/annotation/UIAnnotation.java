@@ -1,10 +1,10 @@
 package net.ooder.esd.annotation;
 
 
+import net.ooder.annotation.NotNull;
 import net.ooder.esd.annotation.ui.Dock;
 import net.ooder.esd.annotation.ui.UIPositionType;
 import net.ooder.esd.annotation.ui.VisibilityType;
-import net.ooder.annotation.NotNull;
 
 import java.lang.annotation.*;
 
@@ -15,6 +15,7 @@ public @interface UIAnnotation {
 
     @NotNull
     public Dock dock() default Dock.none;
+
     @NotNull
     public VisibilityType visibility() default VisibilityType.visible;
 
@@ -38,7 +39,9 @@ public @interface UIAnnotation {
 
     public boolean shadows() default false;
 
-    public int zindex() default 1;
+    public int zIndex() default 1;
+
+    public int tabindex() default 1;
 
     public String width() default "";
 
